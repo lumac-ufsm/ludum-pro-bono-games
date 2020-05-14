@@ -5,9 +5,8 @@ using UnityEngine;
 public class PacmanmMove : MonoBehaviour
 {
 
-    public bool permitirMovimento = true;
     public float velocidade;
-    public Vector3 direcao;
+    public Vector2 direcao;
     public Collider2D colliderUp;
     public Collider2D colliderDown;
     public Collider2D colliderLeft;
@@ -22,7 +21,7 @@ public class PacmanmMove : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        direcao = new Vector3(0, 0, 0);
+        direcao = Vector2.zero;
     }
 
     // Update is called once per frame
@@ -33,16 +32,16 @@ public class PacmanmMove : MonoBehaviour
         left = colliderLeft.IsTouchingLayers();
         right = colliderRight.IsTouchingLayers();
 
-        if (permitirMovimento)
+        if (direcao.Equals(Vector2.zero))
         {
             if (Input.GetKeyDown(Keys.left))
-                if (!colliderLeft.IsTouchingLayers()) mover(Vector3.left);
+                if (!colliderLeft.IsTouchingLayers()) mover(Vector2.left);
 
             if (Input.GetKeyDown(Keys.right))
-                if (!colliderRight.IsTouchingLayers()) mover(Vector3.right);
+                if (!colliderRight.IsTouchingLayers()) mover(Vector2.right);
 
             if (Input.GetKeyDown(Keys.up))
-                if (!colliderUp.IsTouchingLayers()) mover(Vector3.up);
+                if (!colliderUp.IsTouchingLayers()) mover(Vector2.up);
 
             if (Input.GetKeyDown(Keys.down))
                 if (!colliderDown.IsTouchingLayers()) mover(Vector2.down);
@@ -56,21 +55,23 @@ public class PacmanmMove : MonoBehaviour
         animator.SetFloat("y", direcao.y);
     }
 
-    private void parar()
-    {
-        permitirMovimento = true;
-        direcao = Vector3.zero;
-    }
-
     private void mover(Vector2 direcao)
     {
         this.direcao = direcao;
-        permitirMovimento = false;
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void parar()
     {
-        parar();
-        print(other.gameObject.name);
+        direcao = Vector2.zero;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (
+            direcao.y > 0 && colliderUp.IsTouchingLayers() ||
+            direcao.y < 0 && colliderDown.IsTouchingLayers() ||
+            direcao.x < 0 && colliderLeft.IsTouchingLayers() ||
+            direcao.x > 0 && colliderRight.IsTouchingLayers()
+        ) parar();
     }
 }
