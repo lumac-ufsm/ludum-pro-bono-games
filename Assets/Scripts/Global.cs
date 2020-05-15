@@ -16,7 +16,7 @@ public class Global : MonoBehaviour
     {
         if (Input.GetKeyDown(Keys.back))
         {
-            SceneManager.LoadScene("Scenes/Main");
+            SceneManager.LoadScene("Main/Scenes/Main");
         }
     }
 }

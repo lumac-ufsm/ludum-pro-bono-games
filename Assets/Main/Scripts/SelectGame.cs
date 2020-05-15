@@ -128,7 +128,7 @@ public class SelectGame : MonoBehaviour
 
     private void openGameSelected()
     {
-        string scene = cards[cardSelecionado].name;
-        SceneManager.LoadScene("Scenes/" + scene + "/" + scene);
+        string nomeJogo = cards[cardSelecionado].name;
+        SceneManager.LoadScene("Games/" + nomeJogo + "/Scenes/Main");
     }
 }
