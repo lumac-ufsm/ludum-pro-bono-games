@@ -185,10 +185,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 645414638}
     m_Modifications:
-    - target: {fileID: 5531418708275865117, guid: 9bcec9bb5944b9249a624a3019f13537,
+    - target: {fileID: 5531418708195042707, guid: 9bcec9bb5944b9249a624a3019f13537,
         type: 3}
-      propertyPath: m_Name
-      value: SnakeCalculator
+      propertyPath: m_Text
+      value: Snake math
       objectReference: {fileID: 0}
     - target: {fileID: 5531418708275865116, guid: 9bcec9bb5944b9249a624a3019f13537,
         type: 3}
@@ -295,6 +295,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5531418708275865117, guid: 9bcec9bb5944b9249a624a3019f13537,
+        type: 3}
+      propertyPath: m_Name
+      value: SnakeMath
+      objectReference: {fileID: 0}
     - target: {fileID: 5531418708695994906, guid: 9bcec9bb5944b9249a624a3019f13537,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -326,11 +331,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 5f0050929080750458fb6ee22abb1724,
         type: 3}
-    - target: {fileID: 5531418708195042707, guid: 9bcec9bb5944b9249a624a3019f13537,
-        type: 3}
-      propertyPath: m_Text
-      value: Snake calculator
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bcec9bb5944b9249a624a3019f13537, type: 3}
 --- !u!224 &352244324 stripped
@@ -385,10 +385,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 645414638}
     m_Modifications:
-    - target: {fileID: 5531418708275865117, guid: 9bcec9bb5944b9249a624a3019f13537,
+    - target: {fileID: 5531418708195042707, guid: 9bcec9bb5944b9249a624a3019f13537,
         type: 3}
-      propertyPath: m_Name
-      value: FlappyBecker
+      propertyPath: m_Text
+      value: Flappy Becker
       objectReference: {fileID: 0}
     - target: {fileID: 5531418708275865116, guid: 9bcec9bb5944b9249a624a3019f13537,
         type: 3}
@@ -495,6 +495,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5531418708275865117, guid: 9bcec9bb5944b9249a624a3019f13537,
+        type: 3}
+      propertyPath: m_Name
+      value: FlappyBecker
+      objectReference: {fileID: 0}
     - target: {fileID: 5531418708695994906, guid: 9bcec9bb5944b9249a624a3019f13537,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -526,11 +531,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 2ab395d2b88ad5a4fb6f21de6618d4af,
         type: 3}
-    - target: {fileID: 5531418708195042707, guid: 9bcec9bb5944b9249a624a3019f13537,
-        type: 3}
-      propertyPath: m_Text
-      value: Flappy Becker
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bcec9bb5944b9249a624a3019f13537, type: 3}
 --- !u!224 &984775742 stripped
@@ -732,9 +732,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 645414638}
     m_Modifications:
-    - target: {fileID: 5531418708275865117, guid: 9bcec9bb5944b9249a624a3019f13537,
+    - target: {fileID: 5531418708195042707, guid: 9bcec9bb5944b9249a624a3019f13537,
         type: 3}
-      propertyPath: m_Name
+      propertyPath: m_Text
       value: Pacmaze
       objectReference: {fileID: 0}
     - target: {fileID: 5531418708275865116, guid: 9bcec9bb5944b9249a624a3019f13537,
@@ -842,6 +842,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5531418708275865117, guid: 9bcec9bb5944b9249a624a3019f13537,
+        type: 3}
+      propertyPath: m_Name
+      value: Pacmaze
+      objectReference: {fileID: 0}
     - target: {fileID: 5531418708695994906, guid: 9bcec9bb5944b9249a624a3019f13537,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -873,11 +878,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 25dbc13476f0e554c948ffcd87dd1c51,
         type: 3}
-    - target: {fileID: 5531418708195042707, guid: 9bcec9bb5944b9249a624a3019f13537,
-        type: 3}
-      propertyPath: m_Text
-      value: Pacmaze
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bcec9bb5944b9249a624a3019f13537, type: 3}
 --- !u!1 &1549422103 stripped
