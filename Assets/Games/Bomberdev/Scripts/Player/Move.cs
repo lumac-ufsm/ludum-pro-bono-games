@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Move : MonoBehaviour {
-    [SerializeField] private List<Vector2> queuePositions = new List<Vector2>();
+    private List<Vector2> queuePositions = new List<Vector2>();
     private Vector2 oldPosition;
 
     private void Start() {
