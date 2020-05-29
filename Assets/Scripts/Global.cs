@@ -3,19 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Global : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
+public class Global : MonoBehaviour {
+    void Start() {
         Cursor.visible = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(Keys.back))
-        {
+    void Update() {
+        if (Input.GetKeyDown(Keys.back)) {
             SceneManager.LoadScene("Main/Scenes/Main");
         }
     }
