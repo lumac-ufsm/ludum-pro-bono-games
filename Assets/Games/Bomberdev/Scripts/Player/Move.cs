@@ -10,11 +10,6 @@ public class Move : MonoBehaviour {
     private void Start() {
         rigidbody2D = GetComponent<Rigidbody2D>();
         oldPosition = transform.position;
-
-        Translate(Direction.LEFT);
-        Translate(Direction.LEFT);
-        Translate(Direction.LEFT);
-        Translate(Direction.UP);
     }
 
     private void Update() {
