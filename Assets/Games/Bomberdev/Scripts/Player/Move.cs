@@ -43,11 +43,21 @@ public class Move : MonoBehaviour {
     private void Run() {
         if (queuePositions.Count > 0) {
             Vector2 currentPosition = transform.position;
-            if (currentPosition != queuePositions[0]) {
-                transform.Translate((queuePositions[0] - oldPosition) * 0.1f);
-            } else {
-                oldPosition = currentPosition;
+            Vector2 nextPosition = queuePositions[0];
+
+            bool endTranslate = currentPosition == nextPosition;
+
+            if (nextPosition.x > oldPosition.x) endTranslate = currentPosition.x >= nextPosition.x;
+            else if (nextPosition.x < oldPosition.x) endTranslate = currentPosition.x <= nextPosition.x;
+            else if (nextPosition.y > oldPosition.y) endTranslate = currentPosition.y >= nextPosition.y;
+            else if (nextPosition.y < oldPosition.y) endTranslate = currentPosition.y <= nextPosition.y;
+
+            if (endTranslate) {
+                oldPosition = nextPosition;
+                transform.position = nextPosition;
                 queuePositions.RemoveAt(0);
+            } else {
+                transform.Translate((nextPosition - oldPosition) * 0.1f);
             }
         }
     }
