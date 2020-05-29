@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Move : MonoBehaviour {
-    private List<Translation> translations = new List<Translation>();
+    private List<Direction> directions = new List<Direction>();
     private Vector2 oldPosition;
     private Rigidbody2D rigidbody2D;
 
@@ -23,6 +23,10 @@ public class Move : MonoBehaviour {
     }
 
     public void Translate(Direction direction) {
+        directions.Add(direction);
+    }
+
+    private Vector2 CalcPosition(Vector2 currentPosition, Direction direction) {
         Vector2 translate = Vector2.zero;
         switch(direction) {
             case Direction.UP:
@@ -39,21 +43,15 @@ public class Move : MonoBehaviour {
                 break;
         }
 
-        Vector2 position;
-        if (translations.Count > 0) {
-            position = translations[translations.Count - 1].position + translate;
-        } else {
-            position = ((Vector2) transform.position) + translate;
-        }
-        position = new Vector2(Mathf.Round(position.x), Mathf.Round(position.y));
-        translations.Add(new Translation(direction, position));
+        Vector2 position = currentPosition + translate;
+        return position;
     }
 
     private void Run() {
-        if (translations.Count > 0) {
+        if (directions.Count > 0) {
+            Direction direction = directions[0];
             Vector2 currentPosition = transform.position;
-            Vector2 nextPosition = translations[0].position;
-            Direction direction = translations[0].direction;
+            Vector2 nextPosition = CalcPosition(oldPosition, direction);
 
             bool endTranslate = currentPosition == nextPosition;
 
@@ -63,7 +61,6 @@ public class Move : MonoBehaviour {
             else if (direction == Direction.DOWN) endTranslate = currentPosition.y <= nextPosition.y;
 
             if (endTranslate) {
-                oldPosition = nextPosition;
                 Stop();
             } else {
                 if (direction == Direction.DOWN || direction == Direction.UP) {
@@ -84,6 +81,7 @@ public class Move : MonoBehaviour {
         position.x = Mathf.Round(position.x);
         position.y = Mathf.Round(position.y);
         transform.position = position;
-        if (translations.Count > 0) translations.RemoveAt(0);
+        oldPosition = position;
+        if (directions.Count > 0) directions.RemoveAt(0);
     }
 }
