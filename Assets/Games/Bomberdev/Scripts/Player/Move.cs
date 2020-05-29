@@ -6,6 +6,7 @@ public class Move : MonoBehaviour {
     private List<Direction> directions = new List<Direction>();
     private Vector2 oldPosition;
     private Rigidbody2D rigidbody2D;
+    [SerializeField] private float forceIntensity = 1;
 
     private void Start() {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -68,7 +69,8 @@ public class Move : MonoBehaviour {
                 } else if (direction == Direction.LEFT || direction == Direction.RIGHT) {
                     rigidbody2D.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
                 }
-                var force = nextPosition - currentPosition;
+                Vector2 force = nextPosition - currentPosition;
+                force *= forceIntensity;
                 rigidbody2D.AddForce(force, ForceMode2D.Impulse);
             }
         }
