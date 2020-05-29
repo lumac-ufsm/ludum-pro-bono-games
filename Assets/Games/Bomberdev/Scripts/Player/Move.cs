@@ -37,6 +37,7 @@ public class Move : MonoBehaviour {
         } else {
             position = ((Vector2) transform.position) + translate;
         }
+        position = new Vector2(Mathf.Round(position.x), Mathf.Round(position.y));
         queuePositions.Add(position);
     }
 
