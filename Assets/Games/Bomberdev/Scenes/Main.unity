@@ -127,12 +127,12 @@ PrefabInstance:
     - target: {fileID: 6849491336414067349, guid: abbaaf7cfd557474ea777287ca9db1e7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 6849491336414067349, guid: abbaaf7cfd557474ea777287ca9db1e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 6849491336414067349, guid: abbaaf7cfd557474ea777287ca9db1e7,
         type: 3}
@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 2010296642}
   - component: {fileID: 2010296646}
   m_Layer: 0
-  m_Name: Tilemap
+  m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
