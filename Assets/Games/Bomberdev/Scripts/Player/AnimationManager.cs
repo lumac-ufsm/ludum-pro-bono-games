@@ -14,7 +14,9 @@ public class AnimationManager : MonoBehaviour {
     private void Update() {
         if (rigidbody2D.velocity == Vector2.zero) {
             animator.SetBool("stopped", true);
+            animator.enabled = false;
         } else {
+            animator.enabled = true;
             animator.SetBool("stopped", false);
             animator.SetFloat("velocityX", rigidbody2D.velocity.x);
             animator.SetFloat("velocityY", rigidbody2D.velocity.y);
