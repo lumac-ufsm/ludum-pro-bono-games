@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 8110581018197027595}
   - component: {fileID: 8110581018197027592}
   - component: {fileID: 8110581018197027593}
+  - component: {fileID: 181270922356743165}
   m_Layer: 5
   m_Name: Flowchart
   m_TagString: Untagged
@@ -186,7 +187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -21.6, y: 0}
+  m_AnchoredPosition: {x: -21.599976, y: 0}
   m_SizeDelta: {x: 286.5, y: 820}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8110581018197027595
@@ -247,3 +248,15 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
+--- !u!114 &181270922356743165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110581018197027607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8cbd79b5e70e3241aaf997fff969755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

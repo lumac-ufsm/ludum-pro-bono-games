@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveInstructionsFlowchart : MonoBehaviour {
-    private List<GameObject> flowcharts;
+    private List<Flowchart> flowcharts;
     private void Start() {
         foreach (Transform child in transform) {
-            flowcharts.Add(child.gameObject);
+            flowcharts.Add(child.gameObject.GetComponent<Flowchart>());
             
         }
     }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8066276855488838948}
   - component: {fileID: 8066276855488838949}
   - component: {fileID: 8066276855488838950}
+  - component: {fileID: 6469799315522900225}
   m_Layer: 5
   m_Name: Instruction
   m_TagString: Untagged
@@ -97,6 +98,21 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
+--- !u!114 &6469799315522900225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8066276855488838944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1d0da27ed021847827193da6f13a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 8066276855488838949}
+  text: {fileID: 690031439911543310}
+  colorSelect: {r: 0, g: 1, b: 0.08719444, a: 0.6156863}
 --- !u!1 &8331963615072392320
 GameObject:
   m_ObjectHideFlags: 0
