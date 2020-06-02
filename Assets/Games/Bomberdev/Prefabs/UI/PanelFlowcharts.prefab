@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 567828332732301002}
   - component: {fileID: 567828332732301001}
   - component: {fileID: 567828332732301003}
+  - component: {fileID: 6181938467423190029}
   m_Layer: 5
   m_Name: PanelFlowcharts
   m_TagString: Untagged
@@ -96,3 +97,15 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
+--- !u!114 &6181938467423190029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567828332732300999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc3a10f06c721ff4bb2c69710da9765f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
