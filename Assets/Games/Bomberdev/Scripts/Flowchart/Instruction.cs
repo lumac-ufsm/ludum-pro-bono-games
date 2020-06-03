@@ -8,6 +8,7 @@ public class Instruction : MonoBehaviour {
     [SerializeField] private Text text;
     [SerializeField] private Color colorDefault;
     [SerializeField] private Color colorSelect;
+    [SerializeField] private Color colorHold;
     
     public void Select() {
         image.color = colorSelect;
@@ -15,5 +16,9 @@ public class Instruction : MonoBehaviour {
 
     public void Unselect() {
         image.color = colorDefault;
+    }
+
+    public void Hold() {
+        image.color = colorHold;
     }
 }

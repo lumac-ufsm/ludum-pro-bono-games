@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveInstructionsFlowchart : MonoBehaviour {
+public class PanelFlowchart : MonoBehaviour {
     private List<GameObject> flowcharts = new List<GameObject>();
     private List<List<GameObject>> gridInstructions = new List<List<GameObject>>();
     private int indexFlowchart = 0;
