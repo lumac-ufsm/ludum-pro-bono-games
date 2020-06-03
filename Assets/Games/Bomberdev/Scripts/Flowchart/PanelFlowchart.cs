@@ -104,8 +104,10 @@ public class PanelFlowchart : MonoBehaviour {
         if (newIndexInstruction < 0) newIndexInstruction = gridInstructions[indexFlowchart].Count - 1;
         else if (newIndexInstruction >= gridInstructions[indexFlowchart].Count) newIndexInstruction = 0;
 
-        if (newIndexInstruction > gridInstructions[newIndexFlowchart].Count) 
+        if (indexFlowchart != newIndexFlowchart) {
+            if (newIndexInstruction > gridInstructions[newIndexFlowchart].Count) 
             newIndexInstruction = gridInstructions[newIndexFlowchart].Count;
+        }
 
         GameObject instruction = Instantiate(instructionGameObjectSelected, flowcharts[newIndexFlowchart].transform);
         instruction.transform.SetSiblingIndex(newIndexInstruction + 1);
