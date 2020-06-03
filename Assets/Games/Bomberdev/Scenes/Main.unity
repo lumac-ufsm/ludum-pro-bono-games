@@ -224,6 +224,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2070101766}
     m_Modifications:
+    - target: {fileID: 690031439911543310, guid: c83b08b857b82654a81d72cffa9652ba,
+        type: 3}
+      propertyPath: m_Text
+      value: "Instru\xE7\xE3o 2"
+      objectReference: {fileID: 0}
     - target: {fileID: 8066276855488838944, guid: c83b08b857b82654a81d72cffa9652ba,
         type: 3}
       propertyPath: m_Name
@@ -908,6 +913,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2070101766}
     m_Modifications:
+    - target: {fileID: 690031439911543310, guid: c83b08b857b82654a81d72cffa9652ba,
+        type: 3}
+      propertyPath: m_Text
+      value: "Instru\xE7\xE3o 3"
+      objectReference: {fileID: 0}
     - target: {fileID: 8066276855488838944, guid: c83b08b857b82654a81d72cffa9652ba,
         type: 3}
       propertyPath: m_Name
@@ -1172,6 +1182,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1519327437}
     m_Modifications:
+    - target: {fileID: 690031439911543310, guid: c83b08b857b82654a81d72cffa9652ba,
+        type: 3}
+      propertyPath: m_Text
+      value: "Instru\xE7\xE3o 1"
+      objectReference: {fileID: 0}
     - target: {fileID: 8066276855488838944, guid: c83b08b857b82654a81d72cffa9652ba,
         type: 3}
       propertyPath: m_Name
@@ -1311,6 +1326,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 136135990}
     m_Modifications:
+    - target: {fileID: 690031439911543310, guid: c83b08b857b82654a81d72cffa9652ba,
+        type: 3}
+      propertyPath: m_Text
+      value: "Instru\xE7\xE3o 5"
+      objectReference: {fileID: 0}
     - target: {fileID: 8066276855488838944, guid: c83b08b857b82654a81d72cffa9652ba,
         type: 3}
       propertyPath: m_Name
@@ -4932,6 +4952,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 136135990}
     m_Modifications:
+    - target: {fileID: 690031439911543310, guid: c83b08b857b82654a81d72cffa9652ba,
+        type: 3}
+      propertyPath: m_Text
+      value: "Instru\xE7\xE3o 4"
+      objectReference: {fileID: 0}
     - target: {fileID: 8066276855488838944, guid: c83b08b857b82654a81d72cffa9652ba,
         type: 3}
       propertyPath: m_Name
