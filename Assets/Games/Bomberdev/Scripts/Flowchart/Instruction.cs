@@ -33,4 +33,9 @@ public class Instruction : MonoBehaviour {
         hold = false;
         Select();
     }
+
+    public void ToggleHold() {
+        if (hold) Drop();
+        else Hold();
+    }
 }
