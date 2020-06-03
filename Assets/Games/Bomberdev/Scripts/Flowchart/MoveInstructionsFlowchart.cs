@@ -56,6 +56,12 @@ public class MoveInstructionsFlowchart : MonoBehaviour {
         indexFlowchart += indexTranslationFlowchart;
         indexInstruction += indexTranslationInstruction;
 
+        if (indexFlowchart < 0) indexFlowchart = flowcharts.Count - 1;
+        else if (indexFlowchart >= flowcharts.Count) indexFlowchart = 0;
+
+        if (indexInstruction < 0) indexInstruction = gridInstructions[indexFlowchart].Count - 1;
+        else if (indexInstruction >= gridInstructions[indexFlowchart].Count) indexInstruction = 0;
+
         instructionSelected.Select();
     }
 }
