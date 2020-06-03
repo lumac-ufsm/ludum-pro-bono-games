@@ -29,7 +29,7 @@ public class PanelFlowchart : MonoBehaviour {
 
     private void MoveOrSelect(Direction direction) {
         if (instructionSelected.hold) Move(direction);
-        else MoveSelection(direction);        
+        else MoveSelection(direction);
     }
 
     private void Inputs() {
