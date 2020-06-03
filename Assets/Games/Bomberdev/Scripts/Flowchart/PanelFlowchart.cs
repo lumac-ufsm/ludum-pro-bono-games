@@ -13,8 +13,6 @@ public class PanelFlowchart : MonoBehaviour {
     private Instruction instructionSelected { get { return instructionGameObjectSelected.GetComponent<Instruction>(); } }
 
     private void Start() {
-        flowcharts = new List<GameObject>();
-        gridInstructions = new List<List<GameObject>>();
         foreach (Transform child in transform) {
             GameObject flowchart = child.gameObject;
             List<GameObject> instructions = flowchart.GetComponent<Flowchart>().instructions;
@@ -63,14 +61,22 @@ public class PanelFlowchart : MonoBehaviour {
 
         instructionSelected.Unselect();
 
-        indexFlowchart += indexTranslationFlowchart;
-        indexInstruction += indexTranslationInstruction;
+        int newIndexFlowchart = indexFlowchart + indexTranslationFlowchart;
+        int newIndexInstruction = indexInstruction + indexTranslationInstruction;
 
-        if (indexFlowchart < 0) indexFlowchart = flowcharts.Count - 1;
-        else if (indexFlowchart >= flowcharts.Count) indexFlowchart = 0;
+        for(;;) {
+            if (newIndexFlowchart < 0) newIndexFlowchart = flowcharts.Count - 1;
+            else if (newIndexFlowchart >= flowcharts.Count) newIndexFlowchart = 0;
 
-        if (indexInstruction < 0) indexInstruction = gridInstructions[indexFlowchart].Count - 1;
-        else if (indexInstruction >= gridInstructions[indexFlowchart].Count) indexInstruction = 0;
+            if (newIndexInstruction < 0) newIndexInstruction = gridInstructions[newIndexFlowchart].Count - 1;
+            else if (newIndexInstruction >= gridInstructions[newIndexFlowchart].Count) newIndexInstruction = 0;
+
+            if (gridInstructions[newIndexFlowchart].Count == 0) newIndexFlowchart += indexTranslationFlowchart;
+            else break;
+        }
+
+        indexFlowchart = newIndexFlowchart;
+        indexInstruction = newIndexInstruction;
 
         instructionSelected.Select();
     }
