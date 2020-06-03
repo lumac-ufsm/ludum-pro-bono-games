@@ -9,6 +9,12 @@ public class Instruction : MonoBehaviour {
     [SerializeField] private Color colorDefault;
     [SerializeField] private Color colorSelect;
     [SerializeField] private Color colorHold;
+
+    private bool _hold;
+    public bool hold {
+        get { return _hold; }
+        private set { _hold = value; }
+    }
     
     public void Select() {
         image.color = colorSelect;
@@ -19,6 +25,12 @@ public class Instruction : MonoBehaviour {
     }
 
     public void Hold() {
+        hold = true;
         image.color = colorHold;
+    }
+
+    public void Drop() {
+        hold = false;
+        Select();
     }
 }
