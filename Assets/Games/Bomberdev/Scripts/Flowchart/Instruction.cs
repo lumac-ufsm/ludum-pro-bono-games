@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class Instruction : MonoBehaviour {
     [SerializeField] private Image image;
     [SerializeField] private Text text;
+    [SerializeField] private Color colorDefault;
     [SerializeField] private Color colorSelect;
-    
-    private void Start() {
-        Select();
-    }
     
     public void Select() {
         image.color = colorSelect;
+    }
+
+    public void Unselect() {
+        image.color = colorDefault;
     }
 }

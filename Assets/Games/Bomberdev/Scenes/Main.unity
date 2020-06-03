@@ -670,7 +670,7 @@ PrefabInstance:
     - target: {fileID: 8981116922936094494, guid: a11f328643d52084ab5dbf01c519e269,
         type: 3}
       propertyPath: m_Name
-      value: FlowchartRun Variant
+      value: FlowchartRun
       objectReference: {fileID: 0}
     - target: {fileID: 8981116922936094495, guid: a11f328643d52084ab5dbf01c519e269,
         type: 3}

@@ -112,6 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 8066276855488838949}
   text: {fileID: 690031439911543310}
+  colorDefault: {r: 0.85882354, g: 0.12941177, b: 0.59607846, a: 0.69411767}
   colorSelect: {r: 0, g: 1, b: 0.08719444, a: 0.6156863}
 --- !u!1 &8331963615072392320
 GameObject:
