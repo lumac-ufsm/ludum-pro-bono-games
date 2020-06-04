@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flowchart : MonoBehaviour {
+public class FlowchartBomberdev : MonoBehaviour {
     private List<GameObject> _instructions;
     public List<GameObject> instructions {
         get {
@@ -17,7 +17,7 @@ public class Flowchart : MonoBehaviour {
         _instructions = new List<GameObject>();
         foreach (Transform child in transform) {
             GameObject instruction = child.gameObject;
-            if (instruction.GetComponent<Instruction>() != null) {
+            if (instruction.GetComponent<InstructionBomberdev>() != null) {
                 _instructions.Add(instruction);
             }
         }

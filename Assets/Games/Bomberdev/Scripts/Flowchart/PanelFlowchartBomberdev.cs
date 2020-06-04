@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PanelFlowchart : MonoBehaviour {
+public class PanelFlowchartBomberdev : MonoBehaviour {
     private List<GameObject> flowcharts = new List<GameObject>();
     private List<List<GameObject>> gridInstructions = new List<List<GameObject>>();
     private int indexFlowchart = 0;
     private int indexInstruction = 0;
 
     private GameObject instructionGameObjectSelected { get { return gridInstructions[indexFlowchart][indexInstruction]; } }
-    private Instruction instructionSelected { get { return instructionGameObjectSelected.GetComponent<Instruction>(); } }
+    private InstructionBomberdev instructionSelected { get { return instructionGameObjectSelected.GetComponent<InstructionBomberdev>(); } }
 
     private void Start() {
         foreach (Transform child in transform) {
             GameObject flowchart = child.gameObject;
-            List<GameObject> instructions = flowchart.GetComponent<Flowchart>().instructions;
+            List<GameObject> instructions = flowchart.GetComponent<FlowchartBomberdev>().instructions;
             flowcharts.Add(flowchart);
             gridInstructions.Add(instructions);
         }

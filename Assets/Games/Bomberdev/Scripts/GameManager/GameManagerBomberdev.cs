@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManagerBomberdev : MonoBehaviour {
-    [SerializeField] private PanelFlowchart panelFlowchart;
-    [SerializeField] private Flowchart flowchartRun;
+    [SerializeField] private PanelFlowchartBomberdev panelFlowchart;
+    [SerializeField] private FlowchartBomberdev flowchartRun;
     [SerializeField] private GameObject player;
     private MovePlayerBomberdev movePlayer;
 
@@ -29,7 +29,7 @@ public class GameManagerBomberdev : MonoBehaviour {
     private List<CommandBomberdev> GetCommands() {
         List<CommandBomberdev> commands = new List<CommandBomberdev>();
         foreach(GameObject instructionGameObject in flowchartRun.instructions) {
-            Instruction instruction = instructionGameObject.GetComponent<Instruction>();
+            InstructionBomberdev instruction = instructionGameObject.GetComponent<InstructionBomberdev>();
             commands.Add(instruction.command);
         }
         return commands;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Instruction : MonoBehaviour {
+public class InstructionBomberdev : MonoBehaviour {
     [SerializeField] private Image image;
     [SerializeField] private Text text;
     [SerializeField] private Color colorDefault;
