@@ -27,5 +27,6 @@ public class CommandManagerBomberdev : MonoBehaviour {
 
     public void Bomb(Vector2 playerPosition, GameObject bombPrefab) {
         GameObject bomb = Instantiate(bombPrefab, playerPosition, Quaternion.identity);
+        callback();
     }
 }
