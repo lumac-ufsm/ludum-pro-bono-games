@@ -32,6 +32,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6469799315522900225, guid: c83b08b857b82654a81d72cffa9652ba,
+        type: 3}
+      propertyPath: _command
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7197191774134781778, guid: c83b08b857b82654a81d72cffa9652ba,
         type: 3}
       propertyPath: m_Text

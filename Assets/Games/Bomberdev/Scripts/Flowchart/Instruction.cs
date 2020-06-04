@@ -9,6 +9,9 @@ public class Instruction : MonoBehaviour {
     [SerializeField] private Color colorDefault;
     [SerializeField] private Color colorSelect;
     [SerializeField] private Color colorHold;
+    [SerializeField] private CommandBomberdev _command;
+
+    public CommandBomberdev command { get { return _command; } }
 
     private bool _hold;
     public bool hold {
