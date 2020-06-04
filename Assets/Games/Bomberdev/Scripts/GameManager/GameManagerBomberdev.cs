@@ -6,6 +6,12 @@ using UnityEngine.UI;
 public class GameManagerBomberdev : MonoBehaviour {
     [SerializeField] private PanelFlowchart panelFlowchart;
     [SerializeField] private Flowchart flowchartRun;
+    [SerializeField] private GameObject player;
+    private Move movePlayer;
+
+    private void Start() {
+        movePlayer = player.GetComponent<Move>();
+    }
 
     private void Update() {
         Inputs();
@@ -20,11 +26,33 @@ public class GameManagerBomberdev : MonoBehaviour {
         if (Input.GetKeyDown(Keys.start)) Run();
     }
 
-    private void Run() {
+    private List<CommandBomberdev> GetCommands() {
+        List<CommandBomberdev> commands = new List<CommandBomberdev>();
         foreach(GameObject instructionGameObject in flowchartRun.instructions) {
-            Image image = instructionGameObject.transform.GetComponentInChildren<Image>();
-            Text text = image.GetComponentInChildren<Text>();
-            print(text.text);
+            Instruction instruction = instructionGameObject.GetComponent<Instruction>();
+            commands.Add(instruction.command);
+        }
+        return commands;
+    }
+
+    private void Run() {
+        List<CommandBomberdev> commands = GetCommands();
+
+        foreach(CommandBomberdev command in commands) {
+            switch(command) {
+                case CommandBomberdev.UP:
+                    movePlayer.Translate(Direction.UP);
+                    break;
+                case CommandBomberdev.DOWN:
+                    movePlayer.Translate(Direction.DOWN);
+                    break;
+                case CommandBomberdev.LEFT:
+                    movePlayer.Translate(Direction.LEFT);
+                    break;
+                case CommandBomberdev.RIGHT:
+                    movePlayer.Translate(Direction.RIGHT);
+                    break;
+            }
         }
     }
 }
