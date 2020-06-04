@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MovePlayerBomberdev : MonoBehaviour {
-    private List<TranslationBomberdev> translations = new List<TranslationBomberdev>();
+    private TranslationBomberdev translation = null;
     private Vector2 oldPosition;
     private Rigidbody2D rigidbody2D;
     [SerializeField] private float forceIntensity = 1;
@@ -24,8 +24,7 @@ public class MovePlayerBomberdev : MonoBehaviour {
     }
 
     public void Translate(Direction direction, Func.Callback callback) {
-        TranslationBomberdev translation = new TranslationBomberdev(direction, callback);
-        translations.Add(translation);
+        translation = new TranslationBomberdev(direction, callback);
     }
 
     private Vector2 CalcPosition(Vector2 currentPosition, Direction direction) {
@@ -50,8 +49,8 @@ public class MovePlayerBomberdev : MonoBehaviour {
     }
 
     private void Run() {
-        if (translations.Count > 0) {
-            Direction direction = translations[0].direction;
+        if (translation != null) {
+            Direction direction = translation.direction;
             Vector2 currentPosition = transform.position;
             Vector2 nextPosition = CalcPosition(oldPosition, direction);
 
@@ -85,6 +84,8 @@ public class MovePlayerBomberdev : MonoBehaviour {
         position.y = Mathf.Round(position.y);
         transform.position = position;
         oldPosition = position;
-        if (translations.Count > 0) translations.RemoveAt(0);
+        Func.Callback callback = translation.callback;
+        translation = null;
+        callback();
     }
 }
