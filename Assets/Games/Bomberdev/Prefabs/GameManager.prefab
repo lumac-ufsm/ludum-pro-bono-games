@@ -45,8 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelFlowchart: {fileID: 0}
-  flowchartRun: {fileID: 0}
-  player: {fileID: 0}
 --- !u!114 &4621000651517510263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,3 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbbb1c31e8381344d993483ab0cfa7f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombPrefab: {fileID: 8759269905498459611, guid: 099f0576c6d1b3b4588f4f21c34ed1b5,
+    type: 3}
+  flowchartRun: {fileID: 0}
+  player: {fileID: 0}

@@ -25,7 +25,7 @@ public class CommandManagerBomberdev {
         movePlayer.Translate(Direction.RIGHT, callback);
     }
 
-    public void Bomb(GameObject player) {
+    public void Bomb(Vector2 playerPosition, GameObject bombPrefab) {
         
     }
 }

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RunCommandsBomberdev : MonoBehaviour {
-    [SerializeField] private FlowchartBomberdev flowchartRun;
     private Queue<CommandBomberdev> commands;
     private CommandManagerBomberdev commandManager;
     private Func.Callback callbackEndCommand;
     private MovePlayerBomberdev movePlayer;
+    [SerializeField] private GameObject bombPrefab;
+    [SerializeField] private FlowchartBomberdev flowchartRun;
     [SerializeField] private GameObject player;
 
     private void Start() {
@@ -48,7 +49,7 @@ public class RunCommandsBomberdev : MonoBehaviour {
                 commandManager.Right(movePlayer);
                 break;
             case CommandBomberdev.BOMB:
-                commandManager.Bomb(player);
+                commandManager.Bomb(player.transform.position, bombPrefab);
                 break;
         }
     }
