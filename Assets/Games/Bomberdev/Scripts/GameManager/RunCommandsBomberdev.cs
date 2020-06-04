@@ -5,6 +5,7 @@ using UnityEngine;
 public class RunCommandsBomberdev : MonoBehaviour {
     [SerializeField] private FlowchartBomberdev flowchartRun;
     private Queue<CommandBomberdev> commands;
+    private CommandManagerBomberdev commandManager;
     private Func.Callback callbackEndCommand;
     private MovePlayerBomberdev movePlayer;
     [SerializeField] private GameObject player;
@@ -12,6 +13,7 @@ public class RunCommandsBomberdev : MonoBehaviour {
     private void Start() {
         movePlayer = player.GetComponent<MovePlayerBomberdev>();
         callbackEndCommand = () => ExecuteNextCommand();
+        commandManager = new CommandManagerBomberdev(callbackEndCommand);
     }
 
     public void StartCommands() {
@@ -34,16 +36,16 @@ public class RunCommandsBomberdev : MonoBehaviour {
     private void ExecuteCommand(CommandBomberdev command) {
         switch(command) {
             case CommandBomberdev.UP:
-                movePlayer.Translate(Direction.UP, callbackEndCommand);
+                commandManager.Translate(movePlayer, Direction.UP);
                 break;
             case CommandBomberdev.DOWN:
-                movePlayer.Translate(Direction.DOWN, callbackEndCommand);
+                commandManager.Translate(movePlayer, Direction.DOWN);
                 break;
             case CommandBomberdev.LEFT:
-                movePlayer.Translate(Direction.LEFT, callbackEndCommand);
+                commandManager.Translate(movePlayer, Direction.LEFT);
                 break;
             case CommandBomberdev.RIGHT:
-                movePlayer.Translate(Direction.RIGHT, callbackEndCommand);
+                commandManager.Translate(movePlayer, Direction.RIGHT);
                 break;
         }
     }
