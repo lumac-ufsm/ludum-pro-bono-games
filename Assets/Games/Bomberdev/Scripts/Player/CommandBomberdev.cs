@@ -1,4 +1,4 @@
-﻿public enum CommandsBomberdev {
+﻿public enum CommandBomberdev {
     UP,
     DOWN,
     LEFT,
