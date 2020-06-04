@@ -47,5 +47,4 @@ public class RunCommandsBomberdev : MonoBehaviour {
                 break;
         }
     }
-
 }
