@@ -23,21 +23,13 @@ public class PanelFlowchart : MonoBehaviour {
         instructionSelected.Select();
     }
 
-    private void Update() {
-        Inputs();
-    }
-
-    private void MoveOrSelect(Direction direction) {
+    public void MoveOrSelect(Direction direction) {
         if (instructionSelected.hold) Move(direction);
         else MoveSelection(direction);
     }
 
-    private void Inputs() {
-        if (Input.GetKeyDown(Keys.up)) MoveOrSelect(Direction.UP);
-        if (Input.GetKeyDown(Keys.down)) MoveOrSelect(Direction.DOWN);
-        if (Input.GetKeyDown(Keys.left)) MoveOrSelect(Direction.LEFT);
-        if (Input.GetKeyDown(Keys.right)) MoveOrSelect(Direction.RIGHT);
-        if (Input.GetKeyDown(Keys.action1)) instructionSelected.ToggleHold();
+    public void ToggleHold() {
+        instructionSelected.ToggleHold();
     }
 
     private void MoveSelection(Direction direction) {
