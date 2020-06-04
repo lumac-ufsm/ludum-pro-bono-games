@@ -12,6 +12,8 @@ public class DeathPlayerBomberdev : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Enemy")) {
             Death("Colisão com inimigo");
+        } else if (other.CompareTag("Explosion")) {
+            Death("Colisão com explosão");
         }
     }
 
