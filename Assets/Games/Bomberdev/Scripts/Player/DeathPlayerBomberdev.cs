@@ -18,6 +18,7 @@ public class DeathPlayerBomberdev : MonoBehaviour {
     }
 
     private void Death(string deathCause) {
+        Destroy(gameObject);
         gameManagerBomberdev.GameOver(deathCause);
     }
 }
