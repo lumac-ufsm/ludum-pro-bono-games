@@ -5708,6 +5708,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4621000651517510263, guid: 4ed58cde200984e40b88142abda6641f,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1206574015}
+    - target: {fileID: 4621000651517510263, guid: 4ed58cde200984e40b88142abda6641f,
+        type: 3}
+      propertyPath: flowchartRun
+      value: 
+      objectReference: {fileID: 245649395}
     - target: {fileID: 6929831032827782849, guid: 4ed58cde200984e40b88142abda6641f,
         type: 3}
       propertyPath: m_Name

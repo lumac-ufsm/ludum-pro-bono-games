@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6929831032827782855}
   - component: {fileID: 6929831032827782854}
+  - component: {fileID: 4621000651517510263}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -43,4 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987000006ef5e7a419e21c102984aa0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flowchart: {fileID: 0}
+  panelFlowchart: {fileID: 0}
+  flowchartRun: {fileID: 0}
+  player: {fileID: 0}
+--- !u!114 &4621000651517510263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929831032827782849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbbb1c31e8381344d993483ab0cfa7f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
