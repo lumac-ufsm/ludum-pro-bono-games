@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ExplodeBombBomberdev : MonoBehaviour {
-    public float delay = 3;
-    public int power = 1;
+    [SerializeField] private GameObject explosionStartPrefab;
+    [SerializeField] private GameObject explosionMiddlePrefab;
+    [SerializeField] private GameObject explosionEndPrefab;
+    [SerializeField] private float delay = 3;
+    [SerializeField] private int power = 1;
     private float time = 0;
 
     private void Update() {
@@ -13,6 +16,12 @@ public class ExplodeBombBomberdev : MonoBehaviour {
     }
 
     private void Explode() {
+        Vector2 position = gameObject.transform.position;
         Destroy(gameObject);
+        CreateExplosions(position);
+    }
+
+    private void CreateExplosions(Vector2 position) {
+
     }
 }
