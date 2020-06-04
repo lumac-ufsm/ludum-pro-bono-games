@@ -18,7 +18,7 @@ public class MovePlayerBomberdev : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if (other.gameObject.CompareTag("Wall")) {
+        if (other.gameObject.CompareTag("Wall") || other.gameObject.CompareTag("Bomb")) {
             Stop();
         }
     }
