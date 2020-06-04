@@ -38,19 +38,23 @@ public class GameManagerBomberdev : MonoBehaviour {
     private void Run() {
         List<CommandBomberdev> commands = GetCommands();
 
+        Func.Callback callback = () => {
+
+        };
+
         foreach(CommandBomberdev command in commands) {
             switch(command) {
                 case CommandBomberdev.UP:
-                    movePlayer.Translate(Direction.UP);
+                    movePlayer.Translate(Direction.UP, callback);
                     break;
                 case CommandBomberdev.DOWN:
-                    movePlayer.Translate(Direction.DOWN);
+                    movePlayer.Translate(Direction.DOWN, callback);
                     break;
                 case CommandBomberdev.LEFT:
-                    movePlayer.Translate(Direction.LEFT);
+                    movePlayer.Translate(Direction.LEFT, callback);
                     break;
                 case CommandBomberdev.RIGHT:
-                    movePlayer.Translate(Direction.RIGHT);
+                    movePlayer.Translate(Direction.RIGHT, callback);
                     break;
             }
         }
