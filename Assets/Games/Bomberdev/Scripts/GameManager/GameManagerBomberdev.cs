@@ -7,10 +7,10 @@ public class GameManagerBomberdev : MonoBehaviour {
     [SerializeField] private PanelFlowchart panelFlowchart;
     [SerializeField] private Flowchart flowchartRun;
     [SerializeField] private GameObject player;
-    private Move movePlayer;
+    private MovePlayerBomberdev movePlayer;
 
     private void Start() {
-        movePlayer = player.GetComponent<Move>();
+        movePlayer = player.GetComponent<MovePlayerBomberdev>();
     }
 
     private void Update() {

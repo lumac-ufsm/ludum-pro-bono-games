@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour {
+public class MovePlayerBomberdev : MonoBehaviour {
     private List<Direction> directions = new List<Direction>();
     private Vector2 oldPosition;
     private Rigidbody2D rigidbody2D;

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputsPlayer : MonoBehaviour {
-    private Move move;
+public class InputsPlayerBomberdev : MonoBehaviour {
+    private MovePlayerBomberdev move;
     
     private void Start() {
-        move = GetComponent<Move>();
+        move = GetComponent<MovePlayerBomberdev>();
     }
 
     private void Update() {
