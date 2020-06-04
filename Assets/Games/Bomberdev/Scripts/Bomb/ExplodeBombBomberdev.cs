@@ -6,7 +6,7 @@ public class ExplodeBombBomberdev : MonoBehaviour {
     [SerializeField] private GameObject explosionStartPrefab;
     [SerializeField] private GameObject explosionMiddlePrefab;
     [SerializeField] private GameObject explosionEndPrefab;
-    [SerializeField] private float delay = 1;
+    [SerializeField] private float delay = 3;
     [SerializeField] private int power = 1;
     private float time = 0;
 
