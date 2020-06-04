@@ -115,10 +115,10 @@ public class PanelFlowchart : MonoBehaviour {
             newIndexInstruction = gridInstructions[newIndexFlowchart].Count;
         }
 
-        GameObject instruction = Instantiate(instructionGameObjectSelected, flowcharts[newIndexFlowchart].transform);
-        instruction.transform.SetSiblingIndex(newIndexInstruction + 1);
-        Destroy(instructionGameObjectSelected);
-        
+        instructionGameObjectSelected.transform.parent = flowcharts[newIndexFlowchart].transform;
+        instructionGameObjectSelected.transform.SetSiblingIndex(newIndexInstruction + 1);
+
+        GameObject instruction = instructionGameObjectSelected;
         gridInstructions[indexFlowchart].RemoveAt(indexInstruction);
         gridInstructions[newIndexFlowchart].Insert(newIndexInstruction, instruction);
 
