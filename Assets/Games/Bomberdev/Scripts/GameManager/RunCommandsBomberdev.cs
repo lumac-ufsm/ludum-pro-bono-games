@@ -36,16 +36,19 @@ public class RunCommandsBomberdev : MonoBehaviour {
     private void ExecuteCommand(CommandBomberdev command) {
         switch(command) {
             case CommandBomberdev.UP:
-                commandManager.Translate(movePlayer, Direction.UP);
+                commandManager.Up(movePlayer);
                 break;
             case CommandBomberdev.DOWN:
-                commandManager.Translate(movePlayer, Direction.DOWN);
+                commandManager.Down(movePlayer);
                 break;
             case CommandBomberdev.LEFT:
-                commandManager.Translate(movePlayer, Direction.LEFT);
+                commandManager.Left(movePlayer);
                 break;
             case CommandBomberdev.RIGHT:
-                commandManager.Translate(movePlayer, Direction.RIGHT);
+                commandManager.Right(movePlayer);
+                break;
+            case CommandBomberdev.BOMB:
+                commandManager.Bomb(player);
                 break;
         }
     }

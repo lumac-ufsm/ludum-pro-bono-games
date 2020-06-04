@@ -9,7 +9,23 @@ public class CommandManagerBomberdev {
         this.callback = callback;
     }
 
-    public void Translate(MovePlayerBomberdev movePlayer, Direction direction) {
-        movePlayer.Translate(direction, callback);
+    public void Up(MovePlayerBomberdev movePlayer) {
+        movePlayer.Translate(Direction.UP, callback);
+    }
+
+    public void Down(MovePlayerBomberdev movePlayer) {
+        movePlayer.Translate(Direction.DOWN, callback);
+    }
+
+    public void Left(MovePlayerBomberdev movePlayer) {
+        movePlayer.Translate(Direction.LEFT, callback);
+    }
+
+    public void Right(MovePlayerBomberdev movePlayer) {
+        movePlayer.Translate(Direction.RIGHT, callback);
+    }
+
+    public void Bomb(GameObject player) {
+        
     }
 }
