@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class InstructionBomberdev : MonoBehaviour {
     [SerializeField] private Image image;
-    [SerializeField] private Text text;
     [SerializeField] private Color colorDefault;
     [SerializeField] private Color colorSelect;
     [SerializeField] private Color colorHold;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CommandManagerBomberdev {
+public class CommandManagerBomberdev : MonoBehaviour {
     private Func.Callback callback;
     
     public CommandManagerBomberdev(Func.Callback callback) {
@@ -26,6 +26,6 @@ public class CommandManagerBomberdev {
     }
 
     public void Bomb(Vector2 playerPosition, GameObject bombPrefab) {
-        
+        GameObject bomb = Instantiate(bombPrefab, playerPosition, Quaternion.identity);
     }
 }
