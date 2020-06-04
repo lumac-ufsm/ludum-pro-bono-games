@@ -26,6 +26,14 @@ public class ExplodeBombBomberdev : MonoBehaviour {
         Vector2 unitY = new Vector2(0, 1);
 
         CreateExplosion(ExplosionTypeBomberdev.START, position);
+
+        for(int n = 1; n < power; n++) {
+            CreateExplosion(ExplosionTypeBomberdev.MIDDLE_VERTICAL, position + (unitY * n));
+            CreateExplosion(ExplosionTypeBomberdev.MIDDLE_VERTICAL, position - (unitY * n));
+            CreateExplosion(ExplosionTypeBomberdev.MIDDLE_HORIZONTAL, position + (unitX * n));
+            CreateExplosion(ExplosionTypeBomberdev.MIDDLE_HORIZONTAL, position - (unitX * n));
+        }
+
         CreateExplosion(ExplosionTypeBomberdev.END_UP, position + (unitY * power));
         CreateExplosion(ExplosionTypeBomberdev.END_DOWN, position - (unitY * power));
         CreateExplosion(ExplosionTypeBomberdev.END_LEFT, position - (unitX * power));
