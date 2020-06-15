@@ -5,4 +5,5 @@
     LEFT,
     RIGHT,
     BOMB,
+    WAIT
 }

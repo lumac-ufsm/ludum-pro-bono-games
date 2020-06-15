@@ -51,6 +51,9 @@ public class RunCommandsBomberdev : MonoBehaviour {
             case CommandBomberdev.BOMB:
                 commandManager.Bomb(player.transform.position, bombPrefab);
                 break;
+            case CommandBomberdev.WAIT:
+                commandManager.Wait(3);
+                break;
         }
     }
 }
