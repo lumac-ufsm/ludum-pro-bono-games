@@ -9,10 +9,14 @@ public class DeathPlayerBomberdev : MonoBehaviour {
         gameManagerBomberdev = GameObject.Find("GameManager").GetComponent<GameManagerBomberdev>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Enemy")) {
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.gameObject.CompareTag("Enemy")) {
             Death("Colisão com inimigo");
-        } else if (other.CompareTag("Explosion")) {
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("Explosion")) {
             Death("Colisão com explosão");
         }
     }
