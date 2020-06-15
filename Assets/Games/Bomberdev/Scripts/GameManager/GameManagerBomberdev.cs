@@ -21,6 +21,10 @@ public class GameManagerBomberdev : MonoBehaviour {
         if (Input.GetKeyDown(Keys.start)) runCommandsBomberdev.StartCommands();
     }
 
+    public void NextLevel() {
+        
+    }
+
     public void GameOver(string deathCause) {
         print($"Game Over\nCausa da morte: {deathCause}");
     }
