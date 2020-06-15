@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BomberdevEnterPortal : MonoBehaviour {
+public class EnterPortalBomberdev : MonoBehaviour {
     private GameManagerBomberdev gameManager;
     private void Start() {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManagerBomberdev>();

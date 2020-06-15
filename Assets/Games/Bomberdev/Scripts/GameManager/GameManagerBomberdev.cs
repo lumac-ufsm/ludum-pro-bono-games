@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManagerBomberdev : MonoBehaviour {
     [SerializeField] private PanelFlowchartBomberdev panelFlowchart;
@@ -22,7 +22,9 @@ public class GameManagerBomberdev : MonoBehaviour {
     }
 
     public void NextLevel() {
-        
+        string name = SceneManager.GetActiveScene().name;
+        int level = int.Parse(name.Replace("_BomberdevLevel", ""));
+        SceneManager.LoadScene($"{level + 1}_BomberdevLevel");
     }
 
     public void GameOver(string deathCause) {
