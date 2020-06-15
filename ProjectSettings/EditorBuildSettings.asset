@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Games/FlappyBecker/Scenes/Main.unity
     guid: 36eec8e18176d7b4ab5cc3d60436a690
   - enabled: 1
+    path: Assets/Games/Bomberdev/Scenes/Levels/1_BomberdevLevel.unity
+    guid: 4ddd820c009f96a4eb081e327b604f3b
+  - enabled: 1
+    path: Assets/Games/Bomberdev/Scenes/Levels/2_BomberdevLevel.unity
+    guid: 5880ed9b642f69744a5c8597e2b9205f
+  - enabled: 1
     path: Assets/Games/Bomberdev/Scenes/Levels/3_BomberdevLevel.unity
     guid: 4ddff399a01f8214387997e85b9a0307
   m_configObjects: {}
