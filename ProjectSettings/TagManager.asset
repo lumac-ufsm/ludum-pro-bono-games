@@ -5,9 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
-  - Bomb
-  - Explosion
-  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -17,7 +14,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Wall
   - 
   - 
   - 
