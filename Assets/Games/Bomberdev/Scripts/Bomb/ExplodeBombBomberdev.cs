@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading.Tasks;
+using System.Threading;
 
 public class ExplodeBombBomberdev : MonoBehaviour {
     [SerializeField] private GameObject explosionStartPrefab;
@@ -21,23 +23,53 @@ public class ExplodeBombBomberdev : MonoBehaviour {
         CreateExplosions(position);
     }
 
-    private void CreateExplosions(Vector2 position) {
+    private bool CheckCollision(GameObject gameObject) {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(gameObject.transform.position, 0.1f);
+        return colliders.Length > 1;
+    }
+
+    private async void CreateExplosions(Vector2 position) {
         Vector2 unitX = new Vector2(1, 0);
         Vector2 unitY = new Vector2(0, 1);
 
         CreateExplosion(ExplosionTypeBomberdev.START, position);
 
+        bool upAllowed = true;
+        bool downAllowed = true;
+        bool leftAllowed = true;
+        bool rightAllowed = true;
+
         for(int n = 1; n < power; n++) {
-            CreateExplosion(ExplosionTypeBomberdev.MIDDLE_VERTICAL, position + (unitY * n));
-            CreateExplosion(ExplosionTypeBomberdev.MIDDLE_VERTICAL, position - (unitY * n));
-            CreateExplosion(ExplosionTypeBomberdev.MIDDLE_HORIZONTAL, position + (unitX * n));
-            CreateExplosion(ExplosionTypeBomberdev.MIDDLE_HORIZONTAL, position - (unitX * n));
+            if (upAllowed) {
+                var explosion = CreateExplosion(ExplosionTypeBomberdev.MIDDLE_VERTICAL, position + (unitY * n));
+                if (CheckCollision(explosion)) upAllowed = false;
+            }
+            if (downAllowed) {
+                var explosion = CreateExplosion(ExplosionTypeBomberdev.MIDDLE_VERTICAL, position - (unitY * n));
+                if (CheckCollision(explosion)) downAllowed = false;
+            }
+            if (rightAllowed) {
+                var explosion = CreateExplosion(ExplosionTypeBomberdev.MIDDLE_HORIZONTAL, position + (unitX * n));
+                if (CheckCollision(explosion)) rightAllowed = false;
+            }
+            if (leftAllowed) {
+                var explosion = CreateExplosion(ExplosionTypeBomberdev.MIDDLE_HORIZONTAL, position - (unitX * n));
+                if (CheckCollision(explosion)) leftAllowed = false;
+            }
         }
 
-        CreateExplosion(ExplosionTypeBomberdev.END_UP, position + (unitY * power));
-        CreateExplosion(ExplosionTypeBomberdev.END_DOWN, position - (unitY * power));
-        CreateExplosion(ExplosionTypeBomberdev.END_LEFT, position - (unitX * power));
-        CreateExplosion(ExplosionTypeBomberdev.END_RIGHT, position + (unitX * power));
+        if (upAllowed) {
+            CreateExplosion(ExplosionTypeBomberdev.END_UP, position + (unitY * power));
+        }
+        if (downAllowed) {
+            CreateExplosion(ExplosionTypeBomberdev.END_DOWN, position - (unitY * power));
+        }
+        if (leftAllowed) {
+            CreateExplosion(ExplosionTypeBomberdev.END_LEFT, position - (unitX * power));
+        }
+        if (rightAllowed) {
+            CreateExplosion(ExplosionTypeBomberdev.END_RIGHT, position + (unitX * power));
+        }
     }
 
     private GameObject CreateExplosion(ExplosionTypeBomberdev type, Vector2 position) {
