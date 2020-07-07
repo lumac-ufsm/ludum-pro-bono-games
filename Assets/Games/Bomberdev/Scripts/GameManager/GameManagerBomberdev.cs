@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerBomberdev : MonoBehaviour {
     [SerializeField] private PanelFlowchartBomberdev panelFlowchart;
+    [SerializeField] private GameObject panelGameOver;
     private RunCommandsBomberdev runCommandsBomberdev;
 
     private void Update() {
@@ -27,7 +28,14 @@ public class GameManagerBomberdev : MonoBehaviour {
         SceneManager.LoadScene($"{level + 1}_BomberdevLevel");
     }
 
+    public void RestartLevel() {
+        string name = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(name);
+    }
+
     public void GameOver(string deathCause) {
+        Time.timeScale = 0;
+        panelGameOver.SetActive(true);
         print($"Game Over\nCausa da morte: {deathCause}");
     }
 }

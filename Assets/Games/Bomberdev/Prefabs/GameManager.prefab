@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelFlowchart: {fileID: 2111631610708852008}
+  panelGameOver: {fileID: 6998953843626707453}
 --- !u!114 &4621000651517510263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,6 +419,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 765a8574885930544987b46ea5863c53, type: 3}
+--- !u!1 &6998953843626707453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5042888266041535500, guid: 765a8574885930544987b46ea5863c53,
+    type: 3}
+  m_PrefabInstance: {fileID: 2655636521219892721}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &6998953843626707452 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5042888266041535501, guid: 765a8574885930544987b46ea5863c53,
