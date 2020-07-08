@@ -38,4 +38,8 @@ public class GameManagerBomberdev : MonoBehaviour {
         panelGameOver.SetActive(true);
         print($"Game Over\nCausa da morte: {deathCause}");
     }
+
+    public void StartCoroutineGameManager(IEnumerator coroutine) {
+        StartCoroutine(coroutine);
+    }
 }

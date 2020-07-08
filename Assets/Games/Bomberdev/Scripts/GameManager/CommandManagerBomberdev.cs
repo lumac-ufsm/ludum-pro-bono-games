@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading.Tasks;
 
 public class CommandManagerBomberdev : MonoBehaviour {
     private Func.Callback callback;
@@ -32,9 +31,12 @@ public class CommandManagerBomberdev : MonoBehaviour {
     }
 
     public void Wait(int seconds) {
-        Task.Run(async () => {
-            await Task.Delay(seconds * 1000);
+        IEnumerator Coroutine() {
+            yield return new WaitForSeconds(seconds);
             callback();
-        });
+        }
+        GameManagerBomberdev gameManagerBomberdev = 
+            GameObject.Find("GameManager").GetComponent<GameManagerBomberdev>();
+        gameManagerBomberdev.StartCoroutineGameManager(Coroutine());
     }
 }
