@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Main/Scenes/Main.unity
     guid: 690511606807bbb408f2cb861301c3bf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Games/SnakeMath/Scenes/Main.unity
     guid: 82ecade179fb3dc43b3b86f9487f6786
-  - enabled: 1
+  - enabled: 0
     path: Assets/Games/SnakeMath/Scenes/GameOver.unity
     guid: 6222276d8d43b4b4cba21b629c14571a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Games/Pacmaze/Scenes/Main.unity
     guid: b10960fe3a40f1642a7ad3290b982b46
-  - enabled: 1
+  - enabled: 0
     path: Assets/Games/FlappyBecker/Scenes/Main.unity
     guid: 36eec8e18176d7b4ab5cc3d60436a690
   - enabled: 1
