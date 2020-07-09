@@ -14,7 +14,8 @@ public class RunCommandsBomberdev : MonoBehaviour {
     private void Start() {
         movePlayer = player.GetComponent<MovePlayerBomberdev>();
         callbackEndCommand = () => ExecuteNextCommand();
-        commandManager = new CommandManagerBomberdev(callbackEndCommand);
+        commandManager = GetComponent<CommandManagerBomberdev>();
+        commandManager.callback = callbackEndCommand;
     }
 
     public void StartCommands() {
