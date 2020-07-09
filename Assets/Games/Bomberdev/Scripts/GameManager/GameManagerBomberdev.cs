@@ -8,6 +8,10 @@ public class GameManagerBomberdev : MonoBehaviour {
     [SerializeField] private GameObject panelGameOver;
     private RunCommandsBomberdev runCommandsBomberdev;
 
+    private void Start() {
+        Time.timeScale = 1;
+    }
+
     private void Update() {
         runCommandsBomberdev = GetComponent<RunCommandsBomberdev>();
         Inputs();
