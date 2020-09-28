@@ -192,7 +192,7 @@ public class SnakeSnakeMath : MonoBehaviour
 
     private void gameOver()
     {
-        SnakeStorage.points = listBody.Count;
+        PointsSnakeMath.points = listBody.Count;
         SceneManager.LoadScene("Scenes/SnakeCalculator/GameOver");
     }
 
