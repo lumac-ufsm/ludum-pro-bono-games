@@ -20,7 +20,7 @@ public class SnakeSnakeMath : MonoBehaviour {
     
     private void Start() {
         bodyList = new List<GameObject>();
-        AddBody(10);
+        AddBody();
     }
 
     public void Move(Vector2 translation) {
