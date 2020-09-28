@@ -5,9 +5,22 @@ using UnityEngine;
 public class SnakeSnakeMath : MonoBehaviour {
     [SerializeField] GameObject bodyPrefab;
     private List<GameObject> bodyList;
-
+    public int points { get { return bodyList.Count; } }
+    public bool isStart {
+        get {
+            Vector2 position = transform.position;
+            foreach (GameObject body in bodyList) {
+                Vector2 bodyPosition = body.transform.position;
+                if (bodyPosition != position) return false;
+                position = bodyPosition;
+            }
+            return true;
+        }
+    }
+    
     private void Start() {
         bodyList = new List<GameObject>();
+        AddBody(10);
     }
 
     public void Move(Vector2 translation) {
@@ -20,7 +33,7 @@ public class SnakeSnakeMath : MonoBehaviour {
         transform.Translate(translation);
     }
 
-    public void addBody(int num=1) {
+    public void AddBody(int num=1) {
         for (int n = 0; n < num; n++) {
             GameObject body = Instantiate(bodyPrefab, transform.position, Quaternion.identity);
             bodyList.Add(body);
