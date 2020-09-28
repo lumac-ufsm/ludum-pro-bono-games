@@ -10,7 +10,7 @@ public class SnakeGameObjectSnakeMath : MonoBehaviour {
     public int[] nFoods;
     private Vector3 direction;
     public float speedGame = 1;
-    public int deslocamentoTela;
+    public int deslocamentoTela = 0;
     public GameObject bodyPrefab;
     public GameObject gameArea;
     public int sumValues;

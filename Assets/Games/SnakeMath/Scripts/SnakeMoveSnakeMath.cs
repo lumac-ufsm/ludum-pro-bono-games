@@ -8,9 +8,12 @@ public class SnakeMoveSnakeMath : MonoBehaviour {
     private Vector2 direction;
     private float timeMove;
     [SerializeField] private float speedMove = 10;
+    [SerializeField] private GameObject gameAreaGameObject;
+    private GameAreaSnakeMath gameArea;
 
     void Start() {
         snake = GetComponent<SnakeSnakeMath>();
+        gameArea = gameAreaGameObject.GetComponent<GameAreaSnakeMath>();
     }
 
     void Update() {
@@ -39,5 +42,12 @@ public class SnakeMoveSnakeMath : MonoBehaviour {
             snake.Move(direction);
             allowedChangeDirection = true;
         }
+
+        Vector3 position = transform.position;
+        if (position.x < gameArea.minX) position.x = gameArea.maxX;
+        else if (position.x > gameArea.maxX) position.x = gameArea.minX;
+        else if (position.y < gameArea.minY) position.y = gameArea.maxY;
+        else if (position.y > gameArea.maxY) position.y = gameArea.minY;
+        transform.position = position;
     }
 }

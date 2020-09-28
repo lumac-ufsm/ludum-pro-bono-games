@@ -20,8 +20,10 @@ public class SnakeSnakeMath : MonoBehaviour {
         transform.Translate(translation);
     }
 
-    public void addBody() {
-        GameObject body = Instantiate(bodyPrefab, transform.position, Quaternion.identity);
-        bodyList.Add(body);
+    public void addBody(int num=1) {
+        for (int n = 0; n < num; n++) {
+            GameObject body = Instantiate(bodyPrefab, transform.position, Quaternion.identity);
+            bodyList.Add(body);
+        }
     }
 }
