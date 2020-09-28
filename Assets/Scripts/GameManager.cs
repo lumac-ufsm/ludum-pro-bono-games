@@ -5,7 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     private static GameManager instance = null;
+
     void Start() {
+        StartRestart();
+    }
+
+    void Restart() {
+        StartRestart();
+    }
+
+    void StartRestart() {
         Cursor.visible = false;
     }
 
@@ -13,7 +22,8 @@ public class GameManager : MonoBehaviour {
         if (instance == null) {
             instance = this;
             DontDestroyOnLoad(gameObject);
-        } else if (instance != this) {
+        } else {
+            Restart();
             Destroy(gameObject);
         }
     }
