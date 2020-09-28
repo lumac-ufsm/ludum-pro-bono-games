@@ -28,7 +28,6 @@ public class SnakeSnakeMath : MonoBehaviour
     private Vector3 positionOld;
     private int resultadoDesafio;
 
-    // Start is called before the first frame update
     void Start()
     {
         screenHeight = Camera.main.orthographicSize * 2;
@@ -68,7 +67,6 @@ public class SnakeSnakeMath : MonoBehaviour
         gerarDesafio();
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Inputs
