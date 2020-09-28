@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Snake : MonoBehaviour
+public class SnakeSnakeMath : MonoBehaviour
 {
     public GameObject[] foodsPrefab;
     public int[] valuesFood;
