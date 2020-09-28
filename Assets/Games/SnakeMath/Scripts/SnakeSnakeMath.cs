@@ -198,7 +198,7 @@ public class SnakeSnakeMath : MonoBehaviour
     {
         int n1 = Random.Range(1, listBody.Count * 5);
         int n2 = Random.Range(1, listBody.Count * 5);
-        textExpression.text = n1 + " + " + n2 + " = ?";
+        textExpression.text = $"{n1} + {n2} = ?";
         resultadoDesafio = n1 + n2;
     }
 }
