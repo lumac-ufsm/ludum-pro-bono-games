@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 4242191151788808534}
   - component: {fileID: 4242191151788808528}
   - component: {fileID: 4242191151788808529}
-  - component: {fileID: 2668341100174573740}
+  - component: {fileID: 5503438619360381602}
+  - component: {fileID: 2926706692361115271}
   m_Layer: 0
   m_Name: Snake
   m_TagString: Player
@@ -48,6 +49,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -59,6 +61,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -129,7 +132,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &2668341100174573740
+--- !u!114 &5503438619360381602
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,14 +141,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 4242191151788808532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24ef006abe0d9384dbe48474383130b8, type: 3}
+  m_Script: {fileID: 11500000, guid: a277e29779ce37640b038580ca46d242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodsPrefab: []
-  valuesFood: 
-  nFoods: 
-  speedGame: 15
-  bodyPrefab: {fileID: 0}
-  gameArea: {fileID: 0}
-  orthographicSize: 15
-  sumValues: 0
+  bodyPrefab: {fileID: 9177745688792558762, guid: 06aeeaa39c54717419260e8a21f7f701,
+    type: 3}
+--- !u!114 &2926706692361115271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242191151788808532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74e5a2322056074f86f1c33129b7957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMove: 10
