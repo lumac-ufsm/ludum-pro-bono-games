@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 23884269}
   - component: {fileID: 23884271}
   - component: {fileID: 23884270}
+  - component: {fileID: 23884272}
   m_Layer: 5
   m_Name: Expression
   m_TagString: Untagged
@@ -251,6 +252,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23884268}
   m_CullTransparentMesh: 0
+--- !u!114 &23884272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23884268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11570e7c2d5fbb541800dc9531b0560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &58376270
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,8 +2272,9 @@ GameObject:
   - component: {fileID: 1920803853}
   - component: {fileID: 1920803855}
   - component: {fileID: 1920803854}
+  - component: {fileID: 1920803856}
   m_Layer: 5
-  m_Name: Points
+  m_Name: Sum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2326,6 +2340,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920803852}
   m_CullTransparentMesh: 0
+--- !u!114 &1920803856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920803852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb6d22b493727f428cbc69aa805f863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1928387815
 GameObject:
   m_ObjectHideFlags: 0
