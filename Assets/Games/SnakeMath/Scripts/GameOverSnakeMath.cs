@@ -8,7 +8,7 @@ public class GameOverSnakeMath : MonoBehaviour {
     public Text textPontuacao;
 
     void Start() {
-        textPontuacao.text = "Pontuação: " + PointsSnakeMath.points;
+        // textPontuacao.text = "Pontuação: " + SumSnakeMath.points;
     }
 
     void Update() {

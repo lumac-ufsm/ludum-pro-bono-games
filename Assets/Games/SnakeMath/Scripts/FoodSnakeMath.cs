@@ -14,11 +14,17 @@ public class FoodSnakeMath : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")) {
             Reposition();
+            AddFoodValueInSum();
         }
     }
 
     private void Reposition() {
         Vector2[] invalidPositions = foodsManager.GetInvalidPositions();
         transform.position = foodsManager.SortPositionFood(invalidPositions);
+    }
+
+    private void AddFoodValueInSum() {
+        if (value == 0) SumSnakeMath.sum = 0;
+        else SumSnakeMath.sum += value;
     }
 }

@@ -166,7 +166,7 @@ public class SnakeGameObjectSnakeMath : MonoBehaviour {
     }
 
     private void gameOver() {
-        PointsSnakeMath.points = listBody.Count;
+        // SumSnakeMath.points = listBody.Count;
         SceneManager.LoadScene("Scenes/SnakeCalculator/GameOver");
     }
 

@@ -17,7 +17,7 @@ public class SnakeDeathSnakeMath : MonoBehaviour {
     }
 
     private void gameOver() {
-        PointsSnakeMath.points = snake.points;
+        // PointsSnakeMath.points = snake.points;
         SceneManager.LoadScene("Games/SnakeMath/Scenes/GameOver");
     }
 }
