@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 23884270}
   - component: {fileID: 23884272}
   m_Layer: 5
-  m_Name: Expression
+  m_Name: Equation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
