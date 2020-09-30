@@ -6,15 +6,18 @@ public class FoodSnakeMath : MonoBehaviour {
     [SerializeField] private int _value;
     public int value { get { return _value; } }
     private FoodsManagerSnakeMath foodsManager;
+    private EquationManagerSnakeMath equationManager;
     
     private void Start() {
         foodsManager = GameObject.Find("GameManagerSnakeMath").GetComponent<FoodsManagerSnakeMath>();
+        equationManager = GameObject.Find("GameManagerSnakeMath").GetComponent<EquationManagerSnakeMath>();
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")) {
             Reposition();
             AddFoodValueInSum();
+            equationManager.OnColliderFood();
         }
     }
 
