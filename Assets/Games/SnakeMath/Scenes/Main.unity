@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 17220913}
   - component: {fileID: 17220914}
+  - component: {fileID: 17220915}
   m_Layer: 0
   m_Name: GameManagerSnakeMath
   m_TagString: Untagged
@@ -173,6 +174,18 @@ MonoBehaviour:
   - {fileID: 944754617860873966, guid: 916c7e26d3a05c64683b86e2623cc3fc, type: 3}
   - {fileID: 8795455085247265046, guid: c0ca86d527004354aa0701c9d82e5485, type: 3}
   - {fileID: 6327673501465032758, guid: 73d1eaa7fb3629d4694992316f784706, type: 3}
+--- !u!114 &17220915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17220912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c8b950b46a99c47b0c30035442f727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &23884268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,7 +1419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26322994, y: 0.9192076}
   m_AnchorMax: {x: 0.29377007, y: 0.9676226}
-  m_AnchoredPosition: {x: 35.899994, y: 1}
+  m_AnchoredPosition: {x: 35.90001, y: 1}
   m_SizeDelta: {x: 4.7715607, y: 11.421566}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266733163
