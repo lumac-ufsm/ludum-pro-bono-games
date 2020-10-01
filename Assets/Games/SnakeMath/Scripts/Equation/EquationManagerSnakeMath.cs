@@ -5,7 +5,8 @@ using UnityEngine;
 public class EquationManagerSnakeMath : MonoBehaviour {
     private List<EquationSnakeMath> equations;
     private SnakeSnakeMath snake;
-    private int difficulty = 1;
+    [SerializeField] private int difficulty = 1;
+    [SerializeField] private int difficultyDelta = 5;
     private EquationSnakeMath currentEquation;
 
     private void Start() {
@@ -17,10 +18,10 @@ public class EquationManagerSnakeMath : MonoBehaviour {
 
     public void OnColliderFood() {
         if (SumSnakeMath.sum == currentEquation.result) {
+            difficulty += difficultyDelta;
             snake.AddBody();
             CreateEquation();
             SumSnakeMath.sum = 0;
-            difficulty++;
         }
     }
 
