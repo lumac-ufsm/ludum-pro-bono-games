@@ -18,8 +18,10 @@ public class SnakeSnakeMath : MonoBehaviour {
             return true;
         }
     }
+    private GameAreaSnakeMath gameArea;
     
     private void Start() {
+        gameArea = GameObject.Find("GameArea").GetComponent<GameAreaSnakeMath>();
         _bodyList = new List<GameObject>();
         AddBody();
     }
@@ -36,7 +38,8 @@ public class SnakeSnakeMath : MonoBehaviour {
 
     public void AddBody(int num=1) {
         for (int n = 0; n < num; n++) {
-            GameObject body = Instantiate(bodyPrefab, transform.position, Quaternion.identity);
+            Vector2 position = new Vector2(gameArea.maxX * 2, gameArea.maxY * 2);
+            GameObject body = Instantiate(bodyPrefab, position, Quaternion.identity);
             _bodyList.Add(body);
         }
     }

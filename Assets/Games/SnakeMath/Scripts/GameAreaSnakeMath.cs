@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameAreaSnakeMath : MonoBehaviour {
     public int marginTop;
-
     public float maxX { get { return (screenWidth - 1) / 2; } }
     public float minX { get { return -maxX; } }
     public float maxY { get { return ((screenHeight - 1) / 2) - marginTop; } }
