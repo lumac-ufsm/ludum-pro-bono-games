@@ -3,26 +3,50 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EquationManagerSnakeMath : MonoBehaviour {
-    private List<EquationSnakeMath> equations;
+    private Queue<EquationSnakeMath> equationsQueue = new Queue<EquationSnakeMath>(new EquationSnakeMath[] {
+        new SubtractEquationSnakeMath(),
+        new SumEquationSnakeMath(),
+    });
+    private List<EquationSnakeMath> allowedEquations = new List<EquationSnakeMath>();
     private SnakeSnakeMath snake;
     [SerializeField] private int difficulty = 1;
     [SerializeField] private int difficultyDelta = 5;
+    [SerializeField] private int difficultyAddEquation = 30;
     private EquationSnakeMath currentEquation;
 
     private void Start() {
         snake = GameObject.Find("Snake").GetComponent<SnakeSnakeMath>();
-        equations = new List<EquationSnakeMath>();
-        equations.Add(new SumEquationSnakeMath());
+        AddAllowedEquation();
         CreateEquation();
     }
 
     public void OnColliderFood() {
         if (SumSnakeMath.sum == currentEquation.result) {
-            difficulty += difficultyDelta;
+            IncreaseDifficulty();
             snake.AddBody();
             CreateEquation();
             SumSnakeMath.sum = 0;
         }
+    }
+
+    private void IncreaseDifficulty() {
+        difficulty += difficultyDelta;
+        if (difficulty > difficultyAddEquation) {
+            if (AddAllowedEquation()) {
+                difficulty = difficultyDelta;
+            }
+        }
+    }
+
+    private bool AddAllowedEquation() {
+        if (equationsQueue.Count > 0) {
+            EquationSnakeMath equation = equationsQueue.Dequeue();
+            print("Equação adicionada");
+            print(equation);
+            allowedEquations.Add(equation);
+            return true;
+        }
+        return false;
     }
 
     private void CreateEquation() {
@@ -32,8 +56,8 @@ public class EquationManagerSnakeMath : MonoBehaviour {
     }
 
     private EquationSnakeMath GetRandomEquation() {
-        int max = equations.Count;
+        int max = allowedEquations.Count;
         int index = Random.Range(0, max);
-        return equations[index];
+        return allowedEquations[index];
     }
 }
