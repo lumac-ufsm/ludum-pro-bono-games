@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EquationManagerSnakeMath : MonoBehaviour {
     private Queue<EquationSnakeMath> equationsQueue = new Queue<EquationSnakeMath>(new EquationSnakeMath[] {
-        new SubtractEquationSnakeMath(),
         new SumEquationSnakeMath(),
+        new SubtractEquationSnakeMath(),
     });
     private List<EquationSnakeMath> allowedEquations = new List<EquationSnakeMath>();
     private SnakeSnakeMath snake;
@@ -41,8 +41,6 @@ public class EquationManagerSnakeMath : MonoBehaviour {
     private bool AddAllowedEquation() {
         if (equationsQueue.Count > 0) {
             EquationSnakeMath equation = equationsQueue.Dequeue();
-            print("Equação adicionada");
-            print(equation);
             allowedEquations.Add(equation);
             return true;
         }
