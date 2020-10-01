@@ -5,15 +5,22 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameOverSnakeMath : MonoBehaviour {
-    public Text textPontuacao;
+    [SerializeField] private Text pointsText;
+    private static int points = 0;
 
-    void Start() {
-        // textPontuacao.text = "Pontuação: " + SumSnakeMath.points;
+    private void Start() {
+        pointsText.text = $"Pontuação: {GameOverSnakeMath.points}";
     }
 
-    void Update() {
+    private void Update() {
         if (Input.GetKeyDown(Keys.start)) {
             SceneManager.LoadScene("Games/SnakeMath/Scenes/Main");
         }
+    }
+
+    public static void GameOver(int points) {
+        GameOverSnakeMath.points = points;
+        print(GameOverSnakeMath.points);
+        SceneManager.LoadScene("Games/SnakeMath/Scenes/GameOver");
     }
 }
