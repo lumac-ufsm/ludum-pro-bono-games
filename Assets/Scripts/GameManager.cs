@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     private static GameManager instance = null;
+    public static string currentGame;
 
     void Start() {
         StartRestart();
