@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 22110446}
   - component: {fileID: 22110445}
   m_Layer: 0
-  m_Name: "instru\xE7\xF5es BOMBER"
+  m_Name: Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
