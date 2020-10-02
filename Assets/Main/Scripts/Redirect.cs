@@ -2,33 +2,24 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Redirect : MonoBehaviour
-{
-    
-    [SerializeField]
-    public float tempo = 20;
-    private float contadortempo = 0;
+public class Redirect : MonoBehaviour {
+    [SerializeField] public float time = 5;
+    private float timeCounter = 0;
     private SelectGame selectGame;
-    
+    private string gameName;
 
-    private void Start()
-    {
-        this.selectGame = MainCamera.FindObjectOfType<SelectGame>();
-        string nome = selectGame.nomeJogo; 
-
+    private void Start() {
+        selectGame = GameObject.Find("GameManager").GetComponent<SelectGame>();
+        gameName = selectGame.selectedGameName; 
     }
 
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        contadortempo += Timeout.deltaTime;
-        if (contadortempo == tempo)
-        {
-            SceneManager.LoadScene("Games/" + nome + "/Scenes/Main");   // seria interessante deixar essa rotina genérica, buscando a string nomejogo
+    void Update() {
+        timeCounter += Time.deltaTime;
+        print(timeCounter);
+        if (timeCounter >= time) {
+            SceneManager.LoadScene($"Games/{gameName}/Scenes/Main");
         }
-
     }
 } 

@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Games/Bomberdev/Scenes/Levels/3_BomberdevLevel.unity
     guid: 4ddff399a01f8214387997e85b9a0307
+  - enabled: 1
+    path: Assets/Games/Pacmaze/Scenes/GameIntroduction.unity
+    guid: f76a22d0f82745c43943069602a81123
   m_configObjects: {}

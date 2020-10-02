@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SelectGame : MonoBehaviour
-{
+public class SelectGame : MonoBehaviour {
     public GameObject[] cards;
     private float screenHeight;
     private float screenWidth;
@@ -16,17 +15,16 @@ public class SelectGame : MonoBehaviour
     private float maxX, minX, maxY, minY;
     public float widthCard;
     public float marginStop;
-    public enum Direction
-    {
+    private string _selectedGameName;
+    public string selectedGameName { get { return _selectedGameName; } }
+    public enum Direction {
         stop,
         left,
         center,
         right
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         screenHeight = Camera.main.orthographicSize * 2;
         screenWidth = screenHeight / Screen.height * Screen.width;
 
@@ -38,55 +36,44 @@ public class SelectGame : MonoBehaviour
         boxCollider2D = gameObject.GetComponent<BoxCollider2D>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(Keys.left))
-        {
+    void Update() {
+        if (Input.GetKeyDown(Keys.left)) {
             direction = Direction.left;
         }
-        if (Input.GetKeyDown(Keys.right))
-        {
+        if (Input.GetKeyDown(Keys.right)) {
             direction = Direction.right;
         }
-        if (Input.GetKeyDown(Keys.start)) openGameSelected();
+        if (Input.GetKeyDown(Keys.start)) OpenGameSelected();
 
-        if (direction != Direction.stop)
-        {
-            moveCard(cardSelecionado);
+        if (direction != Direction.stop) {
+            MoveCard(cardSelecionado);
         }
     }
 
-    private int selectCardPrev()
-    {
+    private int SelectCardPrev() {
         cardSelecionado -= 1;
         if (cardSelecionado < 0) cardSelecionado = cards.Length - 1;
         return cardSelecionado;
     }
 
-    private int selectCardNext()
-    {
+    private int SelectCardNext() {
         cardSelecionado += 1;
         if (cardSelecionado >= cards.Length) cardSelecionado = 0;
         return cardSelecionado;
     }
 
-    private void moveCard(int numCard)
-    {
+    private void MoveCard(int numCard) {
         float x = 0;
         Transform card = cards[numCard].transform;
 
-        if (direction == Direction.center)
-        {
+        if (direction == Direction.center) {
             Vector2 position = card.transform.position;
 
-            if (position.x == 0)
-            {
+            if (position.x == 0) {
                 direction = Direction.stop;
                 return;
             }
-            else if (position.x > -marginStop && position.x < marginStop)
-            {
+            else if (position.x > -marginStop && position.x < marginStop) {
                 position.x = 0;
                 card.position = position;
             }
@@ -103,9 +90,8 @@ public class SelectGame : MonoBehaviour
             card.Translate(new Vector2(x * Time.deltaTime, 0));
             Vector2 position = card.transform.position;
 
-            if (position.x < minX - (widthCard / 2))
-            {
-                selectCardPrev();
+            if (position.x < minX - (widthCard / 2)) {
+                SelectCardPrev();
                 Vector3 positionNextCard = cards[cardSelecionado].transform.transform.position;
                 position.x = maxX + (widthCard / 2);
                 cards[cardSelecionado].transform.transform.position = position;
@@ -113,9 +99,8 @@ public class SelectGame : MonoBehaviour
                 if (direction == Direction.center) direction = Direction.stop;
                 else direction = Direction.center;
             }
-            else if (position.x > maxX + (widthCard / 2))
-            {
-                selectCardNext();
+            else if (position.x > maxX + (widthCard / 2)) {
+                SelectCardNext();
                 Vector3 positionNextCard = cards[cardSelecionado].transform.transform.position;
                 position.x = minX - (widthCard / 2);
                 cards[cardSelecionado].transform.transform.position = position;
@@ -126,11 +111,8 @@ public class SelectGame : MonoBehaviour
         }
     }
 
-    public void openGameSelected()
-    {
-        public string nomeJogo = cards[cardSelecionado].name;
-        SceneManager.LoadScene("Games/" + nomeJogo + "/Scenes/Main"); 
+    public void OpenGameSelected() {
+        _selectedGameName = cards[cardSelecionado].name;
+        SceneManager.LoadScene($"Games/{selectedGameName}/Scenes/GameIntroduction"); 
     }
 }
-
-
