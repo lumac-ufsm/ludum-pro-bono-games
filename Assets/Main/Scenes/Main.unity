@@ -795,7 +795,7 @@ MonoBehaviour:
   - {fileID: 789394856}
   - {fileID: 1017144601}
   - {fileID: 629920796}
-  velocidade: 60
+  velocity: 60
   direction: 0
   widthCard: 4
   marginStop: 1
