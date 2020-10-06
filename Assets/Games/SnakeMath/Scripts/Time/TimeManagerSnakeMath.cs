@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TimeManagerSnakeMath : MonoBehaviour {
-    [SerializeField] private float _time;
+    [SerializeField] private float _time = 60;
     private float timeCounter = 0;
     public int time { get { return (int) _time; } }
 
