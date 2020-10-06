@@ -17,7 +17,7 @@ public class TimeManagerSnakeMath : MonoBehaviour {
         TimeControllerSnakeMath.time = (int) _time;
     }
 
-    public void AddTime(int time) {
+    public void AddTime(int time=20) {
         this._time += time;
     }
 }

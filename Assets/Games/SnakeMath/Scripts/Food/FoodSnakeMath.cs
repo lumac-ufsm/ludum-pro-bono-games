@@ -9,8 +9,9 @@ public class FoodSnakeMath : MonoBehaviour {
     private EquationManagerSnakeMath equationManager;
     
     private void Start() {
-        foodsManager = GameObject.Find("GameManagerSnakeMath").GetComponent<FoodsManagerSnakeMath>();
-        equationManager = GameObject.Find("GameManagerSnakeMath").GetComponent<EquationManagerSnakeMath>();
+        GameObject gameManager = GameObject.Find("GameManagerSnakeMath");
+        foodsManager = gameManager.GetComponent<FoodsManagerSnakeMath>();
+        equationManager = gameManager.GetComponent<EquationManagerSnakeMath>();
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
