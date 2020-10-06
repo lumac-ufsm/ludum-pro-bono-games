@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SnakeSnakeMath : MonoBehaviour {
     [SerializeField] GameObject bodyPrefab;
-    private List<GameObject> _bodyList;
+    private List<GameObject> _bodyList = new List<GameObject>();
     public List<GameObject> bodyList { get { return _bodyList; } }
     public int points { get { return _bodyList.Count; } }
     public bool isStart {
@@ -22,7 +22,6 @@ public class SnakeSnakeMath : MonoBehaviour {
     
     private void Start() {
         gameArea = GameObject.Find("GameArea").GetComponent<GameAreaSnakeMath>();
-        _bodyList = new List<GameObject>();
         AddBody();
     }
 
