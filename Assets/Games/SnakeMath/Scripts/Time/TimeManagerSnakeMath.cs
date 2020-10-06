@@ -5,16 +5,21 @@ using UnityEngine;
 public class TimeManagerSnakeMath : MonoBehaviour {
     [SerializeField] private float _time = 60;
     private float timeCounter = 0;
-    public int time { get { return (int) _time; } }
+    public int time { get { return (int) Mathf.Ceil(_time); } }
+    private SnakeSnakeMath snake;
+
+    private void Start() {
+        snake = GameObject.Find("Snake").GetComponent<SnakeSnakeMath>();
+    }
 
     private void Update() {
-        _time -= Time.deltaTime;
+        if (snake.isStarted) _time -= Time.deltaTime;
         if (_time < 0) _time = 0;
         UpdateTimeUI();
     }
 
     private void UpdateTimeUI() {
-        TimeControllerSnakeMath.time = (int) _time;
+        TimeControllerSnakeMath.time = time;
     }
 
     public void AddTime(int time=20) {

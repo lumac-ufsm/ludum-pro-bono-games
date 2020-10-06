@@ -19,7 +19,7 @@ public class SnakeDeathSnakeMath : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Player") && !snake.isStart) {
+        if (other.gameObject.CompareTag("Player") && snake.isStarted) {
             GameOver();
         }
     }
