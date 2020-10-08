@@ -6,6 +6,7 @@ public class EquationManagerSnakeMath : MonoBehaviour {
     private Queue<EquationSnakeMath> equationsQueue = new Queue<EquationSnakeMath>(new EquationSnakeMath[] {
         new SumEquationSnakeMath(),
         new SubtractEquationSnakeMath(),
+        new MultiplicationEquationSnakeMath(),
     });
     private List<EquationSnakeMath> allowedEquations = new List<EquationSnakeMath>();
     private SnakeSnakeMath snake;
