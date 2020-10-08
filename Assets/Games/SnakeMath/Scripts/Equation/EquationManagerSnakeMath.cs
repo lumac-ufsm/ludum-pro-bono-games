@@ -8,6 +8,7 @@ public class EquationManagerSnakeMath : MonoBehaviour {
         new SubtractEquationSnakeMath(),
         new MultiplicationEquationSnakeMath(),
         new DivisionEquationSnakeMath(),
+        new PowerEquationSnakeMath(),
     });
     private List<EquationSnakeMath> allowedEquations = new List<EquationSnakeMath>();
     private SnakeSnakeMath snake;
