@@ -6,13 +6,15 @@ using UnityEngine.UI;
 public class MainMenuSnakeMath : MonoBehaviour {
     [SerializeField] Button startGameButton;
 
-    void Start() {
-        startGameButton.onClick.AddListener(() => {
-            
-        });
+    private void Start() {
+        startGameButton.onClick.AddListener(StartGame);
     }
 
-    void Update() {
-        
+    private void Update() {
+        if (Input.GetKeyDown(Keys.start)) {
+            StartGame();
+        }
     }
+
+    private void StartGame() => SceneRouter.OpenGame("SnakeMath");
 }

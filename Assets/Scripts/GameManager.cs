@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
     }
 
     void StartRestart() {
-        Cursor.visible = false;
+        // Cursor.visible = false;
     }
 
     private void Awake() {
@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(Keys.back)) {
             SceneRouter.OpenMain();
+            currentGame = null;
         }
     }
 }

@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Games/Bomberdev/Scenes/GameIntroduction.unity
     guid: 04b3528d5165f954587e90e1987dd906
+  - enabled: 1
+    path: Assets/Games/SnakeMath/Scenes/Main.unity
+    guid: 42c67fc9662e0d74da6ccb75295d00c8
   m_configObjects: {}
