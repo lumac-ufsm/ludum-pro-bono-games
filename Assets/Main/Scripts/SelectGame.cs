@@ -112,6 +112,6 @@ public class SelectGame : MonoBehaviour {
     public void OpenGameSelected() {
         string selectedGameName = cards[selectedCard].name;
         GameManager.currentGame = selectedGameName;
-        SceneManager.LoadScene($"Games/{selectedGameName}/Scenes/GameIntroduction"); 
+        SceneRouter.OpenGameIntroduction(selectedGameName);
     }
 }

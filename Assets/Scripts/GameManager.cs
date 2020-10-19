@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour {
 
     void Update() {
         if (Input.GetKeyDown(Keys.back)) {
-            SceneManager.LoadScene("Main/Scenes/Main");
+            SceneRouter.OpenMain();
         }
     }
 }

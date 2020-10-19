@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/Main.unity
     guid: 690511606807bbb408f2cb861301c3bf
   - enabled: 1
-    path: Assets/Games/SnakeMath/Scenes/Main.unity
+    path: Assets/Games/SnakeMath/Scenes/Game.unity
     guid: 82ecade179fb3dc43b3b86f9487f6786
   - enabled: 1
     path: Assets/Games/SnakeMath/Scenes/GameOver.unity
