@@ -4,25 +4,24 @@ using UnityEngine;
 
 public class SnakeSnakeMath : MonoBehaviour {
     [SerializeField] GameObject bodyPrefab;
-    private List<GameObject> _bodyList;
+    private List<GameObject> _bodyList = new List<GameObject>();
     public List<GameObject> bodyList { get { return _bodyList; } }
     public int points { get { return _bodyList.Count; } }
-    public bool isStart {
+    public bool isStarted {
         get {
             Vector2 position = transform.position;
             foreach (GameObject body in _bodyList) {
                 Vector2 bodyPosition = body.transform.position;
-                if (bodyPosition != position) return false;
+                if (bodyPosition != position) return true;
                 position = bodyPosition;
             }
-            return true;
+            return false;
         }
     }
     private GameAreaSnakeMath gameArea;
     
     private void Start() {
         gameArea = GameObject.Find("GameArea").GetComponent<GameAreaSnakeMath>();
-        _bodyList = new List<GameObject>();
         AddBody();
     }
 

@@ -20,7 +20,6 @@ public class GameOverSnakeMath : MonoBehaviour {
 
     public static void GameOver(int points) {
         GameOverSnakeMath.points = points;
-        print(GameOverSnakeMath.points);
         SceneManager.LoadScene("Games/SnakeMath/Scenes/GameOver");
     }
 }

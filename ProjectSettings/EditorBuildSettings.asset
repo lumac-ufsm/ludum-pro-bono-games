@@ -18,9 +18,6 @@ EditorBuildSettings:
     path: Assets/Games/Pacmaze/Scenes/Main.unity
     guid: b10960fe3a40f1642a7ad3290b982b46
   - enabled: 1
-    path: Assets/Games/FlappyBecker/Scenes/Main.unity
-    guid: 36eec8e18176d7b4ab5cc3d60436a690
-  - enabled: 1
     path: Assets/Games/Bomberdev/Scenes/Levels/1_BomberdevLevel.unity
     guid: 4ddd820c009f96a4eb081e327b604f3b
   - enabled: 1

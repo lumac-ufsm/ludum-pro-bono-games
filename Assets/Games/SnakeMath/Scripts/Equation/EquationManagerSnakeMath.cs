@@ -6,6 +6,10 @@ public class EquationManagerSnakeMath : MonoBehaviour {
     private Queue<EquationSnakeMath> equationsQueue = new Queue<EquationSnakeMath>(new EquationSnakeMath[] {
         new SumEquationSnakeMath(),
         new SubtractEquationSnakeMath(),
+        new MultiplicationEquationSnakeMath(),
+        new DivisionEquationSnakeMath(),
+        new PowerEquationSnakeMath(),
+        new SqrtEquationSnakeMath(),
     });
     private List<EquationSnakeMath> allowedEquations = new List<EquationSnakeMath>();
     private SnakeSnakeMath snake;
@@ -13,9 +17,11 @@ public class EquationManagerSnakeMath : MonoBehaviour {
     [SerializeField] private int difficultyDelta = 5;
     [SerializeField] private int difficultyAddEquation = 30;
     private EquationSnakeMath currentEquation;
+    private TimeManagerSnakeMath timeManager;
 
     private void Start() {
         snake = GameObject.Find("Snake").GetComponent<SnakeSnakeMath>();
+        timeManager = GameObject.Find("GameManagerSnakeMath").GetComponent<TimeManagerSnakeMath>();
         AddAllowedEquation();
         CreateEquation();
     }
@@ -26,6 +32,7 @@ public class EquationManagerSnakeMath : MonoBehaviour {
             snake.AddBody();
             CreateEquation();
             SumSnakeMath.sum = 0;
+            timeManager.AddTime();
         }
     }
 
