@@ -8,7 +8,6 @@ public class PauseMenuManagerSnakeMath : MonoBehaviour {
     [SerializeField] Button resumeButton;
     [SerializeField] Button menuButton;
     private float pauseAnimationLength;
-    private bool paused = false;
 
     private void Start() {
         pauseMenu.SetActive(false);
@@ -17,25 +16,28 @@ public class PauseMenuManagerSnakeMath : MonoBehaviour {
         pauseAnimationLength = animationClip.length;
 
         resumeButton.onClick.AddListener(Resume);
-        menuButton.onClick.AddListener(() => SceneRouter.OpenGameMenu("SnakeMath"));
+        menuButton.onClick.AddListener(OpenMenu);
     }
 
     private void Update() {
         if (Input.GetKeyDown(Keys.start)) {
-            if (paused) Resume();
+            if (pauseMenu.active) Resume();
             else Pause();
         }
     }
 
     private void Pause() {
-        paused = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
     }
 
     private void Resume() {
-        paused = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+    }
+
+    private void OpenMenu() {
+        Time.timeScale = 1;
+        SceneRouter.OpenGameMenu("SnakeMath");
     }
 }
