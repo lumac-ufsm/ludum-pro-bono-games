@@ -22,7 +22,7 @@ public class SelectGame : MonoBehaviour {
         right
     }
 
-    void Start() {
+    private void Start() {
         screenHeight = Camera.main.orthographicSize * 2;
         screenWidth = screenHeight / Screen.height * Screen.width;
 
@@ -32,9 +32,19 @@ public class SelectGame : MonoBehaviour {
         minY = -maxY;
 
         boxCollider2D = gameObject.GetComponent<BoxCollider2D>();
+        StartingPositionCards();
     }
 
-    void Update() {
+    private void StartingPositionCards() {
+        foreach (GameObject card in cards) {
+            Vector2 position = card.transform.position;
+            card.transform.position = new Vector2(maxX * 2, position.y);
+        }
+        Vector2 selectedCardPosition = cards[selectedCard].transform.position;
+        cards[selectedCard].transform.position = new Vector2(0, selectedCardPosition.y);
+    }
+
+    private void Update() {
         if (Input.GetKeyDown(Keys.left)) {
             direction = Direction.left;
         }
