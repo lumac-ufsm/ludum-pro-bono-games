@@ -36,8 +36,7 @@ public class CommandManagerBomberdev : MonoBehaviour {
             yield return new WaitForSeconds(seconds);
             _callback();
         }
-        GameManagerBomberdev gameManagerBomberdev = 
-            GameObject.Find("GameManagerBomberdev").GetComponent<GameManagerBomberdev>();
+        GameManagerBomberdev gameManagerBomberdev = GameManagerBomberdev.Get();
         gameManagerBomberdev.StartCoroutineGameManager(Coroutine());
     }
 }

@@ -6,7 +6,7 @@ public class DeathPlayerBomberdev : MonoBehaviour {
     private GameManagerBomberdev gameManagerBomberdev;
 
     private void Start() {
-        gameManagerBomberdev = GameObject.Find("GameManager").GetComponent<GameManagerBomberdev>();
+        gameManagerBomberdev = GameManagerBomberdev.Get();
     }
 
     private void OnCollisionEnter2D(Collision2D other) {

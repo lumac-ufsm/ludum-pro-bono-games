@@ -14,8 +14,7 @@ public class MenuGameOverBomberdev : MonoBehaviour {
     }
 
     private void RestartLevel() {
-        GameManagerBomberdev gameManager = 
-            GameObject.Find("GameManager").GetComponent<GameManagerBomberdev>();
+        GameManagerBomberdev gameManager = GameManagerBomberdev.Get();
         gameManager.RestartLevel();
     }
 }

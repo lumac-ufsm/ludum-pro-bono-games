@@ -8,6 +8,10 @@ public class GameManagerBomberdev : MonoBehaviour {
     [SerializeField] private GameObject panelGameOver;
     private RunCommandsBomberdev runCommandsBomberdev;
 
+    public static GameManagerBomberdev Get() {
+        return GameObject.Find("GameManagerBomberdev").GetComponent<GameManagerBomberdev>();
+    }
+
     private void Start() {
         Time.timeScale = 1;
     }
