@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using UnityEngine.Networking;
 
 public class MainMenuManager : MonoBehaviour {
     [SerializeField] private Button startGameButton;
@@ -19,5 +17,5 @@ public class MainMenuManager : MonoBehaviour {
         }
     }
 
-    private void StartGame() => SceneManager.LoadScene(scene);
+    private void StartGame() => SceneRouter.OpenScene(scene);
 }
