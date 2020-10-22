@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 
-public class MainMenuSnakeMath : MonoBehaviour {
-    [SerializeField] Button startGameButton;
+public class MainMenuManager : MonoBehaviour {
+    [SerializeField] private Button startGameButton;
+    [SerializeField, Scene] private string scene;
 
     private void Start() {
         startGameButton.onClick.AddListener(StartGame);
@@ -16,5 +19,5 @@ public class MainMenuSnakeMath : MonoBehaviour {
         }
     }
 
-    private void StartGame() => SceneRouter.OpenGame("SnakeMath");
+    private void StartGame() => SceneManager.LoadScene(scene);
 }
