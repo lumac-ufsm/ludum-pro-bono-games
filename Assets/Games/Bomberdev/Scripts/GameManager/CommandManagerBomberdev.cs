@@ -37,7 +37,7 @@ public class CommandManagerBomberdev : MonoBehaviour {
             _callback();
         }
         GameManagerBomberdev gameManagerBomberdev = 
-            GameObject.Find("GameManager").GetComponent<GameManagerBomberdev>();
+            GameObject.Find("GameManagerBomberdev").GetComponent<GameManagerBomberdev>();
         gameManagerBomberdev.StartCoroutineGameManager(Coroutine());
     }
 }
