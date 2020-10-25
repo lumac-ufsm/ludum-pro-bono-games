@@ -28,11 +28,4 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
         }
     }
-
-    private void Update() {
-        if (Input.GetKeyDown(Keys.back)) {
-            SceneRouter.OpenMain();
-            currentGame = null;
-        }
-    }
 }
