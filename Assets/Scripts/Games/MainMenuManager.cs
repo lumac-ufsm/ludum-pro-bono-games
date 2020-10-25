@@ -15,10 +15,6 @@ public class MainMenuManager : MonoBehaviour {
         if (Input.GetKeyDown(Keys.start)) {
             StartGame();
         }
-        if (Input.GetKeyDown(Keys.back)) {
-            SceneRouter.OpenMain();
-            GameManager.currentGame = null;
-        }
     }
 
     private void StartGame() => SceneRouter.OpenScene(scene);
