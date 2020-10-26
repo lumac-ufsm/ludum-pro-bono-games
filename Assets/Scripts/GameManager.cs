@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Text.RegularExpressions;
 
 public class GameManager : MonoBehaviour {
     private static GameManager instance = null;
@@ -29,10 +30,29 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    private static string GetActiveGameName() {
+        Scene activeScene = SceneManager.GetActiveScene();
+        string path = activeScene.path;
+        string gameName = Regex.Replace(path, "Assets\\/Games\\/([a-zA-Z]+)\\/Scenes\\/.+", "$1");
+        if (gameName == path) return null;
+        return gameName;
+    }
+
     private void Update() {
         if (Input.GetKeyDown(Keys.back)) {
+            OnBackPress();
+        }
+    }
+
+    private void OnBackPress() {
+        Scene activeScene = SceneManager.GetActiveScene();
+        string sceneName = activeScene.name;
+        if (activeScene.path == "Assets/Main/Scenes/Main.unity") return;
+        else if (sceneName == "GameIntroduction" || sceneName == "Main") {
             SceneRouter.OpenMain();
-            currentGame = null;
+        } else {
+            string currentGameName = GetActiveGameName();
+            SceneRouter.OpenGameMenu(currentGame);
         }
     }
 }
