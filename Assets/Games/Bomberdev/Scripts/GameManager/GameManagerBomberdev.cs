@@ -27,7 +27,7 @@ public class GameManagerBomberdev : MonoBehaviour {
         if (Input.GetKeyDown(Keys.left)) panelFlowchart.MoveOrSelect(Direction.LEFT);
         if (Input.GetKeyDown(Keys.right)) panelFlowchart.MoveOrSelect(Direction.RIGHT);
         if (Input.GetKeyDown(Keys.action1)) panelFlowchart.ToggleHold();
-        if (Input.GetKeyDown(Keys.start)) runCommandsBomberdev.StartCommands();
+        if (Input.GetKeyDown(Keys.action4)) runCommandsBomberdev.StartCommands();
     }
 
     public void NextLevel() {
@@ -45,9 +45,5 @@ public class GameManagerBomberdev : MonoBehaviour {
         Time.timeScale = 0;
         panelGameOver.SetActive(true);
         print($"Game Over\nCausa da morte: {deathCause}");
-    }
-
-    public void StartCoroutineGameManager(IEnumerator coroutine) {
-        StartCoroutine(coroutine);
     }
 }
