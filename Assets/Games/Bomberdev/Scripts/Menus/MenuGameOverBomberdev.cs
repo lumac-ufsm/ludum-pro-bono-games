@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MenuGameOverBomberdev : MonoBehaviour {
     [SerializeField] private Button restartLevelButton;
     private void Start() {
+        gameObject.SetActive(false);
         restartLevelButton.onClick.AddListener(RestartLevel);
     }
 
