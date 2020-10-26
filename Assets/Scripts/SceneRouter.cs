@@ -9,6 +9,7 @@ public class SceneRouter : MonoBehaviour {
     }
 
     public static void OpenMain() {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Main/Scenes/Main");
     }
 
