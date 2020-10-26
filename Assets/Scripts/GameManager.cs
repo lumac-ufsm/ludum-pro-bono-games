@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour {
         string sceneName = activeScene.name;
         if (activeScene.path == "Assets/Main/Scenes/Main.unity") return;
         else if (sceneName == "GameIntroduction" || sceneName == "Main") {
+            Time.timeScale = 1;
             SceneRouter.OpenMain();
         } else {
             string currentGameName = GetActiveGameName();
