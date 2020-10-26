@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PauseMenuManagerSnakeMath : MonoBehaviour {
+public class MenuPauseBomberdev : MonoBehaviour {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] Button resumeButton;
     [SerializeField] Button menuButton;
@@ -21,7 +21,7 @@ public class PauseMenuManagerSnakeMath : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKeyDown(Keys.start)) {
-            if (pauseMenu.active) Resume();
+            if (pauseMenu.activeSelf) Resume();
             else Pause();
         }
     }
@@ -38,6 +38,6 @@ public class PauseMenuManagerSnakeMath : MonoBehaviour {
 
     private void OpenMenu() {
         Time.timeScale = 1;
-        SceneRouter.OpenGameMenu("SnakeMath");
+        SceneRouter.OpenGameMenu("Bomberdev");
     }
 }
