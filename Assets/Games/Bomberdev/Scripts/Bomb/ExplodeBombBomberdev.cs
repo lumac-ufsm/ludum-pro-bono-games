@@ -28,7 +28,7 @@ public class ExplodeBombBomberdev : MonoBehaviour {
         return colliders.Length > 1;
     }
 
-    private async void CreateExplosions(Vector2 position) {
+    private void CreateExplosions(Vector2 position) {
         Vector2 unitX = new Vector2(1, 0);
         Vector2 unitY = new Vector2(0, 1);
 

@@ -5,11 +5,11 @@ using UnityEngine;
 public class MovePlayerBomberdev : MonoBehaviour {
     private TranslationBomberdev translation = null;
     private Vector2 oldPosition;
-    private Rigidbody2D rigidbody2D;
+    private Rigidbody2D playerRigidbody2D;
     [SerializeField] private float forceIntensity = 1;
 
     private void Start() {
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        playerRigidbody2D = GetComponent<Rigidbody2D>();
         oldPosition = transform.position;
     }
 
@@ -65,20 +65,20 @@ public class MovePlayerBomberdev : MonoBehaviour {
                 Stop();
             } else {
                 if (direction == Direction.DOWN || direction == Direction.UP) {
-                    rigidbody2D.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+                    playerRigidbody2D.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
                 } else if (direction == Direction.LEFT || direction == Direction.RIGHT) {
-                    rigidbody2D.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+                    playerRigidbody2D.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
                 }
                 Vector2 force = nextPosition - currentPosition;
                 force *= forceIntensity;
-                rigidbody2D.AddForce(force, ForceMode2D.Impulse);
+                playerRigidbody2D.AddForce(force, ForceMode2D.Impulse);
             }
         }
     }
 
     private void Stop() {
-        rigidbody2D.Sleep();
-        rigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
+        playerRigidbody2D.Sleep();
+        playerRigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
         Vector2 position = transform.position;
         position.x = Mathf.Round(position.x);
         position.y = Mathf.Round(position.y);

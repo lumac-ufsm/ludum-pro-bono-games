@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class AnimationManagerPlayerBomberdev : MonoBehaviour {
     private Animator animator;
-    private Rigidbody2D rigidbody2D;
+    private Rigidbody2D playerRigidbody2D;
     
     private void Start() {
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        playerRigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
     private void Update() {
-        if (rigidbody2D.velocity == Vector2.zero) {
+        if (playerRigidbody2D.velocity == Vector2.zero) {
             animator.SetBool("stopped", true);
             animator.enabled = false;
         } else {
             animator.enabled = true;
             animator.SetBool("stopped", false);
-            animator.SetFloat("velocityX", rigidbody2D.velocity.x);
-            animator.SetFloat("velocityY", rigidbody2D.velocity.y);
+            animator.SetFloat("velocityX", playerRigidbody2D.velocity.x);
+            animator.SetFloat("velocityY", playerRigidbody2D.velocity.y);
         }
     }
 }

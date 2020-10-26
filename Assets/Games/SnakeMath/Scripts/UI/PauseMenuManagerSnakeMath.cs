@@ -21,7 +21,7 @@ public class PauseMenuManagerSnakeMath : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKeyDown(Keys.start)) {
-            if (pauseMenu.active) Resume();
+            if (pauseMenu.activeSelf) Resume();
             else Pause();
         }
     }
