@@ -43,8 +43,6 @@ public class GameManager : MonoBehaviour {
         else if (sceneName == "GameIntroduction" || sceneName == "Main") {
             Time.timeScale = 1;
             SceneRouter.OpenMain();
-        } else {
-            SceneRouter.OpenGameMenu(currentGame);
         }
     }
 }

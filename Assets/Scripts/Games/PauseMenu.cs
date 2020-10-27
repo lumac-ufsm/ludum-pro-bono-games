@@ -21,9 +21,12 @@ public class PauseMenu : MonoBehaviour {
     }
 
     private void Update() {
+        if (Input.GetKeyDown(Keys.back)) {
+            if (pauseMenu.activeSelf) OpenMenu();
+            else Pause();
+        }
         if (Input.GetKeyDown(Keys.start)) {
             if (pauseMenu.activeSelf) Resume();
-            else Pause();
         }
     }
 
