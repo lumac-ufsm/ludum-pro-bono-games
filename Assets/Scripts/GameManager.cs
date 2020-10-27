@@ -30,14 +30,6 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    private static string GetActiveGameName() {
-        Scene activeScene = SceneManager.GetActiveScene();
-        string path = activeScene.path;
-        string gameName = Regex.Replace(path, "Assets\\/Games\\/([a-zA-Z]+)\\/Scenes\\/.+", "$1");
-        if (gameName == path) return null;
-        return gameName;
-    }
-
     private void Update() {
         if (Input.GetKeyDown(Keys.back)) {
             OnBackPress();
@@ -52,7 +44,6 @@ public class GameManager : MonoBehaviour {
             Time.timeScale = 1;
             SceneRouter.OpenMain();
         } else {
-            string currentGameName = GetActiveGameName();
             SceneRouter.OpenGameMenu(currentGame);
         }
     }
