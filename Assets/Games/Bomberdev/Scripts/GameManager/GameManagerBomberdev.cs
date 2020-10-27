@@ -18,7 +18,7 @@ public class GameManagerBomberdev : MonoBehaviour {
 
     private void Update() {
         runCommandsBomberdev = GetComponent<RunCommandsBomberdev>();
-        Inputs();
+        if (Time.timeScale > 0) Inputs();
     }
 
     private void Inputs() {
