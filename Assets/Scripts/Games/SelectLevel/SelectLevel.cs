@@ -16,7 +16,6 @@ public class SelectLevel : MonoBehaviour {
 
     private void CreateOpenLevelButton(int levelNumber) {
         GameObject button = Instantiate(openLevelButtonPrefab);
-        button.AddComponent<OpenLevelButton>();
         OpenLevelButton openLevelButton = button.GetComponent<OpenLevelButton>();
         openLevelButton.level = new LevelBomberdev(levelNumber, true);
         button.transform.SetParent(panelButtons.transform, false);
