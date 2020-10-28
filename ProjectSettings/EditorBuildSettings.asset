@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Games/Pacmaze/Scenes/SelectLevelPacmaze.unity
     guid: 9bd684fa99c0f954ba12ba55114361e9
+  - enabled: 1
+    path: Assets/Games/Pacmaze/Scenes/Main.unity
+    guid: 4007953c1e84acd429a0d4f1bed267b7
   m_configObjects: {}
