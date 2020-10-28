@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Games/Bomberdev/Scenes/SelectLevelBomberdev.unity
     guid: 20ffa0230d54cce45b054cc019b88a2d
+  - enabled: 1
+    path: Assets/Games/Pacmaze/Scenes/SelectLevelPacmaze.unity
+    guid: 9bd684fa99c0f954ba12ba55114361e9
   m_configObjects: {}
