@@ -21,6 +21,6 @@ public class OpenLevelButton : MonoBehaviour {
     }
 
     private void Start() {
-        button?.onClick?.AddListener(() => level.Start());
+        button.onClick.AddListener(() => level.Start());
     }
 }
