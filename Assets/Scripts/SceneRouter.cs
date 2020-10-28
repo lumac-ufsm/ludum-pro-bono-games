@@ -25,6 +25,6 @@ public class SceneRouter : MonoBehaviour {
     }
 
     public static void OpenGameLevel(string gameName, int level) {
-        SceneManager.LoadScene($"Games/{gameName}/Scenes/Level/{level}_{gameName}Level");
+        SceneManager.LoadScene($"Games/{gameName}/Scenes/Levels/{level}_{gameName}Level");
     }
 }
