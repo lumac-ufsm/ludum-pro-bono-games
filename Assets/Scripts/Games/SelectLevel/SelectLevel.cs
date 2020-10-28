@@ -7,6 +7,7 @@ public class SelectLevel : MonoBehaviour {
     [SerializeField] private GameObject panelButtons;
     [SerializeField] private GameObject openLevelButtonPrefab;
     [SerializeField] private int numberOfLevels = 1;
+    [SerializeField] private GameName gameName;
 
     private void Start() {
         for (int n = 1; n <= numberOfLevels; n++) {
@@ -17,8 +18,12 @@ public class SelectLevel : MonoBehaviour {
     private void CreateOpenLevelButton(int levelNumber) {
         GameObject button = Instantiate(openLevelButtonPrefab);
         OpenLevelButton openLevelButton = button.GetComponent<OpenLevelButton>();
-        openLevelButton.level = new LevelBomberdev(levelNumber, true);
+        openLevelButton.level = CreateLevel(levelNumber);
         button.transform.SetParent(panelButtons.transform, false);
+    }
+
+    protected Level CreateLevel(int levelNumber) {
+        return new Level(gameName.ToString(), levelNumber, true);
     }
 
     private void Update() {

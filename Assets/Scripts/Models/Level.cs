@@ -1,16 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public abstract class Level {
-    public int number;
+﻿public class Level {
+    private int _number;
     private bool _unlocked = false;
-    protected abstract string gameName { get; }
     public bool unlocked { get { return _unlocked; } }
+    public int number { get { return _number; } }
+    private string gameName;
 
-    public Level(int number, bool unlocked=false) {
-        this.number = number;
+    public Level(string gameName, int number, bool unlocked=false) {
+        this._number = number;
         this._unlocked = unlocked;
+        this.gameName = gameName;
     }
 
     public void Lock() {
@@ -22,10 +20,10 @@ public abstract class Level {
     }
 
     public void StartNext() {
-        SceneRouter.OpenGameLevel(gameName, number);
+        SceneRouter.OpenGameLevel(gameName, _number);
     }
 
     public void Start() {
-        SceneRouter.OpenGameLevel(gameName, number);
+        SceneRouter.OpenGameLevel(gameName, _number);
     }
 }
