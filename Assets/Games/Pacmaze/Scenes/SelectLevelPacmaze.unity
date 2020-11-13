@@ -326,6 +326,11 @@ PrefabInstance:
       propertyPath: gameName
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4343639196547375014, guid: 63548e1c6b8ad7645b85daa142528397,
+        type: 3}
+      propertyPath: numberOfLevels
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7419082170891631791, guid: 63548e1c6b8ad7645b85daa142528397,
         type: 3}
       propertyPath: m_Text
