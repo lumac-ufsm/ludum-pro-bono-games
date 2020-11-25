@@ -11,10 +11,10 @@ public enum GhostMoveAxesPacmaze {
 [Serializable]
 public class GhostMoveDeltaPacmaze {
     public int delta;
-    public GhostMoveAxesPacmaze axes;
+    public GhostMoveAxesPacmaze axis;
 
     public GhostMoveDeltaPacmaze(int delta, GhostMoveAxesPacmaze axes) {
         this.delta = delta;
-        this.axes = axes;
+        this.axis = axes;
     }
 }

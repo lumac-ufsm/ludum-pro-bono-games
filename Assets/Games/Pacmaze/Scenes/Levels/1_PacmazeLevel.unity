@@ -133,6 +133,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid
       objectReference: {fileID: 0}
+    - target: {fileID: 5727947946167909253, guid: 01af8f1bbf94cad4f8b6dec6f7f7d6e7,
+        type: 3}
+      propertyPath: m_CellSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727947946167909253, guid: 01af8f1bbf94cad4f8b6dec6f7f7d6e7,
+        type: 3}
+      propertyPath: m_CellSize.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5727947946167909254, guid: 01af8f1bbf94cad4f8b6dec6f7f7d6e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7334,12 +7344,12 @@ PrefabInstance:
     - target: {fileID: 501551589971569646, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
       propertyPath: ghostMoveDeltaList.Array.data[0].delta
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 501551589971569646, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
       propertyPath: ghostMoveDeltaList.Array.data[1].delta
-      value: -4
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 501551589971569646, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
@@ -7351,15 +7361,35 @@ PrefabInstance:
       propertyPath: ghostMoveDeltaList.Array.data[1].axes
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 501551589971569646, guid: c5095104dde20634492042c4f31ca630,
+        type: 3}
+      propertyPath: speedModule
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 501551589971569646, guid: c5095104dde20634492042c4f31ca630,
+        type: 3}
+      propertyPath: blockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 501551589971569646, guid: c5095104dde20634492042c4f31ca630,
+        type: 3}
+      propertyPath: ghostMoveDeltaList.Array.data[0].axis
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 501551589971569646, guid: c5095104dde20634492042c4f31ca630,
+        type: 3}
+      propertyPath: ghostMoveDeltaList.Array.data[1].axis
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4216973727392645170, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.82
+      value: 16.5
       objectReference: {fileID: 0}
     - target: {fileID: 4216973727392645170, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.88
+      value: -11.5
       objectReference: {fileID: 0}
     - target: {fileID: 4216973727392645170, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
@@ -7476,7 +7506,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.4066744
+  orthographic size: 14
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7664,12 +7694,12 @@ PrefabInstance:
     - target: {fileID: 3127592302501135149, guid: 49c77f6426d0c4b40ba50da310565864,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.2
+      value: -20.5
       objectReference: {fileID: 0}
     - target: {fileID: 3127592302501135149, guid: 49c77f6426d0c4b40ba50da310565864,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.991
+      value: -12.5
       objectReference: {fileID: 0}
     - target: {fileID: 3127592302501135149, guid: 49c77f6426d0c4b40ba50da310565864,
         type: 3}
