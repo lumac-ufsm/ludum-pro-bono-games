@@ -115,3 +115,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf49b03bc17e51448e09d784328aa63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ghostMoveDeltaList: []
+  speedModule: 0.01
