@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GhostMovePacmaze : MonoBehaviour {
     [SerializeField] private GhostMoveDeltaPacmaze[] ghostMoveDeltaList;
-    [SerializeField] private float speedModule = 0.005f;
+    [SerializeField] private float speedModule = 0.03f;
     private int currentIndexGhostMoveDelta = 0;
     private Vector2 nextPosition;
     private Animator animator;
@@ -16,7 +16,9 @@ public class GhostMovePacmaze : MonoBehaviour {
 
     private void Update() {
         (int deltaX, int deltaY) = Delta();
-        transform.Translate(new Vector2(deltaX*speedModule, deltaY*speedModule));
+        float x = deltaX > 0 ? speedModule : deltaX < 0 ? -speedModule : 0;
+        float y = deltaY > 0 ? speedModule : deltaY < 0 ? -speedModule : 0;
+        transform.Translate(new Vector2(x, y));
         
         if (FinishStep(deltaX, deltaY)) {
             transform.position = new Vector2(nextPosition.x, nextPosition.y);

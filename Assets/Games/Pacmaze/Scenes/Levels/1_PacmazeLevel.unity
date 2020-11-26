@@ -206,7 +206,7 @@ PrefabInstance:
     - target: {fileID: 2805576599191246979, guid: b30978973eabac3409135b0e90dba530,
         type: 3}
       propertyPath: speedModule
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b30978973eabac3409135b0e90dba530, type: 3}
@@ -7453,7 +7453,7 @@ PrefabInstance:
     - target: {fileID: 501551589971569646, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
       propertyPath: speedModule
-      value: 0.015
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 501551589971569646, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
