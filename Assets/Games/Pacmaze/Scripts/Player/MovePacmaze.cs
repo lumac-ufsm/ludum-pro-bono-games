@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PacmanMove : MonoBehaviour {
+public class MovePacmaze : MonoBehaviour {
     private Vector2 direction;
     [SerializeField] private Collider2D colliderUp;
     [SerializeField] private Collider2D colliderDown;
