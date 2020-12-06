@@ -212,22 +212,22 @@ PrefabInstance:
     - target: {fileID: 919311236572816297, guid: 6247cd2318ee83d4d92e24d2748ba6b5,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 919311236572816297, guid: 6247cd2318ee83d4d92e24d2748ba6b5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 919311236572816297, guid: 6247cd2318ee83d4d92e24d2748ba6b5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.013416312
       objectReference: {fileID: 0}
     - target: {fileID: 919311236572816297, guid: 6247cd2318ee83d4d92e24d2748ba6b5,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99991
       objectReference: {fileID: 0}
     - target: {fileID: 919311236572816297, guid: 6247cd2318ee83d4d92e24d2748ba6b5,
         type: 3}
@@ -247,7 +247,7 @@ PrefabInstance:
     - target: {fileID: 919311236572816297, guid: 6247cd2318ee83d4d92e24d2748ba6b5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 1.5370001
       objectReference: {fileID: 0}
     - target: {fileID: 919311236572816302, guid: 6247cd2318ee83d4d92e24d2748ba6b5,
         type: 3}
@@ -292,7 +292,7 @@ PrefabInstance:
     - target: {fileID: 3508974203294435445, guid: 6247cd2318ee83d4d92e24d2748ba6b5,
         type: 3}
       propertyPath: speedModule
-      value: 0.03
+      value: 0.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6247cd2318ee83d4d92e24d2748ba6b5, type: 3}
@@ -401,7 +401,7 @@ PrefabInstance:
     - target: {fileID: 7239564932181340593, guid: 5bcae38da0dbbc04388123dfbbd548f0,
         type: 3}
       propertyPath: speedModule
-      value: 0.03
+      value: 0.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bcae38da0dbbc04388123dfbbd548f0, type: 3}
@@ -450,7 +450,7 @@ PrefabInstance:
     - target: {fileID: 501551589971569646, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
       propertyPath: speedModule
-      value: 0.03
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 4216973727392645170, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
@@ -787,7 +787,7 @@ PrefabInstance:
     - target: {fileID: 2805576599191246979, guid: b30978973eabac3409135b0e90dba530,
         type: 3}
       propertyPath: speedModule
-      value: 0.03
+      value: 0.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b30978973eabac3409135b0e90dba530, type: 3}
