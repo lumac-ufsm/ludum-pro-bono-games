@@ -232,7 +232,7 @@ PrefabInstance:
     - target: {fileID: 919311236572816297, guid: 6247cd2318ee83d4d92e24d2748ba6b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919311236572816297, guid: 6247cd2318ee83d4d92e24d2748ba6b5,
         type: 3}
@@ -289,11 +289,6 @@ PrefabInstance:
       propertyPath: ghostMoveDeltaList.Array.data[3].delta
       value: -2
       objectReference: {fileID: 0}
-    - target: {fileID: 3508974203294435445, guid: 6247cd2318ee83d4d92e24d2748ba6b5,
-        type: 3}
-      propertyPath: speedModule
-      value: 0.09
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6247cd2318ee83d4d92e24d2748ba6b5, type: 3}
 --- !u!1001 &466299299
@@ -346,7 +341,7 @@ PrefabInstance:
     - target: {fileID: 6343447834651941485, guid: 5bcae38da0dbbc04388123dfbbd548f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6343447834651941485, guid: 5bcae38da0dbbc04388123dfbbd548f0,
         type: 3}
@@ -398,11 +393,6 @@ PrefabInstance:
       propertyPath: ghostMoveDeltaList.Array.data[3].delta
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 7239564932181340593, guid: 5bcae38da0dbbc04388123dfbbd548f0,
-        type: 3}
-      propertyPath: speedModule
-      value: 0.09
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bcae38da0dbbc04388123dfbbd548f0, type: 3}
 --- !u!1001 &630984130
@@ -447,11 +437,6 @@ PrefabInstance:
       propertyPath: ghostMoveDeltaList.Array.data[3].delta
       value: -2
       objectReference: {fileID: 0}
-    - target: {fileID: 501551589971569646, guid: c5095104dde20634492042c4f31ca630,
-        type: 3}
-      propertyPath: speedModule
-      value: 0.09
-      objectReference: {fileID: 0}
     - target: {fileID: 4216973727392645170, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -490,7 +475,7 @@ PrefabInstance:
     - target: {fileID: 4216973727392645170, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4216973727392645170, guid: c5095104dde20634492042c4f31ca630,
         type: 3}
@@ -663,7 +648,7 @@ PrefabInstance:
     - target: {fileID: 3127592302501135149, guid: 49c77f6426d0c4b40ba50da310565864,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3127592302501135149, guid: 49c77f6426d0c4b40ba50da310565864,
         type: 3}
@@ -732,7 +717,7 @@ PrefabInstance:
     - target: {fileID: 1918257248360739679, guid: b30978973eabac3409135b0e90dba530,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1918257248360739679, guid: b30978973eabac3409135b0e90dba530,
         type: 3}
@@ -783,11 +768,6 @@ PrefabInstance:
         type: 3}
       propertyPath: ghostMoveDeltaList.Array.data[3].delta
       value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2805576599191246979, guid: b30978973eabac3409135b0e90dba530,
-        type: 3}
-      propertyPath: speedModule
-      value: 0.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b30978973eabac3409135b0e90dba530, type: 3}
@@ -1111,7 +1091,7 @@ PrefabInstance:
     - target: {fileID: 5727947946167909254, guid: 01af8f1bbf94cad4f8b6dec6f7f7d6e7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5727947946167909254, guid: 01af8f1bbf94cad4f8b6dec6f7f7d6e7,
         type: 3}
