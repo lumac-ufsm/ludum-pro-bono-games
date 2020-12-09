@@ -49,11 +49,15 @@ public class GhostMovePacmaze : MonoBehaviour {
     }
 
     public (int, int) Delta() {
-        GhostMoveDeltaPacmaze ghostMoveDelta = ghostMoveDeltaList[currentIndexGhostMoveDelta];
-        int deltaX = ghostMoveDelta.axis == GhostMoveAxesPacmaze.X ? ghostMoveDelta.delta : 0;
-        int deltaY = ghostMoveDelta.axis == GhostMoveAxesPacmaze.Y ? ghostMoveDelta.delta : 0;
-        animator.SetInteger("deltaX", deltaX);
-        animator.SetInteger("deltaY", deltaY);
-        return (deltaX, deltaY);
+        if (ghostMoveDeltaList.Length > 0) {
+            GhostMoveDeltaPacmaze ghostMoveDelta = ghostMoveDeltaList[currentIndexGhostMoveDelta];
+            int deltaX = ghostMoveDelta.axis == GhostMoveAxesPacmaze.X ? ghostMoveDelta.delta : 0;
+            int deltaY = ghostMoveDelta.axis == GhostMoveAxesPacmaze.Y ? ghostMoveDelta.delta : 0;
+            animator.SetInteger("deltaX", deltaX);
+            animator.SetInteger("deltaY", deltaY);
+            return (deltaX, deltaY);
+        } else {
+            return (0, 0);
+        }
     }
 }
