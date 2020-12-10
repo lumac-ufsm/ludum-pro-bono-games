@@ -12,10 +12,6 @@ public class SceneRouter : MonoBehaviour {
         SceneManager.LoadScene("Main/Scenes/Main");
     }
 
-    public static void OpenGameIntroduction(string gameName) {
-        SceneManager.LoadScene($"Games/{gameName}/Scenes/GameIntroduction"); 
-    }
-
     public static void OpenGameMenu(string gameName) {
         SceneManager.LoadScene($"Games/{gameName}/Scenes/Main"); 
     }

@@ -165,4 +165,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ghostMoveDeltaList: []
-  speedModule: 0.09
+  speedModule: 0.057

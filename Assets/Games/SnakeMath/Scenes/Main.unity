@@ -128,10 +128,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5424184140544885707, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_text
+      value: Snake Math
+      objectReference: {fileID: 0}
     - target: {fileID: 7175264530451767414, guid: 9e9b38cf772c3664581d80a2c5b75096,
         type: 3}
       propertyPath: scene
       value: Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 7862907102442718240, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.02078247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8486835034442567267, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_text
+      value: "1. Use as setas para iniciar o jogo e movimentar a snake.\n2. No canto
+        esquerdo superior est\xE1 o valor de cada bolinha.\n3. A snake deve comer
+        as bolinhas com as cores necess\xE1rias at\xE9 alcan\xE7ar o resultado da
+        equa\xE7\xE3o apresentada no canto superior direito da tela\n4. Quando a
+        soma \xE9 alcan\xE7ada, a snake cresce e uma nova equa\xE7\xE3o aparece."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8486835034442567267, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 33.2
       objectReference: {fileID: 0}
     - target: {fileID: 8594222519911952815, guid: 9e9b38cf772c3664581d80a2c5b75096,
         type: 3}
@@ -307,7 +331,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

@@ -157,7 +157,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -211,10 +211,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5424184140544885707, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_text
+      value: Pacmaze
+      objectReference: {fileID: 0}
     - target: {fileID: 7175264530451767414, guid: 9e9b38cf772c3664581d80a2c5b75096,
         type: 3}
       propertyPath: scene
       value: SelectLevelPacmaze
+      objectReference: {fileID: 0}
+    - target: {fileID: 7862907102442718240, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.02078247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8486835034442567267, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_text
+      value: "1. Use as setas para iniciar o jogo e movimentar o pac.\n2. O movimento
+        na dire\xE7\xE3o selecionada s\xF3 para quando o pac atinge um obst\xE1culo.\n3.
+        O pac deve atravessar o labirinto evitando os fantasmas e chegar ao portal
+        luminoso."
       objectReference: {fileID: 0}
     - target: {fileID: 8594222519911952815, guid: 9e9b38cf772c3664581d80a2c5b75096,
         type: 3}
