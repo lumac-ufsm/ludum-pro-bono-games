@@ -132,6 +132,6 @@ public class SelectGame : MonoBehaviour {
     public void OpenGameSelected() {
         string selectedGameName = gameSelectors[selectedGameSelector].name;
         GameManager.currentGame = selectedGameName;
-        SceneRouter.OpenGameIntroduction(selectedGameName);
+        SceneRouter.OpenGameMenu(selectedGameName);
     }
 }

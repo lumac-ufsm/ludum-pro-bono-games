@@ -128,16 +128,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 389552473486672427, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -72.600006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1135632867870395403, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489319911199375543, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489319911199375543, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5424184140544885707, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_text
+      value: Bomberdev
+      objectReference: {fileID: 0}
     - target: {fileID: 7175264530451767414, guid: 9e9b38cf772c3664581d80a2c5b75096,
         type: 3}
       propertyPath: scene
       value: SelectLevelBomberdev
       objectReference: {fileID: 0}
+    - target: {fileID: 7862907102442718240, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7862907102442718240, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.02078247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8486835034442567267, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_text
+      value: "1. Use as setas para escolher entre as placas de a\xE7\xF5es e \"A\"
+        para selecionar uma e mover entre as colunas.\n2. Na coluna de comandos devem
+        ficar as placas na ordem correta de execu\xE7\xE3o, formando um fluxograma\n3.
+        Nas colunas de invent\xE1rio devem ficar as placas que n\xE3o ser\xE3o executadas.\n4.
+        O Bomberdev precisa seguir o fluxograma criado para explodir os COVID-19
+        e chegar ao portal seguro."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8486835034442567267, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 31.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8594222519911952815, guid: 9e9b38cf772c3664581d80a2c5b75096,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e4ff25318b9d77f4c9a3ca8737734923,
+      objectReference: {fileID: 21300000, guid: 1fac4ade77142b7439f71cb9016f2f81,
         type: 3}
     - target: {fileID: 8594222520725993780, guid: 9e9b38cf772c3664581d80a2c5b75096,
         type: 3}
@@ -254,20 +304,35 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1834010551}
+    - target: {fileID: 8594222520725993803, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8594222520976724073, guid: 9e9b38cf772c3664581d80a2c5b75096,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.5058824
+      value: 0.08627451
       objectReference: {fileID: 0}
     - target: {fileID: 8594222520976724073, guid: 9e9b38cf772c3664581d80a2c5b75096,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.4901961
+      value: 0.40000004
       objectReference: {fileID: 0}
     - target: {fileID: 8594222520976724073, guid: 9e9b38cf772c3664581d80a2c5b75096,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.72156864
+      value: 0.14901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594222521548849341, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00018310547
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594222521548849341, guid: 9e9b38cf772c3664581d80a2c5b75096,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0014648438
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e9b38cf772c3664581d80a2c5b75096, type: 3}
@@ -307,7 +372,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
