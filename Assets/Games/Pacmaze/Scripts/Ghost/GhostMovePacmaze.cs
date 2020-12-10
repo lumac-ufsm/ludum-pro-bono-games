@@ -18,7 +18,7 @@ public class GhostMovePacmaze : MonoBehaviour {
         (int deltaX, int deltaY) = Delta();
         float x = deltaX > 0 ? speedModule : deltaX < 0 ? -speedModule : 0;
         float y = deltaY > 0 ? speedModule : deltaY < 0 ? -speedModule : 0;
-        transform.Translate(new Vector2(x, y));
+        transform.Translate(new Vector2(x, y) * Time.deltaTime);
         
         if (FinishStep(deltaX, deltaY)) {
             transform.position = new Vector2(nextPosition.x, nextPosition.y);
