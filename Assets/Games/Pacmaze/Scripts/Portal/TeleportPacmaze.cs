@@ -6,16 +6,11 @@ public class TeleportPacmaze : MonoBehaviour {
     [SerializeField] private GameObject otherPortal;
     private static bool teleportAllowed = true;
     private void OnTriggerEnter2D(Collider2D other) {
+        Vector2 position = gameObject.transform.position;
         if (other.gameObject.CompareTag("Player")) {
-            if (teleportAllowed) {
-                other.transform.position = otherPortal.transform.position;
-                teleportAllowed = false;
-            }
+            other.transform.position = otherPortal.transform.position;
+            gameObject.transform.position = otherPortal.transform.position;
+            otherPortal.transform.position = position;
         }
-    }
-
-    private void OnTriggerExit2D(Collider2D other) {
-        teleportAllowed = true;
-        // print("Saiu da colisão");
     }
 }
