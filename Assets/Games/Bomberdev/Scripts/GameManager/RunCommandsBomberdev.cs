@@ -9,9 +9,10 @@ public class RunCommandsBomberdev : MonoBehaviour {
     private MovePlayerBomberdev movePlayer;
     [SerializeField] private GameObject bombPrefab;
     [SerializeField] private FlowchartBomberdev flowchartRun;
-    [SerializeField] private GameObject player;
+    private GameObject player;
 
     private void Start() {
+        player = GameObject.Find("Player");
         movePlayer = player.GetComponent<MovePlayerBomberdev>();
         callbackEndCommand = () => ExecuteNextCommand();
         commandManager = GetComponent<CommandManagerBomberdev>();
