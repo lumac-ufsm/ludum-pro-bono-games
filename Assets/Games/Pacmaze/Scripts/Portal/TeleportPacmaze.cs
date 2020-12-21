@@ -7,9 +7,10 @@ public class TeleportPacmaze : MonoBehaviour {
     
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Player")) {
-            if (other.transform.position != transform.position) {
-                other.transform.position = otherPortal.transform.position;
-            }
+            Vector2 position = gameObject.transform.position;
+            other.transform.position = otherPortal.transform.position;
+            gameObject.transform.position = otherPortal.transform.position;
+            otherPortal.transform.position = position;
         }
     }
 }
