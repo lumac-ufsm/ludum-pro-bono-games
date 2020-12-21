@@ -8,7 +8,11 @@ public class EnterPillPacmaze : MonoBehaviour {
         if (other.gameObject.CompareTag("Player")) {
             string name = SceneManager.GetActiveScene().name;
             int level = int.Parse(name.Replace("_PacmazeLevel", ""));
-            SceneManager.LoadScene($"{level + 1}_PacmazeLevel");
+            if(level == 7){
+                //Mostrar tela de game over
+            }else{
+                SceneManager.LoadScene($"{level + 1}_PacmazeLevel");
+            }
         }
     }
 }
