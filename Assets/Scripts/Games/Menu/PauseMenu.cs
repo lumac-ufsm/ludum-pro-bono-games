@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour {
-     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject pauseMenu;
     [SerializeField] private Button resumeButton;
     [SerializeField] private Button menuButton;
     private float pauseAnimationLength;
