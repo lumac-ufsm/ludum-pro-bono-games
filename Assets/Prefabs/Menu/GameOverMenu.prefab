@@ -377,6 +377,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ad3a79a25029e4fbcb315d527f8dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainButton: {fileID: 2602161170031842277}
+  menuButton: {fileID: 2570045426957009153}
 --- !u!1 &3536633134927236170
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +470,7 @@ GameObject:
   - component: {fileID: 2447057759332746444}
   - component: {fileID: 2602161170031842277}
   m_Layer: 5
-  m_Name: ContinueButton
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -587,7 +589,7 @@ GameObject:
   - component: {fileID: 5278323852269475873}
   - component: {fileID: 2570045426957009153}
   m_Layer: 5
-  m_Name: MenuButton
+  m_Name: GameMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
