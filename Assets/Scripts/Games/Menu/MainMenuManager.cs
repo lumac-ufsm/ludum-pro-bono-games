@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour {
     [SerializeField] private Button startGameButton;
-    [SerializeField, Scene] private string scene;
+    [SerializeField] private string scene;
 
     private void Start() {
         startGameButton.onClick.AddListener(StartGame);
