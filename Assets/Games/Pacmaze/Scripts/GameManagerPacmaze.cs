@@ -14,7 +14,7 @@ public class GameManagerPacmaze : MonoBehaviour {
     public void OnFinishLevel() {
         string name = SceneManager.GetActiveScene().name;
         int level = int.Parse(name.Replace("_PacmazeLevel", ""));
-        if (level == 7) {
+        if (level == SelectLevel.numberOfLevelsCurrentGame) {
             GameOver();
         } else {
             SceneManager.LoadScene($"{level + 1}_PacmazeLevel");
