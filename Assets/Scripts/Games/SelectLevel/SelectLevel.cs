@@ -10,7 +10,6 @@ public class SelectLevel : MonoBehaviour {
     [SerializeField] private GameName gameName;
 
     private void Start() {
-        numberOfLevels = GameManagerPacmaze.CountLevels();
         for (int n = 1; n <= numberOfLevels; n++) {
             CreateOpenLevelButton(n);
         }
