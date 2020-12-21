@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameOverMenu : MonoBehaviour {
+    [SerializeField] private Button mainButton;
+    [SerializeField] private Button menuButton;
+
     private void Start() {
         gameObject.SetActive(false);
         Animator animator = gameObject.GetComponent<Animator>();
         AnimationClip animationClip = animator.runtimeAnimatorController.animationClips[0];
+
+        mainButton.onClick.AddListener(OpenMain);
+        menuButton.onClick.AddListener(OpenMenu);
     }
 
     private void Update() {
