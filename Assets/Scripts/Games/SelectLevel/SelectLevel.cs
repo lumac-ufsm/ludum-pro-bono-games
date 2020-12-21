@@ -6,13 +6,11 @@ using UnityEngine.UI;
 public class SelectLevel : MonoBehaviour {
     [SerializeField] private GameObject panelButtons;
     [SerializeField] private GameObject openLevelButtonPrefab;
-    [SerializeField] private int _numberOfLevels = 1;
+    [SerializeField] private int numberOfLevels = 1;
     [SerializeField] private GameName gameName;
-    public static int numberOfLevelsCurrentGame;
 
     private void Start() {
-        numberOfLevelsCurrentGame = _numberOfLevels;
-        for (int n = 1; n <= _numberOfLevels; n++) {
+        for (int n = 1; n <= numberOfLevels; n++) {
             CreateOpenLevelButton(n);
         }
     }
