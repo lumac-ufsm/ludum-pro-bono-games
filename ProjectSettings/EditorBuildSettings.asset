@@ -54,10 +54,10 @@ EditorBuildSettings:
     path: Assets/Games/Pacmaze/Scenes/Levels/5_PacmazeLevel.unity
     guid: 82c220ce51ce4064ebe540fa801cf379
   - enabled: 1
-    path: Assets/Games/Pacmaze/Scenes/Levels/6_PacmazeLevel.unity
+    path: Assets/Games/Pacmaze/Scenes/Levels/7_PacmazeLevel.unity
     guid: 5bc40744ada2cde46974e0738ee60311
   - enabled: 1
-    path: Assets/Games/Pacmaze/Scenes/Levels/7_PacmazeLevel.unity
+    path: Assets/Games/Pacmaze/Scenes/Levels/8_PacmazeLevel.unity
     guid: f0ceedfde65784146a8b6f223991ddf6
   - enabled: 1
     path: Assets/Games/Pacmaze/Scenes/Levels/4_PacmazeLevel.unity

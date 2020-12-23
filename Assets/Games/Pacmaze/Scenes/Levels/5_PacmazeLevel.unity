@@ -455,7 +455,7 @@ PrefabInstance:
     - target: {fileID: 7398120075867055754, guid: 41563f94554343846b85205d2bc2e6aa,
         type: 3}
       propertyPath: m_Name
-      value: Portais Vermelhos
+      value: PortalsRed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41563f94554343846b85205d2bc2e6aa, type: 3}
@@ -669,7 +669,7 @@ PrefabInstance:
     - target: {fileID: 7398120075867055754, guid: 41563f94554343846b85205d2bc2e6aa,
         type: 3}
       propertyPath: m_Name
-      value: Portais Amarelos
+      value: PortalsYellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41563f94554343846b85205d2bc2e6aa, type: 3}
@@ -12186,7 +12186,7 @@ PrefabInstance:
     - target: {fileID: 7398120075867055754, guid: 41563f94554343846b85205d2bc2e6aa,
         type: 3}
       propertyPath: m_Name
-      value: Portais Verdes
+      value: PortalsGreen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41563f94554343846b85205d2bc2e6aa, type: 3}
