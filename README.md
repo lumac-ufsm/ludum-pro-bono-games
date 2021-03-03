@@ -1,4 +1,4 @@
-![image](https://lh4.googleusercontent.com/TlgWM1K2L9qbd8cKHgWMxDHjmxKQENH-DjqpIZetJQ7X2V-5xU33axxoD-n3pidm2rWM2EI5vcb-WHRAIE4K=w1366-h624-rw)
+![image](public/menu.gif)
 
 # Ludum pro bono
 
