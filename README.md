@@ -26,13 +26,11 @@
 - [Bomberdev](#-bomberdev)
 
 ### Snake Calculator
-![Snake Calculator](public/snake.gif)
-
+<img src="public/snake.gif" width="300" height="300"/>
 
 ### Pacmaze
-![Pacmaze](public/pacmaze.gif)
-
+<img src="public/pacmaze.gif" width="300" height="300"/>
 
 
 ### Bomberdev
-![Bomberdev](public/bomberdev.gif)
+<img src="public/bomberdev.gif" width="300" height="300"/>
