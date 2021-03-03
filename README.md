@@ -27,10 +27,19 @@
 
 ### Snake Calculator
 <img src="public/snake.gif" width="300" height="300"/>
+<p style='text-align: justify;'>
+A mecânica de controle é feita a partir das setas direcionais, onde a serpente se movimenta na direção desejada a fim de coletar as comidas para realizar o cálculo. As comidas possuem diferentes cores que representam seus respectivos valores. A Snake pode passar pelos limites da tela reaparecendo na extremidade oposta da qual foi passada. A cada solução, o personagem aumenta de tamanho e são incrementados alguns segundos no tempo de jogo. O jogo é finalizado se o jogador colidir com seu próprio corpo ou o tempo acabar.
+</p>
+
 
 ### Pacmaze
 <img src="public/pacmaze.gif" width="300" height="300"/>
+<p style='text-align: justify;'>
+</p>
 
 
 ### Bomberdev
 <img src="public/bomberdev.gif" width="300" height="300"/>
+<p style='text-align: justify;'>
+Bomberdev tem como principal objetivo completar as fases destruindo obstáculos e inimigos em lugares estratégicos para alcançar a saída. Bomberdev tem como finalidade desenvolver o raciocínio lógico do jogador e, principalmente, suas habilidades algorítmicas, uma vez que é exigido montar uma estrutura de instruções que satisfaça os desafios da fase. 
+</p>
