@@ -22,7 +22,7 @@
 ## 🎮 Jogos
 
 - [Snake Calculator](#-snake-calculator)
-- [Pacmaze](#-Pacmaze)
+- [Pacmaze](#-pacmaze)
 - [Bomberdev](#-bomberdev)
 
 ### Snake Calculator
