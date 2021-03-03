@@ -41,9 +41,9 @@
 <br>
 
 # Índice
-- [Sobre](#-🔖-sobre)
-- [Tecnologias utilizadas](#-🚀-tecnologias-utilizadas)
-- [Jogos](#-🎮-jogos)
+- [Sobre](#-sobre)
+- [Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [Jogos](#-jogos)
 
 # 🔖 Sobre
 [![image](public/menu.gif)](https://ludum-pro-bono.github.io/ludum-pro-bono-frontend/menu/index.html)
