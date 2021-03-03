@@ -35,6 +35,7 @@ A mecânica de controle é feita a partir das setas direcionais, onde a serpente
 ### Pacmaze
 <img src="public/pacmaze.gif" width="300" height="300"/>
 <p style='text-align: justify;'>
+Pacmaze foi criado com o propósito de incentivar o estudo de algoritmos e estimular o raciocínio lógico. O jogador é apresentado à um labirinto e deve conduzir o personagem até o final do caminho, tendo de se precaver com as armadilhas e inimigos que tentarão impedir que o personagem avance para o próximo nível. 
 </p>
 
 
