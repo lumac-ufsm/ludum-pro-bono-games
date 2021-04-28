@@ -13,7 +13,7 @@ public class JumpTheLostBrains : MonoBehaviour {
     }
 
     void Update() {
-        float jump = Input.GetMouseButtonDown(0) == true ? 1 : Input.GetAxis("Jump");
+        float jump = Input.GetAxis("Jump");
         Vector2 speed = playerRigidbody2D.GetPointVelocity(new Vector2(0, 0));
         if (jump > 0 && !isJumping && speed.y <= 0.01f) {
             playerRigidbody2D.AddForce(new Vector2(0, forceJump * jump), ForceMode2D.Impulse);
