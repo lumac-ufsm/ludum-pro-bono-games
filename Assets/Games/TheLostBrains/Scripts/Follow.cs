@@ -13,10 +13,18 @@ public class Follow : MonoBehaviour {
         
     }
 
+    float GetNextPosition(float position, float offset) {
+        return position + offset;
+    }
+
     void Update() {
         Vector3 position = transform.position;
-        if (followX) position.x = followTransform.position.x + offsetX;
-        if (followY) position.y = followTransform.position.y + offsetY;
+        if (followX) {
+            position.x = GetNextPosition(followTransform.position.x, offsetX);
+        }
+        if (followY) {
+            position.y = GetNextPosition(followTransform.position.y, offsetY);
+        }
         transform.position = position;
     }
 }
