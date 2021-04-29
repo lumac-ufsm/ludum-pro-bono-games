@@ -8,22 +8,23 @@ public class Follow : MonoBehaviour {
     [SerializeField] private bool followY = true;
     [SerializeField] private float offsetY = 0f;
     [SerializeField] private float offsetX = 0f;
+    [SerializeField] private float smoothLevel = 0f;
 
     void Start() {
         
     }
 
-    float GetNextPosition(float position, float offset) {
-        return position + offset;
+    float GetNextPosition(float currentPosition, float nextPosition, float offset) {
+        return Mathf.Lerp(nextPosition + offset, currentPosition, Time.deltaTime * smoothLevel);
     }
 
     void Update() {
         Vector3 position = transform.position;
         if (followX) {
-            position.x = GetNextPosition(followTransform.position.x, offsetX);
+            position.x = GetNextPosition(transform.position.x, followTransform.position.x, offsetX);
         }
         if (followY) {
-            position.y = GetNextPosition(followTransform.position.y, offsetY);
+            position.y = GetNextPosition(transform.position.y, followTransform.position.y, offsetY);
         }
         transform.position = position;
     }
