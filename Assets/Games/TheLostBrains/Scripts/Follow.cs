@@ -10,15 +10,14 @@ public class Follow : MonoBehaviour {
     [SerializeField] private float offsetX = 0f;
     [SerializeField] private float smoothLevel = 0f;
 
-    void Start() {
-        
-    }
-
-    float GetNextPosition(float currentPosition, float nextPosition, float offset) {
+    private float GetNextPosition(float currentPosition, float nextPosition, float offset) {
+        if (Mathf.Abs(currentPosition - nextPosition) < 1) {
+            return nextPosition;
+        }
         return Mathf.Lerp(nextPosition + offset, currentPosition, Time.deltaTime * smoothLevel);
     }
 
-    void Update() {
+    private void Update() {
         Vector3 position = transform.position;
         if (followX) {
             position.x = GetNextPosition(transform.position.x, followTransform.position.x, offsetX);
