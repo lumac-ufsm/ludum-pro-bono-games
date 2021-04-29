@@ -17,20 +17,20 @@ public class MoveTheLostBrains : MonoBehaviour {
     }
 
     void Update() {
-            float axisX = 0;
-            float axisY = 0;
-            
-            if (player.isSelected) {
-                axisX = Input.GetAxis("Horizontal");
-                axisY = Input.GetAxis("Vertical");
-            }
+        float axisX = 0;
+        float axisY = 0;
+        
+        if (player.isSelected) {
+            axisX = Input.GetAxis("Horizontal");
+            axisY = Input.GetAxis("Vertical");
+        }
 
-            float deltaX = axisX * modVelocity * Time.deltaTime;
+        float deltaX = axisX * modVelocity * Time.deltaTime;
 
-            animator.SetBool("stop", deltaX == 0 ? true : false);
-            animator.SetBool("left", deltaX < 0 ? true : false);
-            animator.SetBool("right", deltaX > 0 ? true : false);
+        animator.SetBool("stop", deltaX == 0 ? true : false);
+        animator.SetBool("left", deltaX < 0 ? true : false);
+        animator.SetBool("right", deltaX > 0 ? true : false);
 
-            transform.Translate(new Vector3(deltaX, 0, 0));
+        transform.Translate(new Vector3(deltaX, 0, 0));
     }
 }
