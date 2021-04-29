@@ -17,9 +17,13 @@ public class MoveTheLostBrains : MonoBehaviour {
     }
 
     void Update() {
-        if (player.isSelected) {
-            float axisX = Input.GetAxis("Horizontal");
-            float axisY = Input.GetAxis("Vertical");
+            float axisX = 0;
+            float axisY = 0;
+            
+            if (player.isSelected) {
+                axisX = Input.GetAxis("Horizontal");
+                axisY = Input.GetAxis("Vertical");
+            }
 
             float deltaX = axisX * modVelocity * Time.deltaTime;
 
@@ -28,6 +32,5 @@ public class MoveTheLostBrains : MonoBehaviour {
             animator.SetBool("right", deltaX > 0 ? true : false);
 
             transform.Translate(new Vector3(deltaX, 0, 0));
-        }
     }
 }

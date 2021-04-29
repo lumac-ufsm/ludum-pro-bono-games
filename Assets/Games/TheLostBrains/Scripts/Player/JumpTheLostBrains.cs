@@ -14,16 +14,18 @@ public class JumpTheLostBrains : MonoBehaviour {
     }
 
     void Update() {
+        float jump = 0;
         if (player.isSelected) {
-            float jump = Input.GetAxis("Jump");
-            Vector2 speed = playerRigidbody2D.GetPointVelocity(new Vector2(0, 0));
-            if (jump > 0 && !isJumping && speed.y <= 0.01f) {
-                playerRigidbody2D.AddForce(new Vector2(0, forceJump * jump), ForceMode2D.Impulse);
-                isJumping = true;
-            }
-
-            animator.SetBool("jump", isJumping);
+            jump = Input.GetAxis("Jump");
         }
+        
+        Vector2 speed = playerRigidbody2D.GetPointVelocity(new Vector2(0, 0));
+        if (jump > 0 && !isJumping && speed.y <= 0.01f) {
+            playerRigidbody2D.AddForce(new Vector2(0, forceJump * jump), ForceMode2D.Impulse);
+            isJumping = true;
+        }
+
+        animator.SetBool("jump", isJumping);
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
