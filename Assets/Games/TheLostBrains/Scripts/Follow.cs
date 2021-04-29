@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Follow : MonoBehaviour {
-    [SerializeField] private Transform followTransform;
+    public Transform followTransform;
     [SerializeField] private bool followX = true;
     [SerializeField] private bool followY = true;
     [SerializeField] private float offsetY = 0f;
