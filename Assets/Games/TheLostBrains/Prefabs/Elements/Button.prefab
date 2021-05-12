@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f227009b4aa6e3148b8940356c3baf19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weightButton: {fileID: 5022208894716954083}
   isPressed: 0
   isShortPressed: 0
   buttonPressTime: 0.5
@@ -224,6 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1581172063890567369}
+  - component: {fileID: 5022208894716954083}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -248,6 +250,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5022208894716954083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581172063890567368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b20a5e9a4be09ce4c95f36da63015c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlledActivation: {fileID: 0}
 --- !u!1 &1581172064323895117
 GameObject:
   m_ObjectHideFlags: 0

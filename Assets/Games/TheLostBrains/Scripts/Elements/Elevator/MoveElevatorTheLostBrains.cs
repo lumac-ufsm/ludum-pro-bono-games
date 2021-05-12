@@ -2,22 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveElevatorTheLostBrains : MonoBehaviour {
+public class MoveElevatorTheLostBrains : ControlledActivationMonoBehaviour {
 	[SerializeField] private float modSpeed = 0;
 	[SerializeField] private float breakTime = 0;
 	[SerializeField] private ElevatorStateTheLostBrains state;
 	private float timeCount = 0;
+	private bool allowMove = false;
 
 	void Start() {
 
 	}
 
 	void Update() {
-		if (timeCount > 0) {
-			timeCount -= Time.deltaTime;
-		} else {
-			float speed = GetSpeed();
-			transform.Translate(new Vector2(0, speed * Time.deltaTime));
+		if (allowMove) {
+			if (timeCount > 0) {
+				timeCount -= Time.deltaTime;
+			} else {
+				float speed = GetSpeed();
+				transform.Translate(new Vector2(0, speed * Time.deltaTime));
+			}
 		}
 	}
 
@@ -41,5 +44,13 @@ public class MoveElevatorTheLostBrains : MonoBehaviour {
 			state = ElevatorStateTheLostBrains.UP;
 			if (oldState != state) timeCount = breakTime;
 		}
+	}
+
+	public override void On() {
+		allowMove = true;
+	}
+
+	public override void Off() {
+		allowMove = false;
 	}
 }

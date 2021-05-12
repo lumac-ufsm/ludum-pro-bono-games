@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PressButtonTheLostBrains : MonoBehaviour {
+	[SerializeField] private WeightButtonTheLostBrains weightButton;
 	[SerializeField] private bool isPressed = false;
 	[SerializeField] private bool isShortPressed = false;
 	[SerializeField] private float buttonPressTime;
@@ -17,11 +18,14 @@ public class PressButtonTheLostBrains : MonoBehaviour {
 			if (timeCount < buttonPressTime) {
 				timeCount += Time.deltaTime;
 				isPressed = false;
+				weightButton.Off();
 			} else {
 				isPressed = true;
+				weightButton.On();
 			}
 		} else {
 			isPressed = false;
+			weightButton.Off();
 			timeCount = 0;
 		}
 	}
