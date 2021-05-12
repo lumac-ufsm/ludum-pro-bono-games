@@ -2,19 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveElevatorTheLostBrains : ControlledActivationMonoBehaviour {
+public class MoveElevatorTheLostBrains : MonoBehaviour {
+	[SerializeField] private ElevatorTheLostBrains elevator;
 	[SerializeField] private float modSpeed = 0;
 	[SerializeField] private float breakTime = 0;
 	[SerializeField] private ElevatorStateTheLostBrains state;
 	private float timeCount = 0;
-	private bool allowMove = false;
-
-	void Start() {
-
-	}
 
 	void Update() {
-		if (allowMove) {
+		if (elevator.isActive) {
 			if (timeCount > 0) {
 				timeCount -= Time.deltaTime;
 			} else {
@@ -44,13 +40,5 @@ public class MoveElevatorTheLostBrains : ControlledActivationMonoBehaviour {
 			state = ElevatorStateTheLostBrains.UP;
 			if (oldState != state) timeCount = breakTime;
 		}
-	}
-
-	public override void On() {
-		allowMove = true;
-	}
-
-	public override void Off() {
-		allowMove = false;
 	}
 }

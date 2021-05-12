@@ -56,6 +56,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8202532070357268879}
+  - component: {fileID: 5803470348463545434}
   m_Layer: 0
   m_Name: Elevator
   m_TagString: Untagged
@@ -80,6 +81,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5803470348463545434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3656474043315678510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81943de8ca23fc4eae761b7f690be8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5708856125569793647
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2888eb57c6e14d408d03819286cfabf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elevator: {fileID: 5803470348463545434}
   modSpeed: 2
   breakTime: 3
   state: 0
-  timeCount: 0
