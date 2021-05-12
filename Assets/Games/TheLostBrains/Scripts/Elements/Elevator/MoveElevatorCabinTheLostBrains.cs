@@ -8,12 +8,15 @@ public class MoveElevatorCabinTheLostBrains : MonoBehaviour {
 	[SerializeField] private float breakTime = 0;
 	[SerializeField] private ElevatorStateTheLostBrains state;
 	private float timeCount = 0;
+	private bool isStopped = true;
 
 	void Update() {
 		if (elevator.isActive) {
 			if (timeCount > 0) {
 				timeCount -= Time.deltaTime;
+				isStopped = true;
 			} else {
+				isStopped = false;
 				float speed = GetSpeed();
 				transform.Translate(new Vector2(0, speed * Time.deltaTime));
 			}
@@ -31,14 +34,6 @@ public class MoveElevatorCabinTheLostBrains : MonoBehaviour {
 		}
 	}
 
-	private void ToggleDirection() {
-		if (state == ElevatorStateTheLostBrains.UP) {
-			state = ElevatorStateTheLostBrains.DOWN;
-		} else if (state == ElevatorStateTheLostBrains.DOWN) {
-			state = ElevatorStateTheLostBrains.UP;
-		}
-	}
-
 	private void OnTriggerEnter2D(Collider2D other) {
 		ElevatorStateTheLostBrains oldState = state;
 		if (other.gameObject.name == "TopPoint") {
@@ -50,7 +45,11 @@ public class MoveElevatorCabinTheLostBrains : MonoBehaviour {
 		}
 	}
 
-	private void OnCollisionEnter2D(Collision2D other) {
-		ToggleDirection();
+	public void OnColliderEnterTop() {
+		state = ElevatorStateTheLostBrains.DOWN;
+	}
+
+	public void OnColliderEnterBottom() {
+		state = ElevatorStateTheLostBrains.UP;
 	}
 }
