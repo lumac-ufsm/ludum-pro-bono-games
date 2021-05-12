@@ -46,7 +46,6 @@ public class MoveElevatorCabinTheLostBrains : MonoBehaviour {
 	}
 
 	public void OnColliderEnterTop() {
-		state = ElevatorStateTheLostBrains.DOWN;
 	}
 
 	public void OnColliderEnterBottom() {
