@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WeightButtonTheLostBrains : MonoBehaviour {
-	[SerializeField] ControlledActivationMonoBehaviour controlledActivation;
+	[SerializeField] ControlledActivationMonoBehaviour[] controlledActivations;
 
 	public void On() {
-		controlledActivation.On();
+		foreach (var controlledActivation in controlledActivations) {
+			controlledActivation.On();
+		}
 	}
 
 	public void Off() {
-		controlledActivation.Off();
+		foreach (var controlledActivation in controlledActivations) {
+			controlledActivation.Off();
+		}
 	}
 }
