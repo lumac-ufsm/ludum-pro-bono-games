@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveElevatorTheLostBrains : MonoBehaviour {
+public class MoveElevatorCabinTheLostBrains : MonoBehaviour {
 	[SerializeField] private ElevatorTheLostBrains elevator;
 	[SerializeField] private float modSpeed = 0;
 	[SerializeField] private float breakTime = 0;
