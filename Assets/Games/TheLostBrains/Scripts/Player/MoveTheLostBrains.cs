@@ -13,7 +13,7 @@ public class MoveTheLostBrains : MonoBehaviour {
 
     void Start() {
         player = GetComponent<PlayerTheLostBrains>();
-        externalSpeed = new Vector2(0, 0);
+        externalSpeed = Vector2.zero;
     }
 
     void Update() {
