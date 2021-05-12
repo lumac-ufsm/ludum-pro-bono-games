@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PressButtonTheLostBrains : MonoBehaviour {
+public class PressWeightButtonTheLostBrains : MonoBehaviour {
 	[SerializeField] private WeightButtonTheLostBrains weightButton;
 	[SerializeField] private bool isPressed = false;
 	[SerializeField] private bool isShortPressed = false;
