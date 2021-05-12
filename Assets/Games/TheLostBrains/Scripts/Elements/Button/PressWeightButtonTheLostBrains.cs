@@ -14,19 +14,21 @@ public class PressWeightButtonTheLostBrains : MonoBehaviour {
 	}
 
 	void Update() {
+		bool oldIsPressed = isPressed;
 		if (isShortPressed) {
 			if (timeCount < buttonPressTime) {
 				timeCount += Time.deltaTime;
 				isPressed = false;
-				weightButton.Off();
 			} else {
 				isPressed = true;
-				weightButton.On();
 			}
 		} else {
 			isPressed = false;
-			weightButton.Off();
 			timeCount = 0;
+		}
+		if (oldIsPressed != isPressed) {
+			if (isPressed) weightButton.On();
+			else weightButton.Off();
 		}
 	}
 
