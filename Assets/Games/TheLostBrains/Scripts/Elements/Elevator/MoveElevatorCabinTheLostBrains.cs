@@ -31,6 +31,14 @@ public class MoveElevatorCabinTheLostBrains : MonoBehaviour {
 		}
 	}
 
+	private void ToggleDirection() {
+		if (state == ElevatorStateTheLostBrains.UP) {
+			state = ElevatorStateTheLostBrains.DOWN;
+		} else if (state == ElevatorStateTheLostBrains.DOWN) {
+			state = ElevatorStateTheLostBrains.UP;
+		}
+	}
+
 	private void OnTriggerEnter2D(Collider2D other) {
 		ElevatorStateTheLostBrains oldState = state;
 		if (other.gameObject.name == "TopPoint") {
@@ -40,5 +48,9 @@ public class MoveElevatorCabinTheLostBrains : MonoBehaviour {
 			state = ElevatorStateTheLostBrains.UP;
 			if (oldState != state) timeCount = breakTime;
 		}
+	}
+
+	private void OnCollisionEnter2D(Collision2D other) {
+		ToggleDirection();
 	}
 }
