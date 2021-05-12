@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: c0073e2762c1318488a8f1f1c2f3104d
+guid: c5513ba1821d37f4ca2e2424be7af08b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: parado_0
+      213: -4721596366527860972
+    second: Stop_0
   - first:
-      213: 21300002
-    second: parado_1
+      213: 7071160084937813458
+    second: Stop_1
   - first:
-      213: 21300004
-    second: parado_2
+      213: 4406460030313519524
+    second: Stop_2
   - first:
-      213: 21300006
-    second: parado_3
+      213: -6805885296459576740
+    second: Stop_3
   - first:
-      213: 21300008
-    second: parado_4
+      213: 5543578363429788377
+    second: Stop_4
   - first:
-      213: 21300010
-    second: parado_5
+      213: -800739930512314952
+    second: Stop_5
   - first:
-      213: 21300012
-    second: parado_6
+      213: -1720752822044334075
+    second: Stop_6
   - first:
-      213: 21300014
-    second: parado_7
+      213: -927795510302828341
+    second: Stop_7
   - first:
-      213: 21300016
-    second: parado_8
+      213: -6931479778736164764
+    second: Stop_8
   - first:
-      213: 21300018
-    second: parado_9
+      213: 9060966720747146119
+    second: Stop_9
   - first:
-      213: 21300020
-    second: parado_10
+      213: 7415191995255636898
+    second: Stop_10
   - first:
-      213: 21300022
-    second: parado_11
+      213: -8187907714923557581
+    second: Stop_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -59,6 +59,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -90,10 +91,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -106,7 +110,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -118,24 +122,12 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: parado_0
+      name: Stop_0
       rect:
         serializedVersion: 2
         x: 57
@@ -149,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8eabb29c22ca69d408bb0e8c5fb7e1c2
-      internalID: 21300000
+      spriteID: 41fe458ee15897eb0800000000000000
+      internalID: -4721596366527860972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parado_1
+      name: Stop_1
       rect:
         serializedVersion: 2
         x: 220
@@ -170,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21511ed74b2ac73438aa726924798e47
-      internalID: 21300002
+      spriteID: 2dda3a4f1aec12260800000000000000
+      internalID: 7071160084937813458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parado_2
+      name: Stop_2
       rect:
         serializedVersion: 2
         x: 382
@@ -191,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69ceef5524e38c84c9006949e639760e
-      internalID: 21300004
+      spriteID: 4a95bc71d04e62d30800000000000000
+      internalID: 4406460030313519524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parado_3
+      name: Stop_3
       rect:
         serializedVersion: 2
         x: 545
@@ -212,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cf3d325d686f0047920ad73bec2df81
-      internalID: 21300006
+      spriteID: c5a097ac163ac81a0800000000000000
+      internalID: -6805885296459576740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parado_4
+      name: Stop_4
       rect:
         serializedVersion: 2
         x: 708
@@ -233,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25f89f52a6a38c04482d0c8109b8bff1
-      internalID: 21300008
+      spriteID: 9da16c0862fbeec40800000000000000
+      internalID: 5543578363429788377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parado_5
+      name: Stop_5
       rect:
         serializedVersion: 2
         x: 871
@@ -254,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 052c1b5c05231ba4091fddaeb93db478
-      internalID: 21300010
+      spriteID: 8bda754964333e4f0800000000000000
+      internalID: -800739930512314952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parado_6
+      name: Stop_6
       rect:
         serializedVersion: 2
         x: 1033
@@ -275,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f8d8ac725dbd46458653bfc1764eb90
-      internalID: 21300012
+      spriteID: 508ebcfdc68ae18e0800000000000000
+      internalID: -1720752822044334075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parado_7
+      name: Stop_7
       rect:
         serializedVersion: 2
         x: 1196
@@ -296,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70e2192b62c6ec546b368a95547fd7d1
-      internalID: 21300014
+      spriteID: bc8923826eecf13f0800000000000000
+      internalID: -927795510302828341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parado_8
+      name: Stop_8
       rect:
         serializedVersion: 2
         x: 1359
@@ -317,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64d803d1678b6a342a481e2933cb6ed8
-      internalID: 21300016
+      spriteID: 460b0a4addf6ecf90800000000000000
+      internalID: -6931479778736164764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parado_9
+      name: Stop_9
       rect:
         serializedVersion: 2
         x: 1522
@@ -338,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7946ec0948f176742afec1c38e9597f2
-      internalID: 21300018
+      spriteID: 78b05c7b9350fbd70800000000000000
+      internalID: 9060966720747146119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parado_10
+      name: Stop_10
       rect:
         serializedVersion: 2
         x: 1685
@@ -359,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf99edfb1264de3479a19448ef71798a
-      internalID: 21300020
+      spriteID: 2a3488215dd08e660800000000000000
+      internalID: 7415191995255636898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parado_11
+      name: Stop_11
       rect:
         serializedVersion: 2
         x: 1847
@@ -380,8 +372,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29cb9bb31e885e349bf2e524fdd73cc5
-      internalID: 21300022
+      spriteID: 33d0d4e8055be5e80800000000000000
+      internalID: -8187907714923557581
       vertices: []
       indices: 
       edges: []
@@ -389,7 +381,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

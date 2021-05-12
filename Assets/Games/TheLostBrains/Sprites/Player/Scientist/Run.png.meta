@@ -1,61 +1,61 @@
 fileFormatVersion: 2
-guid: 328c6fc11362f6141b3188561455c34a
+guid: fd1c275c5c9e0d2419aed6b0b985b50d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: correndo_0
+      213: 4944230376442633554
+    second: Run_0
   - first:
-      213: 21300002
-    second: correndo_1
+      213: -2274363484027164459
+    second: Run_1
   - first:
-      213: 21300004
-    second: correndo_2
+      213: 8284087734974297348
+    second: Run_2
   - first:
-      213: 21300006
-    second: correndo_3
+      213: 5304202850863732263
+    second: Run_3
   - first:
-      213: 21300008
-    second: correndo_4
+      213: 2833043080597125133
+    second: Run_4
   - first:
-      213: 21300010
-    second: correndo_5
+      213: -2217414122262695004
+    second: Run_5
   - first:
-      213: 21300012
-    second: correndo_6
+      213: -4440497016933152808
+    second: Run_6
   - first:
-      213: 21300014
-    second: correndo_7
+      213: 8676454946275842879
+    second: Run_7
   - first:
-      213: 21300016
-    second: correndo_8
+      213: -6351944509545543589
+    second: Run_8
   - first:
-      213: 21300018
-    second: correndo_9
+      213: 2158891789428380870
+    second: Run_9
   - first:
-      213: 21300020
-    second: correndo_10
+      213: 9151066736925549315
+    second: Run_10
   - first:
-      213: 21300022
-    second: correndo_11
+      213: -7266845314124737194
+    second: Run_11
   - first:
-      213: 21300024
-    second: correndo_12
+      213: -5168576596277122810
+    second: Run_12
   - first:
-      213: 21300026
-    second: correndo_13
+      213: -7303085922518154401
+    second: Run_13
   - first:
-      213: 21300028
-    second: correndo_14
+      213: -3387832490922303652
+    second: Run_14
   - first:
-      213: 21300030
-    second: correndo_15
+      213: 2196459547150753776
+    second: Run_15
   - first:
-      213: 21300032
-    second: correndo_16
+      213: -2969576599511150121
+    second: Run_16
   - first:
-      213: 21300034
-    second: correndo_17
+      213: -1100304572229716114
+    second: Run_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -77,6 +77,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -108,10 +109,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -124,7 +128,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -136,30 +140,18 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: correndo_0
+      name: Run_0
       rect:
         serializedVersion: 2
         x: 122
-        y: 288
+        y: 289
         width: 132
-        height: 143
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa9aed72d23880643832c3c1f953fe44
-      internalID: 21300000
+      spriteID: 25d1f8be45f6d9440800000000000000
+      internalID: 4944230376442633554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_1
+      name: Run_1
       rect:
         serializedVersion: 2
         x: 293
@@ -188,14 +180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13564d7ebb616ce4c95cda65444a6f2e
-      internalID: 21300002
+      spriteID: 5d8e07c1676df60e0800000000000000
+      internalID: -2274363484027164459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_2
+      name: Run_2
       rect:
         serializedVersion: 2
         x: 463
@@ -209,14 +201,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8095436a18fae084691a3819d8786d4a
-      internalID: 21300004
+      spriteID: 405305b67edf6f270800000000000000
+      internalID: 8284087734974297348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_3
+      name: Run_3
       rect:
         serializedVersion: 2
         x: 633
@@ -230,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be5db6de9299486448860895c668a4a1
-      internalID: 21300006
+      spriteID: 726d856d3605c9940800000000000000
+      internalID: 5304202850863732263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_4
+      name: Run_4
       rect:
         serializedVersion: 2
         x: 803
@@ -251,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0129286da419114499e751eb252486b5
-      internalID: 21300008
+      spriteID: d08be54fbadf05720800000000000000
+      internalID: 2833043080597125133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_5
+      name: Run_5
       rect:
         serializedVersion: 2
         x: 972
@@ -272,14 +264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34742601946c92a4eb41e43602e6d445
-      internalID: 21300010
+      spriteID: 4a3f89aaa992a31e0800000000000000
+      internalID: -2217414122262695004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_6
+      name: Run_6
       rect:
         serializedVersion: 2
         x: 1142
@@ -293,14 +285,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84a02b5ad320a5d42af3dfa58a5b422e
-      internalID: 21300012
+      spriteID: 8d784876d7f2062c0800000000000000
+      internalID: -4440497016933152808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_7
+      name: Run_7
       rect:
         serializedVersion: 2
         x: 1315
@@ -314,14 +306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a6a3e0f0a1086746a375d36daaf6d50
-      internalID: 21300014
+      spriteID: f3bd376cdc5f86870800000000000000
+      internalID: 8676454946275842879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_8
+      name: Run_8
       rect:
         serializedVersion: 2
         x: 1516
@@ -335,14 +327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa313405dacbc8f4fb8d5fbcf19299a0
-      internalID: 21300016
+      spriteID: b588b836f1c59d7a0800000000000000
+      internalID: -6351944509545543589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_9
+      name: Run_9
       rect:
         serializedVersion: 2
         x: 1732
@@ -356,14 +348,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9e6bf692ce0d8a48b9d9173144044e6
-      internalID: 21300018
+      spriteID: 6c4d269e4ace5fd10800000000000000
+      internalID: 2158891789428380870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_10
+      name: Run_10
       rect:
         serializedVersion: 2
         x: 249
@@ -377,14 +369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaaee25879c624e48b54f3526fdb1c19
-      internalID: 21300020
+      spriteID: 303275a76be1ffe70800000000000000
+      internalID: 9151066736925549315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_11
+      name: Run_11
       rect:
         serializedVersion: 2
         x: 486
@@ -398,14 +390,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 122f3be911f20374cb76e05f2616bfc4
-      internalID: 21300022
+      spriteID: 65512ed20baf62b90800000000000000
+      internalID: -7266845314124737194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_12
+      name: Run_12
       rect:
         serializedVersion: 2
         x: 717
@@ -419,14 +411,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b910aae1d8272840b30e8c6b6f5d81f
-      internalID: 21300024
+      spriteID: 609218058f68548b0800000000000000
+      internalID: -5168576596277122810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_13
+      name: Run_13
       rect:
         serializedVersion: 2
         x: 932
@@ -440,14 +432,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f715d39ed2000a41bd54a2ff4967608
-      internalID: 21300026
+      spriteID: f5346200c0a36aa90800000000000000
+      internalID: -7303085922518154401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_14
+      name: Run_14
       rect:
         serializedVersion: 2
         x: 1129
@@ -461,14 +453,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d640b825c3d2874393cc11ce74ea6b4
-      internalID: 21300028
+      spriteID: c5f9c0c8c400cf0d0800000000000000
+      internalID: -3387832490922303652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_15
+      name: Run_15
       rect:
         serializedVersion: 2
         x: 1301
@@ -482,14 +474,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1dd0c60b71957342b305ede710a44d6
-      internalID: 21300030
+      spriteID: 0ff9f6f12546b7e10800000000000000
+      internalID: 2196459547150753776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_16
+      name: Run_16
       rect:
         serializedVersion: 2
         x: 1471
@@ -503,14 +495,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40746d6471800ed46a4a50bf284f71fc
-      internalID: 21300032
+      spriteID: 7d153d4f0d1f9c6d0800000000000000
+      internalID: -2969576599511150121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: correndo_17
+      name: Run_17
       rect:
         serializedVersion: 2
         x: 1640
@@ -524,8 +516,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bac57c408269c84fa74fb92a711e2d9
-      internalID: 21300034
+      spriteID: e67728b32deeab0f0800000000000000
+      internalID: -1100304572229716114
       vertices: []
       indices: 
       edges: []
@@ -533,7 +525,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

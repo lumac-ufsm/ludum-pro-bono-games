@@ -1,40 +1,40 @@
 fileFormatVersion: 2
-guid: 8f9fa79131580b042b46a6d8f2e5a83b
+guid: a16a9ce7bb9b8454d9ab5e6f90428bd9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: piscando_0
+      213: 5719645077506295280
+    second: StopAnimated_0
   - first:
-      213: 21300002
-    second: piscando_1
+      213: -2720541745808895016
+    second: StopAnimated_1
   - first:
-      213: 21300004
-    second: piscando_2
+      213: 701165531099740071
+    second: StopAnimated_2
   - first:
-      213: 21300006
-    second: piscando_3
+      213: -7483956585573317164
+    second: StopAnimated_3
   - first:
-      213: 21300008
-    second: piscando_4
+      213: 8219955556556947195
+    second: StopAnimated_4
   - first:
-      213: 21300010
-    second: piscando_5
+      213: 1559346792128632248
+    second: StopAnimated_5
   - first:
-      213: 21300012
-    second: piscando_6
+      213: -4774929421074285975
+    second: StopAnimated_6
   - first:
-      213: 21300014
-    second: piscando_7
+      213: -6356385715527350953
+    second: StopAnimated_7
   - first:
-      213: 21300016
-    second: piscando_8
+      213: 2081231055699709827
+    second: StopAnimated_8
   - first:
-      213: 21300018
-    second: piscando_9
+      213: 895192132989877299
+    second: StopAnimated_9
   - first:
-      213: 21300020
-    second: piscando_10
+      213: 7914717187168265544
+    second: StopAnimated_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -56,6 +56,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -87,10 +88,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -103,7 +107,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -115,24 +119,12 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: piscando_0
+      name: StopAnimated_0
       rect:
         serializedVersion: 2
         x: 88
@@ -146,14 +138,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aea75cf543c55b54ebd0a5550c40d015
-      internalID: 21300000
+      spriteID: 0f5031ed4e2406f40800000000000000
+      internalID: 5719645077506295280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piscando_1
+      name: StopAnimated_1
       rect:
         serializedVersion: 2
         x: 261
@@ -167,19 +159,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19b111133b1e4fc44a07267e894ec94f
-      internalID: 21300002
+      spriteID: 8d3907c32b1be3ad0800000000000000
+      internalID: -2720541745808895016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piscando_2
+      name: StopAnimated_2
       rect:
         serializedVersion: 2
-        x: 432
+        x: 434
         y: 53
-        width: 146
+        width: 144
         height: 147
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,14 +180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32eda0eacf535174483c313456da3034
-      internalID: 21300004
+      spriteID: 7a7b2f9e55a0bb900800000000000000
+      internalID: 701165531099740071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piscando_3
+      name: StopAnimated_3
       rect:
         serializedVersion: 2
         x: 607
@@ -209,14 +201,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06c87feafb4b2dd4dba74805ad0636d5
-      internalID: 21300006
+      spriteID: 4d5057a1325a32890800000000000000
+      internalID: -7483956585573317164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piscando_4
+      name: StopAnimated_4
       rect:
         serializedVersion: 2
         x: 779
@@ -230,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa356c300b8db23469189e55ae1522da
-      internalID: 21300008
+      spriteID: bfe331a0706231270800000000000000
+      internalID: 8219955556556947195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piscando_5
+      name: StopAnimated_5
       rect:
         serializedVersion: 2
         x: 952
@@ -251,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 175b6f89cddbad94dbbd7f705418086c
-      internalID: 21300010
+      spriteID: 8b5d87a45a9e3a510800000000000000
+      internalID: 1559346792128632248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piscando_6
+      name: StopAnimated_6
       rect:
         serializedVersion: 2
         x: 1125
@@ -272,19 +264,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fea9ac512b97e3c47ba3abdf1571e44a
-      internalID: 21300012
+      spriteID: 96a3e4d7dfa0cbdb0800000000000000
+      internalID: -4774929421074285975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piscando_7
+      name: StopAnimated_7
       rect:
         serializedVersion: 2
         x: 1298
         y: 53
-        width: 146
+        width: 143
         height: 147
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -293,14 +285,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e72859ce35b502458c159f653ad9a40
-      internalID: 21300014
+      spriteID: 75500aa8ed499c7a0800000000000000
+      internalID: -6356385715527350953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piscando_8
+      name: StopAnimated_8
       rect:
         serializedVersion: 2
         x: 1470
@@ -314,14 +306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98434baa0ed167d4d8cec266a73516ca
-      internalID: 21300016
+      spriteID: 38f0e7a4e9402ec10800000000000000
+      internalID: 2081231055699709827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piscando_9
+      name: StopAnimated_9
       rect:
         serializedVersion: 2
         x: 1643
@@ -335,14 +327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 648a83371cabc63499a5d1fb28ceb017
-      internalID: 21300018
+      spriteID: 33cf594808c5c6c00800000000000000
+      internalID: 895192132989877299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piscando_10
+      name: StopAnimated_10
       rect:
         serializedVersion: 2
         x: 1816
@@ -356,8 +348,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9865151b29ce66a47b489f0a70ea3813
-      internalID: 21300020
+      spriteID: 845e7d60959b6dd60800000000000000
+      internalID: 7914717187168265544
       vertices: []
       indices: 
       edges: []
@@ -365,7 +357,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
