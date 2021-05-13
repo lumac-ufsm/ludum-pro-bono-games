@@ -12,6 +12,7 @@ public class PressableButtonTheLostBrains : InteractiveMonoBehaviourTheLostBrain
 
 	public override void OnInteract(CharacterTheLostBrains character) {
 		animator.Play("Press");
+		animator.Play("Stop");
 		foreach (var controlledActivation in controlledActivations) {
 			controlledActivation.On();
 		}
