@@ -18,7 +18,7 @@ public class PlayerManagerTheLostBrains : MonoBehaviour {
         followCamera = Camera.main.GetComponent<Follow>();
     }
 
-    private GameObject GetSelectedCharacterGameObject() {
+    public GameObject GetSelectedCharacterGameObject() {
         foreach(GameObject characterGameObject in allCharactersGameObject) {
             PlayerTheLostBrains player = characterGameObject.GetComponent<PlayerTheLostBrains>();
             if (player.character == selectedCharacter) {

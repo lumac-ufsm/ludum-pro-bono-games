@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManagerTheLostBrains : MonoBehaviour {
 	private PlayerManagerTheLostBrains playerManager;
+	public List<InteractiveMonoBehaviourTheLostBrains> interactiveElements;
 
 	private void Start() {
 		playerManager = GetComponent<PlayerManagerTheLostBrains>();
@@ -12,6 +13,15 @@ public class GameManagerTheLostBrains : MonoBehaviour {
 	private void Update() {
 		if (Input.GetKeyDown(Keys.action4)) {
 			playerManager.toggleCharacter();
+		}
+		if (Input.GetKeyDown(Keys.action1)) {
+			Interact();
+		}
+	}
+
+	private void Interact() {
+		foreach (var interactiveElement in interactiveElements) {
+			interactiveElement.Interact(playerManager.selectedCharacter);
 		}
 	}
 
