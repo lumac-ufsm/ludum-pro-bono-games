@@ -56,6 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4793786832189550423}
   - component: {fileID: 4793786832189550422}
+  - component: {fileID: 7349537723803083103}
   m_Layer: 0
   m_Name: GameManagerTheLostBrains
   m_TagString: Untagged
@@ -99,6 +100,18 @@ MonoBehaviour:
   - {fileID: 6234887010671322210}
   selectedCharacter: 0
   allCharacters: 020000000000000001000000
+--- !u!114 &7349537723803083103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4793786832189550416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a35344255226864caac6324ca469bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4793786832397451841
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,15 +763,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10030b120ffcb7447a6b46cfbe2797df, type: 3}
---- !u!1 &6234887010671322210 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1441212398348231114, guid: 10030b120ffcb7447a6b46cfbe2797df,
-    type: 3}
-  m_PrefabInstance: {fileID: 4793786831771370920}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6236058452658823318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1444562183338894654, guid: 10030b120ffcb7447a6b46cfbe2797df,
+    type: 3}
+  m_PrefabInstance: {fileID: 4793786831771370920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6234887010671322210 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1441212398348231114, guid: 10030b120ffcb7447a6b46cfbe2797df,
     type: 3}
   m_PrefabInstance: {fileID: 4793786831771370920}
   m_PrefabAsset: {fileID: 0}
