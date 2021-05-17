@@ -18,13 +18,7 @@ public class PlayerManagerTheLostBrains : MonoBehaviour {
         followCamera = Camera.main.GetComponent<Follow>();
     }
 
-    void Update() {
-        if (Input.GetKeyDown(Keys.action1)) {
-            toggleCharacter();
-        }
-    }
-
-    private GameObject GetSelectedCharacterGameObject() {
+    public GameObject GetSelectedCharacterGameObject() {
         foreach(GameObject characterGameObject in allCharactersGameObject) {
             PlayerTheLostBrains player = characterGameObject.GetComponent<PlayerTheLostBrains>();
             if (player.character == selectedCharacter) {
@@ -34,7 +28,7 @@ public class PlayerManagerTheLostBrains : MonoBehaviour {
         return null;
     }
 
-    private void toggleCharacter() {
+    public void toggleCharacter() {
         int index = Array.IndexOf(allCharacters, selectedCharacter) + 1;
         if (index >= allCharacters.Length) index = 0;
         selectedCharacter = allCharacters[index];
