@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RunCommandsBomberdev : MonoBehaviour {
-    private Queue<(CommandBomberdev, GameObject)> commands;
+    private Queue<CommandBomberdev> commands;
     private CommandManagerBomberdev commandManager;
     private Func.Callback callbackEndCommand;
     private MovePlayerBomberdev movePlayer;
@@ -25,19 +25,18 @@ public class RunCommandsBomberdev : MonoBehaviour {
     }
 
     private void UpdateCommands() {
-        commands = new Queue<(CommandBomberdev, GameObject)>();
+        commands = new Queue<CommandBomberdev>();
         foreach(GameObject instructionGameObject in flowchartRun.instructions) {
             InstructionBomberdev instruction = instructionGameObject.GetComponent<InstructionBomberdev>();
-            commands.Enqueue((instruction.command, instructionGameObject));
+            commands.Enqueue(instruction.command);
         }
     }
 
     private void ExecuteNextCommand() {
-        var (command, gameObject) = commands.Dequeue();
-        if (commands.Count > 0) ExecuteCommand(command, gameObject);
+        if (commands.Count > 0) ExecuteCommand(commands.Dequeue());
     }
 
-    private void ExecuteCommand(CommandBomberdev command, GameObject instructionGameObject) {
+    private void ExecuteCommand(CommandBomberdev command) {
         switch(command) {
             case CommandBomberdev.UP:
                 commandManager.Up(movePlayer);
