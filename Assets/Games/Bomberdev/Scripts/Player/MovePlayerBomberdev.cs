@@ -71,6 +71,7 @@ public class MovePlayerBomberdev : MonoBehaviour {
 					playerRigidbody2D.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
 				}
 				Vector2 force = nextPosition - currentPosition;
+                force = force / force.magnitude;
 				force *= forceIntensity;
 				playerRigidbody2D.AddForce(force, ForceMode2D.Impulse);
 			}
