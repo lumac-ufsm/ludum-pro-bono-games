@@ -40,18 +40,20 @@ public class RunCommandsBomberdev : MonoBehaviour {
 	}
 
 	private void ExecuteCommand(CommandBomberdev command, GameObject instructionGameObject) {
+		int numberOfSteps = instructionGameObject.GetComponent<MoveInstructionBomberdev>()?.numberOfSteps ?? 1;
+
 		switch (command) {
 			case CommandBomberdev.UP:
-				commandManager.Up(movePlayer);
+				commandManager.Up(movePlayer, numberOfSteps);
 				break;
 			case CommandBomberdev.DOWN:
-				commandManager.Down(movePlayer);
+				commandManager.Down(movePlayer, numberOfSteps);
 				break;
 			case CommandBomberdev.LEFT:
-				commandManager.Left(movePlayer);
+				commandManager.Left(movePlayer, numberOfSteps);
 				break;
 			case CommandBomberdev.RIGHT:
-				commandManager.Right(movePlayer);
+				commandManager.Right(movePlayer, numberOfSteps);
 				break;
 			case CommandBomberdev.BOMB:
 				commandManager.Bomb(player.transform.position, bombPrefab);
