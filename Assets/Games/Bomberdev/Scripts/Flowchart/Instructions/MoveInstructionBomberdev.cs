@@ -5,18 +5,16 @@ using UnityEngine.UI;
 
 
 public class MoveInstructionBomberdev : MonoBehaviour {
-	[SerializeField] private int _numberOfSteps = 1;
 	[SerializeField] private Text txtOfSteps;
+	private int _numberOfSteps = 1;
 
 	public int numberOfSteps {
 		get { return _numberOfSteps; }
 	}
 
 	void Start() {
-		if (_numberOfSteps == 1) {
-			txtOfSteps.text = "";
-		} else {
-			txtOfSteps.text = _numberOfSteps.ToString();
+		if (txtOfSteps.text != "") {
+			this._numberOfSteps = int.Parse(txtOfSteps.text);
 		}
 	}
 }
