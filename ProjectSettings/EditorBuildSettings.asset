@@ -83,4 +83,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Games/Bomberdev/Scenes/Levels/6_BomberdevLevel.unity
     guid: aec691da4e277454583a29c7bd5b73e2
+  - enabled: 1
+    path: Assets/Games/Bomberdev/Scenes/Levels/3_BomberdevLevel.unity
+    guid: be8da072aa21a6548b9a64918af7d949
   m_configObjects: {}
