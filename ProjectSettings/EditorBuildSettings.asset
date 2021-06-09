@@ -74,4 +74,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Games/Pacmaze/Scenes/Levels/10_PacmazeLevel.unity
     guid: 1c72f1c0468a93644a2d173ba8f91ce1
+  - enabled: 1
+    path: Assets/Games/Bomberdev/Scenes/Levels/4_BomberdevLevel.unity
+    guid: 3afdacdc8cbb54447baf410d0e4a8629
+  - enabled: 1
+    path: Assets/Games/Bomberdev/Scenes/Levels/5_BomberdevLevel.unity
+    guid: 28dad6ada789daf4d9e92d49de99d409
+  - enabled: 1
+    path: Assets/Games/Bomberdev/Scenes/Levels/6_BomberdevLevel.unity
+    guid: aec691da4e277454583a29c7bd5b73e2
   m_configObjects: {}
