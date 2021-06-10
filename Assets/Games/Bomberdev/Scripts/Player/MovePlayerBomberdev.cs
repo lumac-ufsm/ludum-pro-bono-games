@@ -14,7 +14,33 @@ public class MovePlayerBomberdev : MonoBehaviour {
 	}
 
 	private void Update() {
-		Run();
+		if (translation != null) {
+			Direction direction = translation.direction;
+			Vector2 currentPosition = transform.position;
+			int numberOfSteps = translation.numberOfSteps;
+			Vector2 nextPosition = CalcNextPosition(oldPosition, direction, numberOfSteps);
+
+			bool endTranslate = currentPosition == nextPosition;
+
+			if (direction == Direction.RIGHT) endTranslate = currentPosition.x >= nextPosition.x;
+			else if (direction == Direction.LEFT) endTranslate = currentPosition.x <= nextPosition.x;
+			else if (direction == Direction.UP) endTranslate = currentPosition.y >= nextPosition.y;
+			else if (direction == Direction.DOWN) endTranslate = currentPosition.y <= nextPosition.y;
+
+			if (endTranslate) {
+				Stop();
+			} else {
+				if (direction == Direction.DOWN || direction == Direction.UP) {
+					playerRigidbody2D.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+				} else if (direction == Direction.LEFT || direction == Direction.RIGHT) {
+					playerRigidbody2D.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+				}
+				Vector2 force = nextPosition - currentPosition;
+				force = force / force.magnitude;
+				force *= forceIntensity;
+				playerRigidbody2D.AddForce(force, ForceMode2D.Impulse);
+			}
+		}
 	}
 
 	private void OnCollisionEnter2D(Collision2D other) {
@@ -46,36 +72,6 @@ public class MovePlayerBomberdev : MonoBehaviour {
 
 		Vector2 position = currentPosition + translate;
 		return position;
-	}
-
-	private void Run() {
-		if (translation != null) {
-			Direction direction = translation.direction;
-			Vector2 currentPosition = transform.position;
-			int numberOfSteps = translation.numberOfSteps;
-			Vector2 nextPosition = CalcNextPosition(oldPosition, direction, numberOfSteps);
-
-			bool endTranslate = currentPosition == nextPosition;
-
-			if (direction == Direction.RIGHT) endTranslate = currentPosition.x >= nextPosition.x;
-			else if (direction == Direction.LEFT) endTranslate = currentPosition.x <= nextPosition.x;
-			else if (direction == Direction.UP) endTranslate = currentPosition.y >= nextPosition.y;
-			else if (direction == Direction.DOWN) endTranslate = currentPosition.y <= nextPosition.y;
-
-			if (endTranslate) {
-				Stop();
-			} else {
-				if (direction == Direction.DOWN || direction == Direction.UP) {
-					playerRigidbody2D.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
-				} else if (direction == Direction.LEFT || direction == Direction.RIGHT) {
-					playerRigidbody2D.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-				}
-				Vector2 force = nextPosition - currentPosition;
-                force = force / force.magnitude;
-				force *= forceIntensity;
-				playerRigidbody2D.AddForce(force, ForceMode2D.Impulse);
-			}
-		}
 	}
 
 	private void Stop() {
