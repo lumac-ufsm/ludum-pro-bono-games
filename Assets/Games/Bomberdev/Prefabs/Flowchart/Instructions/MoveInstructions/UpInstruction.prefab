@@ -122,6 +122,16 @@ PrefabInstance:
       propertyPath: _command
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5475903406908977141, guid: a9dff9f9e4a19604aa6fd52afc694df3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 66.9591
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475903406908977141, guid: a9dff9f9e4a19604aa6fd52afc694df3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 41.5209
+      objectReference: {fileID: 0}
     - target: {fileID: 7251940286240968285, guid: a9dff9f9e4a19604aa6fd52afc694df3,
         type: 3}
       propertyPath: m_Sprite
