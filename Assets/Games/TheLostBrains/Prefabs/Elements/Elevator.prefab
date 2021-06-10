@@ -93,6 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f81943de8ca23fc4eae761b7f690be8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _topPointGameObject: {fileID: 5708856125569793647}
+  _bottomPointGameObject: {fileID: 1309772410791007930}
 --- !u!1 &5142292229336752846
 GameObject:
   m_ObjectHideFlags: 0
