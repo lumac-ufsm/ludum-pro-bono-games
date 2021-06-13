@@ -751,13 +751,19 @@ PrefabInstance:
     - target: {fileID: 312978064493291129, guid: 90165a91326b4c44095ca87a707ef070,
         type: 3}
       propertyPath: m_text
-      value: "Setas direcionais: movimenta o cursor\nBot\xE3o A: reinicia a fase\nBot\xE3o
-        D: reinicia a fase"
+      value: "Setas direcionais: movimenta o cursor pelas instru\xE7\xF5es\nBot\xE3o
+        A: Ativa ou desativa a aloca\xE7\xE3o da instru\xE7\xE3o selecionada\nBot\xE3o
+        D: Executa o fluxograma"
+      objectReference: {fileID: 0}
+    - target: {fileID: 312978064493291129, guid: 90165a91326b4c44095ca87a707ef070,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 312978064493291134, guid: 90165a91326b4c44095ca87a707ef070,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 8
+      value: 7.8
       objectReference: {fileID: 0}
     - target: {fileID: 312978065337927600, guid: 90165a91326b4c44095ca87a707ef070,
         type: 3}
@@ -818,6 +824,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5705180791737043169, guid: 90165a91326b4c44095ca87a707ef070,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 312978064493291128, guid: 90165a91326b4c44095ca87a707ef070, type: 3}
