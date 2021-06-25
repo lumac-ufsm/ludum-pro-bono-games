@@ -850,7 +850,7 @@ MonoBehaviour:
   gameSelectors: []
   velocity: 60
   direction: 0
-  widthGameSelector: 10
+  widthGameSelector: 20
   marginStop: 1
 --- !u!1001 &715590639
 PrefabInstance:
