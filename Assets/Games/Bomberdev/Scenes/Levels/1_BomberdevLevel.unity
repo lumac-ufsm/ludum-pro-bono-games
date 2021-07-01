@@ -1027,12 +1027,12 @@ PrefabInstance:
     - target: {fileID: 3373057474664649293, guid: 5d3bf0203f564184390655b89a562ee7,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 439.98
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 3373057474664649293, guid: 5d3bf0203f564184390655b89a562ee7,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 176.7
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3373057474664649293, guid: 5d3bf0203f564184390655b89a562ee7,
         type: 3}
@@ -1094,6 +1094,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4022974743184788634, guid: 5d3bf0203f564184390655b89a562ee7,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -35.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022974743184788634, guid: 5d3bf0203f564184390655b89a562ee7,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -73.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022974743184788634, guid: 5d3bf0203f564184390655b89a562ee7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 14.8
+      objectReference: {fileID: 0}
     - target: {fileID: 6438205197117401864, guid: 5d3bf0203f564184390655b89a562ee7,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1102,7 +1117,15 @@ PrefabInstance:
     - target: {fileID: 6438205197117401864, guid: 5d3bf0203f564184390655b89a562ee7,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -60
+      value: -64.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825954706003629506, guid: 5d3bf0203f564184390655b89a562ee7,
+        type: 3}
+      propertyPath: m_Text
+      value: "Comandos:\n- As setas direcionais movimentam o cursor pelas instru\xE7\xF5es\r\n-
+        A tecla \"A\" ativa ou desativa a aloca\xE7\xE3o da instru\xE7\xE3o selecionada\r\n-
+        A tecla \"D\" executa o fluxograma \rprincipal\n- Evite ou destrua os inimigos\n-
+        Chegue at\xE9 o portal para avan\xE7ar para a pr\xF3xima fase"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d3bf0203f564184390655b89a562ee7, type: 3}
