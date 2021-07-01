@@ -10,6 +10,8 @@ public class InstructionsBox : MonoBehaviour {
         gameObject.SetActive(true);
 
         continueButton.onClick.AddListener(CloseInstruction);
+
+        Time.timeScale = 0;
     }
 
     private void Update() {
@@ -20,5 +22,6 @@ public class InstructionsBox : MonoBehaviour {
 
     private void CloseInstruction() {
         gameObject.SetActive(false);
+        Time.timeScale = 1;
     }
 }
