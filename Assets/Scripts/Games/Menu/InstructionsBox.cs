@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Instructions : MonoBehaviour {
+public class InstructionsBox : MonoBehaviour {
     [SerializeField] private Button continueButton;
 
     private void Start() {
         gameObject.SetActive(true);
 
-        continueButton.onClick.AddListener(CloseInstruction)
+        continueButton.onClick.AddListener(CloseInstruction);
     }
 
     private void Update() {
