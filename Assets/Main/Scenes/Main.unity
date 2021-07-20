@@ -385,6 +385,7 @@ GameObject:
   - component: {fileID: 480196204}
   - component: {fileID: 480196203}
   - component: {fileID: 480196202}
+  - component: {fileID: 480196205}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -470,7 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.103946924, b: 1, a: 1}
+  m_Color: {r: 0.32941177, g: 0.32941177, b: 0.32941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -495,6 +496,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480196200}
   m_CullTransparentMesh: 1
+--- !u!114 &480196205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480196200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b695e432becdb045803087042bab1d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &545991028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2848300351933458469, guid: 8b9c878c47a7ac84c99846eae8a3100f,
@@ -2031,7 +2044,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -100, y: 0}
-  m_SizeDelta: {x: 60, y: 58}
+  m_SizeDelta: {x: 60, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1737735060
 MonoBehaviour:
