@@ -33,6 +33,6 @@ public class AvaliationGames : MonoBehaviour {
     private void OpenAvaliation() {
         gameObject.SetActive(false);
         Time.timeScale = 1;
-        Application.OpenURL("https://www.google.com/");
+        Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLSfPTezOEJSxiApqnPoUhZ_Z4-w6UfoSzqyN-kC4cBjhGSOrSw/viewform?usp=sf_link");
     }
 }
