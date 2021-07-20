@@ -8,7 +8,10 @@ public class GameManagerBomberdev : MonoBehaviour {
 	[SerializeField] private GameObject panelGameOver;
 	private RunCommandsBomberdev runCommandsBomberdev;
 	private PointsManagerBomberdev pointsManager;
-	private static int points = 0;
+	private static int _points = 0;
+	public static int points {
+		get { return _points; }
+	}
 
 	public static GameManagerBomberdev Get() {
 		return GameObject.Find("GameManagerBomberdev").GetComponent<GameManagerBomberdev>();
@@ -34,8 +37,8 @@ public class GameManagerBomberdev : MonoBehaviour {
 	}
 
 	public void NextLevel() {
-		int points = pointsManager.GetPoints();
-		print(points);
+		_points += pointsManager.GetPoints();
+		print(_points);
 		string name = SceneManager.GetActiveScene().name;
 		int level = int.Parse(name.Replace("_BomberdevLevel", ""));
 		SceneManager.LoadScene($"{level + 1}_BomberdevLevel");
