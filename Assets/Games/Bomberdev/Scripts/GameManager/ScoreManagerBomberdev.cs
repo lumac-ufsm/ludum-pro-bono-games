@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PointsManagerBomberdev : MonoBehaviour {
+public class ScoreManagerBomberdev : MonoBehaviour {
 	private RunCommandsBomberdev runCommandsBomberdev;
-	[SerializeField] private int nextLevelPoints = 0;
+	[SerializeField] private int nextLevelScore = 0;
 	[SerializeField] private int numberOfInstructionsSensibility = 0;
 	[SerializeField] private int timeCountSensibility = 0;
 
@@ -12,12 +12,12 @@ public class PointsManagerBomberdev : MonoBehaviour {
 		runCommandsBomberdev = GameManagerBomberdev.Get().GetComponent<RunCommandsBomberdev>();
 	}
 
-	public int GetPoints() {
+	public int GetScore() {
 		float numberOfInstructions = runCommandsBomberdev.flowchartRun.instructions.Count;
 		float timeCount = Mathf.RoundToInt(TimeCountBomberdev.timeCount);
 		float sn = numberOfInstructionsSensibility;
 		float st = timeCountSensibility;
-		float points = nextLevelPoints + (sn / numberOfInstructions) + (st / timeCount);
-		return Mathf.RoundToInt(points);
+		float score = nextLevelScore + (sn / numberOfInstructions) + (st / timeCount);
+		return Mathf.RoundToInt(score);
 	}
 }
