@@ -77,6 +77,11 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 6.9
       objectReference: {fileID: 0}
+    - target: {fileID: 766611192378243958, guid: 42078960cb124b64a9f00c678f92a579,
+        type: 3}
+      propertyPath: m_text
+      value: Comandos mostrados durante o jogo
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 766611191125274095, guid: 42078960cb124b64a9f00c678f92a579, type: 3}
     - {fileID: 766611191861101261, guid: 42078960cb124b64a9f00c678f92a579, type: 3}
