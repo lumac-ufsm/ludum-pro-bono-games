@@ -18,8 +18,6 @@ public class PointsManagerBomberdev : MonoBehaviour {
 		float timeCount = Mathf.RoundToInt(TimeCountBomberdev.timeCount);
 		float sn = numberOfInstructionsSensibility;
 		float st = timeCountSensibility;
-		sn = 0;
-		nextLevelPoints = 0;
 		float points = nextLevelPoints + (sn / numberOfInstructions) + (st / timeCount);
 		return Mathf.RoundToInt(points);
 	}
