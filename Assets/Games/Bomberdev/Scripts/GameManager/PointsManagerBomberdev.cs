@@ -10,7 +10,6 @@ public class PointsManagerBomberdev : MonoBehaviour {
 
 	private void Start() {
 		runCommandsBomberdev = GameManagerBomberdev.Get().GetComponent<RunCommandsBomberdev>();
-		print("teste");
 	}
 
 	public int GetPoints() {
