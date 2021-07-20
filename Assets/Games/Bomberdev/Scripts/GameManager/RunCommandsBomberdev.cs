@@ -8,7 +8,10 @@ public class RunCommandsBomberdev : MonoBehaviour {
 	private Func.Callback callbackEndCommand;
 	private MovePlayerBomberdev movePlayer;
 	[SerializeField] private GameObject bombPrefab;
-	[SerializeField] private FlowchartBomberdev flowchartRun;
+	[SerializeField] private FlowchartBomberdev _flowchartRun;
+	public FlowchartBomberdev flowchartRun {
+		get { return _flowchartRun; }
+	}
 	private GameObject player;
 
 	private void Start() {
@@ -26,7 +29,7 @@ public class RunCommandsBomberdev : MonoBehaviour {
 
 	private void UpdateCommands() {
 		commands = new Queue<(CommandBomberdev, GameObject)>();
-		foreach (GameObject instructionGameObject in flowchartRun.instructions) {
+		foreach (GameObject instructionGameObject in _flowchartRun.instructions) {
 			InstructionBomberdev instruction = instructionGameObject.GetComponent<InstructionBomberdev>();
 			commands.Enqueue((instruction.command, instructionGameObject));
 		}
