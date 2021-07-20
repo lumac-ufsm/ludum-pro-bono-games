@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 6929831032827782854}
   - component: {fileID: 4621000651517510263}
   - component: {fileID: 6249711384217826828}
-  - component: {fileID: 707195338893228047}
+  - component: {fileID: 3461655684857187693}
   m_Layer: 0
   m_Name: GameManagerBomberdev
   m_TagString: Untagged
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d5f667ad8f57a347a72583cb4870533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &707195338893228047
+--- !u!114 &3461655684857187693
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d70739be162a39a44985cdcdb40c1bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelPoints: 10
+  nextLevelScore: 10
   numberOfInstructionsSensibility: 100
   timeCountSensibility: 20
 --- !u!1001 &1725774780395851798
