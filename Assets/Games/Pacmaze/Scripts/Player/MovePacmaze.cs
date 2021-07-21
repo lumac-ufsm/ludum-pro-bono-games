@@ -7,6 +7,10 @@ public class MovePacmaze : MonoBehaviour {
     [SerializeField] private float speed = 60;
     private Vector2 direction;
     private Rigidbody2D rigidbodyPacmaze;
+    private static int _moveCount = 0;
+	public static int moveCount {
+		get { return _moveCount; }
+	}
 
     void Start() {
         rigidbodyPacmaze = GetComponent<Rigidbody2D>();
@@ -32,6 +36,7 @@ public class MovePacmaze : MonoBehaviour {
     private void Move(Vector2 direction) {
         if (rigidbodyPacmaze.velocity == Vector2.zero) {
             this.direction = direction;
+            _moveCount += 1;
         }
     }
 

@@ -12,11 +12,11 @@ public class ScoreManagerPacmaze : MonoBehaviour {
 		movePacmaze = GetComponent<MovePacmaze>();
 	}
     public int GetScore() {
-		//float numberOfInstructions = movePacmaze.GetMove();
+		float numberOfMovements = movePacmaze.moveCount;
 		float timeCount = Mathf.RoundToInt(TimeCountPacmaze.timeCount);
 		float sn = numberOfInstructionsSensibility;
 		float st = timeCountSensibility;
-		float score = nextLevelScore + (sn / numberOfInstructions) + (st / timeCount);
+		float score = nextLevelScore + (sn / numberOfMovements) + (st / timeCount);
 		return Mathf.RoundToInt(score);
 	}
 }
