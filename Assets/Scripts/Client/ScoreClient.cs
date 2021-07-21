@@ -4,11 +4,11 @@ using UnityEngine;
 
 
 public class ScoreClient {
-	public static IEnumerator GetScores(System.Action<Score[]> callback) {
-		UnityWebRequest request = UnityWebRequest.Get($"{Api.address}/ranking/1");
+	public static IEnumerator GetScores(int gameId, System.Action<Score[]> callback) {
+		UnityWebRequest request = UnityWebRequest.Get($"{Api.address}/ranking/{gameId}");
 		yield return request.SendWebRequest();
 		string json = request.downloadHandler.text;
-		Score[] scores = JsonUtility.FromJson<Score[]>(json);
+		Score[] scores = JsonHelper.FromJsonArray<Score>(json);
 		callback(scores);
 	}
 
