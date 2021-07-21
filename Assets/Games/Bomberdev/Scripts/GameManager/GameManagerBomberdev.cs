@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManagerBomberdev : MonoBehaviour {
 	[SerializeField] private PanelFlowchartBomberdev panelFlowchart;
 	[SerializeField] private GameObject panelGameOver;
+	[SerializeField] private Text scoreText;
 	private RunCommandsBomberdev runCommandsBomberdev;
 	private ScoreManagerBomberdev scoreManager;
 	private static int _score = 0;
@@ -50,6 +51,7 @@ public class GameManagerBomberdev : MonoBehaviour {
 	}
 
 	public void GameOver(string deathCause) {
+		scoreText.text = $"Pontuação: {_score}";
 		Time.timeScale = 0;
 		panelGameOver.SetActive(true);
 		print($"Game Over\nCausa da morte: {deathCause}");
