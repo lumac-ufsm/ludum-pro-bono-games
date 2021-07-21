@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 public class ScoreClient {
-	public static IEnumerator GetScores(int gameId, System.Action<Score[]> callback) {
+	public static IEnumerator GetTopScores(int gameId, System.Action<Score[]> callback) {
 		UnityWebRequest request = UnityWebRequest.Get($"{Api.address}/ranking/{gameId}");
 		yield return request.SendWebRequest();
 		string json = request.downloadHandler.text;
