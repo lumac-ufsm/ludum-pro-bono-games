@@ -164,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelFlowchart: {fileID: 2111631610708852008}
   panelGameOver: {fileID: 6998953843626707453}
+  scoreText: {fileID: 1382176968263455858}
 --- !u!114 &4621000651517510263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,6 +641,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2655636521219892721}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1382176968263455858 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4032074038448517507, guid: 765a8574885930544987b46ea5863c53,
+    type: 3}
+  m_PrefabInstance: {fileID: 2655636521219892721}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7843093657063293423
 PrefabInstance:
   m_ObjectHideFlags: 0

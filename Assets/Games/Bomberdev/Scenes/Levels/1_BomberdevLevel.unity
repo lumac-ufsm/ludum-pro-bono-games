@@ -561,6 +561,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManagerBomberdev
       objectReference: {fileID: 0}
+    - target: {fileID: 6929831032827782854, guid: 4ed58cde200984e40b88142abda6641f,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 711148564}
     - target: {fileID: 6929831032827782855, guid: 4ed58cde200984e40b88142abda6641f,
         type: 3}
       propertyPath: m_RootOrder
@@ -649,6 +654,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 711148562}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &711148564 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1382176968263455858, guid: 4ed58cde200984e40b88142abda6641f,
+    type: 3}
+  m_PrefabInstance: {fileID: 711148562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &963276367
 PrefabInstance:
   m_ObjectHideFlags: 0
