@@ -35,7 +35,7 @@ public class SelectGame : MonoBehaviour {
         boxCollider2D = gameObject.GetComponent<BoxCollider2D>();
         StartingPositionGameSelectors();
     }
-    
+
     private GameObject[] GetGameSelectors() {
         List<GameObject> gameSelectorList = new List<GameObject>();
         for (int n = 0; n < transform.childCount; n++) {

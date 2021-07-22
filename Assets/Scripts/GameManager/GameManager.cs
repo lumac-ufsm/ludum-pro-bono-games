@@ -6,6 +6,10 @@ public class GameManager : MonoBehaviour {
 	private static GameManager instance = null;
 	public static string currentGame;
 
+	public static GameManager Get() {
+		return GameObject.Find("GameManager").GetComponent<GameManager>();
+	}
+
 	private void Start() {
 		StartRestart();
 	}
