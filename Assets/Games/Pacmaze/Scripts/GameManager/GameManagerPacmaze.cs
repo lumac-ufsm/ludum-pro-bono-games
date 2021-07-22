@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManagerPacmaze : MonoBehaviour {
 	[SerializeField] private Canvas canvas;
 	[SerializeField] private GameOverMenu gameOverMenu;
+	[SerializeField] private Text scoreText;
 	private ScoreManagerPacmaze scoreManager;
 	private static int _score = 0;
 	public static int score {
@@ -21,12 +23,12 @@ public class GameManagerPacmaze : MonoBehaviour {
 	}
 
 	private void GameOver() {
-		// scoreText.text = $"Pontuação: {_score}";
+		scoreText.text = $"Pontuação: {_score}";
 		gameOverMenu.GameOver();
 	}
 
 	public void OnFinishLevel() {
-		int _score = +scoreManager.GetScore();
+		_score += scoreManager.GetScore();
 		print(_score);
 		string name = SceneManager.GetActiveScene().name;
 		int level = int.Parse(name.Replace("_PacmazeLevel", ""));
