@@ -13,10 +13,11 @@ public class ScoreRegister : MonoBehaviour {
 
 	private void OnClickRegister() {
 		GameName currentGameName = GameManager.currentGameName;
+		int score = ScoreRegisterManager.score;
 		string registrationNumber = registrationNumberInput.text;
 		NewScore newScore = new NewScore(
 			gameId: (int)currentGameName,
-			score: 2000,
+			score: score,
 			registrationNumber: registrationNumber,
 			institutionName: "UFSM"
 		);

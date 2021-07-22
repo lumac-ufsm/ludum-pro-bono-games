@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour {
 		return GameObject.Find("GameManager").GetComponent<GameManager>();
 	}
 
+	public static ScoreRegisterManager GetScoreRegisterManager() {
+		return GameManager.Get().GetComponent<ScoreRegisterManager>();
+	}
+
 	private void Start() {
 		StartRestart();
 	}
