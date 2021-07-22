@@ -7,13 +7,14 @@ public class MoveElevatorCabinTheLostBrains : MonoBehaviour {
 	[SerializeField] private float modSpeed = 0;
 	[SerializeField] private float breakTime = 0;
 	[SerializeField] private ElevatorStateTheLostBrains state;
-	private float timeCount = 0;
+	private bool allowToggleDirectionOnColideBottom = true;
+	private float breakTimeCount = 0;
 	private bool isStopped = true;
 
 	void Update() {
 		if (elevator.isActive) {
-			if (timeCount > 0) {
-				timeCount -= Time.deltaTime;
+			if (breakTimeCount > 0) {
+				breakTimeCount -= Time.deltaTime;
 				isStopped = true;
 			} else {
 				isStopped = false;
@@ -37,11 +38,19 @@ public class MoveElevatorCabinTheLostBrains : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D other) {
 		ElevatorStateTheLostBrains oldState = state;
 		if (other.gameObject.name == "TopPoint") {
+			allowToggleDirectionOnColideBottom = false;
 			state = ElevatorStateTheLostBrains.DOWN;
-			if (oldState != state) timeCount = breakTime;
+			if (oldState != state) breakTimeCount = breakTime;
 		} else if (other.gameObject.name == "BottomPoint") {
+			allowToggleDirectionOnColideBottom = false;
 			state = ElevatorStateTheLostBrains.UP;
-			if (oldState != state) timeCount = breakTime;
+			if (oldState != state) breakTimeCount = breakTime;
+		}
+	}
+
+	private void OnTriggerExit2D(Collider2D other) {
+		if (other.gameObject.name == "TopPoint" || other.gameObject.name == "BottomPoint") {
+			allowToggleDirectionOnColideBottom = true;
 		}
 	}
 
@@ -49,6 +58,8 @@ public class MoveElevatorCabinTheLostBrains : MonoBehaviour {
 	}
 
 	public void OnColliderEnterBottom() {
-		state = ElevatorStateTheLostBrains.UP;
+		if (allowToggleDirectionOnColideBottom) {
+			state = ElevatorStateTheLostBrains.UP;
+		}
 	}
 }

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 766611191008287420}
+  - component: {fileID: 2714532854800034206}
   m_Layer: 0
   m_Name: GameSelector
   m_TagString: Untagged
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2714532854800034206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766611191008287423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a10a5bf1f2bb2449b5d89691b280a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameName: 0
 --- !u!1 &766611191023254752
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,7 +57,6 @@ GameObject:
   m_Component:
   - component: {fileID: 766611191023254753}
   - component: {fileID: 766611191023254756}
-  - component: {fileID: 766611191023254759}
   - component: {fileID: 766611191023254758}
   m_Layer: 0
   m_Name: Title
@@ -86,10 +99,11 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2016476434795893640, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
+  - {fileID: -8075715969138124531, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,14 +124,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!222 &766611191023254759
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766611191023254752}
-  m_CullTransparentMesh: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &766611191023254758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +140,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -140,7 +148,7 @@ MonoBehaviour:
   m_text: Comandos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
-  m_sharedMaterial: {fileID: -2016476434795893640, guid: 477a132a923bdb648933a669e8fe9baf,
+  m_sharedMaterial: {fileID: -8075715969138124531, guid: 477a132a923bdb648933a669e8fe9baf,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -219,7 +227,6 @@ GameObject:
   m_Component:
   - component: {fileID: 766611191125274089}
   - component: {fileID: 766611191125274092}
-  - component: {fileID: 766611191125274095}
   - component: {fileID: 766611191125274094}
   m_Layer: 0
   m_Name: GameNameText
@@ -262,10 +269,11 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2016476434795893640, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
+  - {fileID: -8075715969138124531, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -286,14 +294,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!222 &766611191125274095
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766611191125274088}
-  m_CullTransparentMesh: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &766611191125274094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,6 +310,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -316,7 +318,7 @@ MonoBehaviour:
   m_text: Nome do jogo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
-  m_sharedMaterial: {fileID: -2016476434795893640, guid: 477a132a923bdb648933a669e8fe9baf,
+  m_sharedMaterial: {fileID: -8075715969138124531, guid: 477a132a923bdb648933a669e8fe9baf,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -395,7 +397,6 @@ GameObject:
   m_Component:
   - component: {fileID: 766611191861101263}
   - component: {fileID: 766611191861101250}
-  - component: {fileID: 766611191861101261}
   - component: {fileID: 766611191861101260}
   m_Layer: 0
   m_Name: Title
@@ -438,10 +439,11 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2016476434795893640, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
+  - {fileID: -8075715969138124531, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -462,14 +464,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!222 &766611191861101261
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766611191861101262}
-  m_CullTransparentMesh: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &766611191861101260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,6 +480,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -492,7 +488,7 @@ MonoBehaviour:
   m_text: Ranking
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
-  m_sharedMaterial: {fileID: -2016476434795893640, guid: 477a132a923bdb648933a669e8fe9baf,
+  m_sharedMaterial: {fileID: -8075715969138124531, guid: 477a132a923bdb648933a669e8fe9baf,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -585,7 +581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766611192113094579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0.61, z: 0}
+  m_LocalPosition: {x: -4, y: 0.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 766611191023254753}
@@ -603,7 +599,6 @@ GameObject:
   m_Component:
   - component: {fileID: 766611192241203151}
   - component: {fileID: 766611192241203138}
-  - component: {fileID: 766611192241203149}
   - component: {fileID: 766611192241203148}
   m_Layer: 0
   m_Name: Description
@@ -629,7 +624,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -3.072}
-  m_SizeDelta: {x: 3.8687034, y: 5.1033897}
+  m_SizeDelta: {x: 8, y: 5.1034}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &766611192241203138
 MeshRenderer:
@@ -646,10 +641,11 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2016476434795893640, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
+  - {fileID: -8075715969138124531, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -670,14 +666,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!222 &766611192241203149
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766611192241203150}
-  m_CullTransparentMesh: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &766611192241203148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,57 +682,15 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA
-    1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA
-    1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA
-    1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA
-    1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA
-    1 123456'
+  m_text: Carregando ranking...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
-  m_sharedMaterial: {fileID: -2016476434795893640, guid: 477a132a923bdb648933a669e8fe9baf,
+  m_sharedMaterial: {fileID: -8075715969138124531, guid: 477a132a923bdb648933a669e8fe9baf,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -822,7 +769,6 @@ GameObject:
   m_Component:
   - component: {fileID: 766611192378243953}
   - component: {fileID: 766611192378243956}
-  - component: {fileID: 766611192378243959}
   - component: {fileID: 766611192378243958}
   m_Layer: 0
   m_Name: Description
@@ -848,7 +794,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -1.587}
-  m_SizeDelta: {x: 3.8687034, y: 2.132454}
+  m_SizeDelta: {x: 8, y: 2.1325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &766611192378243956
 MeshRenderer:
@@ -865,10 +811,11 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2016476434795893640, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
+  - {fileID: -8075715969138124531, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -889,14 +836,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!222 &766611192378243959
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766611192378243952}
-  m_CullTransparentMesh: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &766611192378243958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,6 +852,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -919,7 +860,7 @@ MonoBehaviour:
   m_text: Lista de comandos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
-  m_sharedMaterial: {fileID: -2016476434795893640, guid: 477a132a923bdb648933a669e8fe9baf,
+  m_sharedMaterial: {fileID: -8075715969138124531, guid: 477a132a923bdb648933a669e8fe9baf,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -997,6 +938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 766611192439914127}
+  - component: {fileID: 3552958541150774037}
   m_Layer: 0
   m_Name: Ranking
   m_TagString: Untagged
@@ -1012,7 +954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766611192439914126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 0.61, z: 0}
+  m_LocalPosition: {x: 4, y: 0.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 766611191861101263}
@@ -1020,3 +962,17 @@ Transform:
   m_Father: {fileID: 766611191008287420}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3552958541150774037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766611192439914126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14324d40cafa2944f957f204f74bdc1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSelectorManager: {fileID: 2714532854800034206}
+  rankingTextMeshPro: {fileID: 766611192241203148}
