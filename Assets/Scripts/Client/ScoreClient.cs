@@ -1,10 +1,11 @@
 using UnityEngine.Networking;
 using System.Collections;
 using UnityEngine;
+using System;
 
 
 public class ScoreClient {
-	public static IEnumerator GetTopScores(int gameId, System.Action<Score[]> callback) {
+	public static IEnumerator GetTopScores(int gameId, Action<Score[]> callback) {
 		UnityWebRequest request = UnityWebRequest.Get($"{Api.address}/ranking/{gameId}");
 		yield return request.SendWebRequest();
 		string json = request.downloadHandler.text;
@@ -12,7 +13,7 @@ public class ScoreClient {
 		callback(scores);
 	}
 
-	public static IEnumerator AddScore(NewScore newScore) {
+	public static IEnumerator AddScore(NewScore newScore, Action<bool> callback) {
 		string json = JsonUtility.ToJson(newScore);
 		string url = $"{Api.address}/scores";
 		UnityWebRequest request = new UnityWebRequest(url, "POST");
@@ -23,8 +24,10 @@ public class ScoreClient {
 		yield return request.SendWebRequest();
 		if (request.result == UnityWebRequest.Result.Success) {
 			Debug.Log(request.downloadHandler.text);
+			callback(true);
 		} else {
 			Debug.Log(request.error);
+			callback(false);
 		}
 	}
 }

@@ -8,9 +8,22 @@ public class ScoreRegister : MonoBehaviour {
 	[SerializeField] private Button registerButton;
 
 	private void Start() {
-		registerButton.onClick.AddListener(() => {
-			string registrationNumber = registrationNumberInput.text;
-			print(registrationNumber);
-		});
+		registerButton.onClick.AddListener(OnClickRegister);
+	}
+
+	private void OnClickRegister() {
+		GameName currentGameName = GameManager.currentGameName;
+		string registrationNumber = registrationNumberInput.text;
+		NewScore newScore = new NewScore(
+			gameId: (int)currentGameName,
+			score: 2000,
+			registrationNumber: registrationNumber,
+			institutionName: "UFSM"
+		);
+		StartCoroutine(ScoreClient.AddScore(newScore, isSuccessful => {
+			if (isSuccessful) {
+				Destroy(gameObject);
+			}
+		}));
 	}
 }

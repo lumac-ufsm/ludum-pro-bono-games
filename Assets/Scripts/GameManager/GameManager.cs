@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameManager : MonoBehaviour {
 	private static GameManager instance = null;
 	public static string currentGame;
+	public static GameName currentGameName {
+		get { return (GameName)Enum.Parse(typeof(GameName), GameManager.currentGame); }
+	}
 
 	public static GameManager Get() {
 		return GameObject.Find("GameManager").GetComponent<GameManager>();
