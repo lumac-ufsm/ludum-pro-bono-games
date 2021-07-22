@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScoreManagerPacmaze : MonoBehaviour {
-    private MovePacmaze movePacmaze;
-    [SerializeField] private int nextLevelScore = 0;
+	public int moveCount;
+	[SerializeField] private int nextLevelScore = 0;
 	[SerializeField] private int numberOfInstructionsSensibility = 0;
 	[SerializeField] private int timeCountSensibility = 0;
 
-    private void Start() {
-		movePacmaze = GetComponent<MovePacmaze>();
+	private void Start() {
 	}
-    public int GetScore() {
-		float numberOfMovements = movePacmaze.moveCount;
+
+	public int GetScore() {
+		float numberOfMovements = moveCount;
 		float timeCount = Mathf.RoundToInt(TimeCountPacmaze.timeCount);
 		float sn = numberOfInstructionsSensibility;
 		float st = timeCountSensibility;
