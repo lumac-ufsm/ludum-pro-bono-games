@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 766611191008287420}
+  - component: {fileID: 2714532854800034206}
   m_Layer: 0
   m_Name: GameSelector
   m_TagString: Untagged
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2714532854800034206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766611191008287423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a10a5bf1f2bb2449b5d89691b280a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameName: 0
 --- !u!1 &766611191023254752
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,50 +687,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA
-    1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA
-    1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA
-    1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA
-    1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA 1 123456
-
-    PESSOA
-    1 123456'
+  m_text: Carregando ranking...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 477a132a923bdb648933a669e8fe9baf, type: 2}
   m_sharedMaterial: {fileID: -8075715969138124531, guid: 477a132a923bdb648933a669e8fe9baf,
@@ -967,6 +938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 766611192439914127}
+  - component: {fileID: 3552958541150774037}
   m_Layer: 0
   m_Name: Ranking
   m_TagString: Untagged
@@ -990,3 +962,17 @@ Transform:
   m_Father: {fileID: 766611191008287420}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3552958541150774037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766611192439914126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14324d40cafa2944f957f204f74bdc1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSelectorManager: {fileID: 2714532854800034206}
+  rankingTextMeshPro: {fileID: 766611192241203148}
