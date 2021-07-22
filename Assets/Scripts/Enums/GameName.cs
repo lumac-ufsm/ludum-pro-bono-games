@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum GameName {
-    Bomberdev,
-    SnakeMath,
-    Pacmaze,
+    SnakeMath = 1,
+    Pacmaze = 2,
+    Bomberdev = 3,
+    TheLostBrains = 4,
 }
