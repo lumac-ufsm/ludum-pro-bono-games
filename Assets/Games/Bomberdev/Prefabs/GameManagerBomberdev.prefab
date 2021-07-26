@@ -205,8 +205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevelScore: 10
-  numberOfInstructionsSensibility: 100
-  timeCountSensibility: 20
+  numberOfInstructionsSensibility: 50
+  timeCountSensibility: 200
 --- !u!1001 &1725774780395851798
 PrefabInstance:
   m_ObjectHideFlags: 0
