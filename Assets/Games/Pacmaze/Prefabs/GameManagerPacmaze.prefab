@@ -63,8 +63,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveCount: 0
   nextLevelScore: 10
-  numberOfMoveSensibility: 10
-  timeCountSensibility: 20
+  numberOfMoveSensibility: 200
+  timeCountSensibility: 100
 --- !u!114 &1494718539938308027
 MonoBehaviour:
   m_ObjectHideFlags: 0

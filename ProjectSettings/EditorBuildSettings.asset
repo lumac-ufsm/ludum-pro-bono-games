@@ -54,7 +54,7 @@ EditorBuildSettings:
     path: Assets/Games/Pacmaze/Scenes/Levels/8_PacmazeLevel.unity
     guid: 82c220ce51ce4064ebe540fa801cf379
   - enabled: 1
-    path: Assets/Games/Pacmaze/Scenes/Levels/9_PacmazeLevel.unity
+    path: Assets/Games/Pacmaze/Scenes/Levels/X1_PacmazeLevel.unity
     guid: f0ceedfde65784146a8b6f223991ddf6
   - enabled: 1
     path: Assets/Games/Pacmaze/Scenes/Levels/6_PacmazeLevel.unity
@@ -72,7 +72,7 @@ EditorBuildSettings:
     path: Assets/Games/Pacmaze/Scenes/Levels/7_PacmazeLevel.unity
     guid: 091409e6440a61f40aa564c458e74ec7
   - enabled: 1
-    path: Assets/Games/Pacmaze/Scenes/Levels/10_PacmazeLevel.unity
+    path: Assets/Games/Pacmaze/Scenes/Levels/X2_PacmazeLevel.unity
     guid: 1c72f1c0468a93644a2d173ba8f91ce1
   - enabled: 1
     path: Assets/Games/Bomberdev/Scenes/Levels/4_BomberdevLevel.unity
