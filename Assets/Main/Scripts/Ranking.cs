@@ -21,7 +21,7 @@ public class Ranking : MonoBehaviour {
 				string rankingText = "";
 				foreach (Score score in scores) {
 					int scoreNumber = score.score;
-					if (score.user != null) {
+					if (score.user.id != 0) {
 						string userName = score.user.name;
 						string institutionName = score.user.institution.name;
 						rankingText += $"{institutionName} {userName} {scoreNumber}\n";
