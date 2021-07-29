@@ -20,10 +20,14 @@ public class Ranking : MonoBehaviour {
 			} else {
 				string rankingText = "";
 				foreach (Score score in scores) {
-					string name = score.user.name;
 					int scoreNumber = score.score;
-					string institutionName = score.user.institution.name;
-					rankingText += $"{institutionName} {name} {scoreNumber}\n";
+					if (score.user != null) {
+						string userName = score.user.name;
+						string institutionName = score.user.institution.name;
+						rankingText += $"{institutionName} {userName} {scoreNumber}\n";
+					} else {
+						rankingText += $"{score.playerName} {scoreNumber}\n";
+					}
 				}
 				rankingTextMeshPro.text = rankingText;
 			}
