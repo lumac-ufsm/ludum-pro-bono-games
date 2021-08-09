@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1856625931351249006}
   - component: {fileID: 6815472273465173362}
+  - component: {fileID: 5549792561258522652}
+  - component: {fileID: 1494718539938308027}
   m_Layer: 0
   m_Name: GameManagerPacmaze
   m_TagString: Untagged
@@ -46,6 +48,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 519625063347769691}
   gameOverMenu: {fileID: 60819110819729400}
+  scoreText: {fileID: 1456032810200866413}
+--- !u!114 &5549792561258522652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653886443438619346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f600039b83c3a9a478eaaf0bbf782eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveCount: 0
+  nextLevelScore: 10
+  numberOfMoveSensibility: 200
+  timeCountSensibility: 100
+--- !u!114 &1494718539938308027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653886443438619346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ccb5fc11673d44caa6209feb721a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6532297921695247034
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +160,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5910620337075916787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,6 +313,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63ad3a79a25029e4fbcb315d527f8dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1456032810200866413 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 888321433717733242, guid: 046d43514b9eab74c8ef19b43b5e1eb6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1758424221488933143}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &5609890723209155502
