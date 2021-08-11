@@ -56,5 +56,6 @@ public class GameManagerBomberdev : MonoBehaviour {
 		Time.timeScale = 0;
 		panelGameOver.SetActive(true);
 		print($"Game Over\nCausa da morte: {deathCause}");
+		GameManager.GetScoreRegisterManager().OpenScoreRegisterPanel(_score);
 	}
 }
