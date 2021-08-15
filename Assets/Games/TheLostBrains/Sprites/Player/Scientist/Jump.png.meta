@@ -100,9 +100,9 @@ TextureImporter:
       name: Jump_0
       rect:
         serializedVersion: 2
-        x: 74
+        x: 64
         y: 51
-        width: 151
+        width: 167
         height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -121,9 +121,9 @@ TextureImporter:
       name: Jump_1
       rect:
         serializedVersion: 2
-        x: 304
+        x: 295
         y: 51
-        width: 134
+        width: 152
         height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
