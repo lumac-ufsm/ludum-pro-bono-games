@@ -22,7 +22,7 @@ public class GameManagerPacmaze : MonoBehaviour {
 		scoreManager = GetComponent<ScoreManagerPacmaze>();
 	}
 
-	private void GameOver() {
+	private void GameOverMenu() {
 		scoreText.text = $"Pontuação: {_score}";
 		gameOverMenu.GameOver();
 		scoreManager.RegisterScore();
@@ -37,7 +37,7 @@ public class GameManagerPacmaze : MonoBehaviour {
 		if (Application.CanStreamedLevelBeLoaded(nextSceneName)) {
 			SceneManager.LoadScene(nextSceneName);
 		} else {
-			GameOver();
+			GameOverPacmaze.GameOver(_score);
 		}
 	}
 }
