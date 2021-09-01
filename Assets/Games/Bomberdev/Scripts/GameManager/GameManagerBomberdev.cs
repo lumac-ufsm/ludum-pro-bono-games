@@ -38,12 +38,17 @@ public class GameManagerBomberdev : MonoBehaviour {
 		if (Input.GetKeyDown(Keys.action4)) runCommandsBomberdev.StartCommands();
 	}
 
-	public void NextLevel() {
+	public void OnFinishLevel() {
 		_score += scoreManager.GetScore();
 		print(_score);
 		string name = SceneManager.GetActiveScene().name;
 		int level = int.Parse(name.Replace("_BomberdevLevel", ""));
-		SceneManager.LoadScene($"{level + 1}_BomberdevLevel");
+		string nextSceneName = $"{level + 1}_BomberdevLevel";
+		if (Application.CanStreamedLevelBeLoaded(nextSceneName)) {
+			SceneManager.LoadScene(nextSceneName);
+		} else {
+			GameOverBomberdev.GameOver(_score);
+		}
 	}
 
 	public void RestartLevel() {
