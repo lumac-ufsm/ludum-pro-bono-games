@@ -25,6 +25,7 @@ public class GameManagerPacmaze : MonoBehaviour {
 	private void GameOver() {
 		scoreText.text = $"Pontuação: {_score}";
 		gameOverMenu.GameOver();
+		scoreManager.RegisterScore();
 	}
 
 	public void OnFinishLevel() {

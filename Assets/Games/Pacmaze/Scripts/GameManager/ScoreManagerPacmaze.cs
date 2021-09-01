@@ -19,4 +19,9 @@ public class ScoreManagerPacmaze : MonoBehaviour {
 		float score = nextLevelScore + (sn / numberOfMovements) + (st / timeCount);
 		return Mathf.RoundToInt(score);
 	}
+
+	public void RegisterScore() {
+		int score = GetScore();
+		GameManager.GetScoreRegisterManager().OpenScoreRegisterPanel(score);
+	}
 }
