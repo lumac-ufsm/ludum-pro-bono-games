@@ -30,7 +30,7 @@
     Desenvolvimento e aplicação de jogos sérios relacionados a disciplinas do núcleo básico de graduações em engenharias
     <br />
     <br />
-    <a href="https://ludum-pro-bono.github.io/ludum-pro-bono-frontend/menu/index.html">Acessar aplicação WEB</a>
+    <a href="https://lumac-ufsm.github.io/ludum-pro-bono-frontend/menu/index.html">Acessar aplicação WEB</a>
     ·
     <a href="https://github.com/ludum-pro-bono/ludum-pro-bono-games/issues">Reportar Bug</a>
     ·
