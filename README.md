@@ -1,13 +1,13 @@
-[contributors-shield]: https://img.shields.io/github/contributors/ludum-pro-bono/ludum-pro-bono-games.svg?style=for-the-badge
-[contributors-url]: https://github.com/ludum-pro-bono/ludum-pro-bono-games/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ludum-pro-bono/ludum-pro-bono-games.svg?style=for-the-badge
-[forks-url]: https://github.com/ludum-pro-bono/ludum-pro-bono-games/network/members
-[stars-shield]: https://img.shields.io/github/stars/ludum-pro-bono/ludum-pro-bono-games.svg?style=for-the-badge
-[stars-url]: https://github.com/ludum-pro-bono/ludum-pro-bono-games/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ludum-pro-bono/ludum-pro-bono-games.svg?style=for-the-badge
-[issues-url]: https://github.com/ludum-pro-bono/ludum-pro-bono-games/issues
-[license-shield]: https://img.shields.io/github/license/ludum-pro-bono/ludum-pro-bono-games.svg?style=for-the-badge
-[license-url]: https://github.com/ludum-pro-bono/ludum-pro-bono-games/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/lumac-ufsm/ludum-pro-bono-games.svg?style=for-the-badge
+[contributors-url]: https://github.com/lumac-ufsm/ludum-pro-bono-games/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/lumac-ufsm/ludum-pro-bono-games.svg?style=for-the-badge
+[forks-url]: https://github.com/lumac-ufsm/ludum-pro-bono-games/network/members
+[stars-shield]: https://img.shields.io/github/stars/lumac-ufsm/ludum-pro-bono-games.svg?style=for-the-badge
+[stars-url]: https://github.com/lumac-ufsm/ludum-pro-bono-games/stargazers
+[issues-shield]: https://img.shields.io/github/issues/lumac-ufsm/ludum-pro-bono-games.svg?style=for-the-badge
+[issues-url]: https://github.com/lumac-ufsm/ludum-pro-bono-games/issues
+[license-shield]: https://img.shields.io/github/license/lumac-ufsm/ludum-pro-bono-games.svg?style=for-the-badge
+[license-url]: https://github.com/lumac-ufsm/ludum-pro-bono-games/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -20,7 +20,7 @@
 <br/>
 
 <p align="center">
-  <a href="https://github.com/ludum-pro-bono/ludum-pro-bono-games">
+  <a href="https://github.com/lumac-ufsm/ludum-pro-bono-games">
     <img src="https://avatars.githubusercontent.com/u/65375446?s=200&v=4" alt="Logo" width="150" height="150">
   </a>
 
@@ -32,9 +32,9 @@
     <br />
     <a href="https://lumac-ufsm.github.io/ludum-pro-bono-frontend/menu/index.html">Acessar aplicação WEB</a>
     ·
-    <a href="https://github.com/ludum-pro-bono/ludum-pro-bono-games/issues">Reportar Bug</a>
+    <a href="https://github.com/lumac-ufsm/ludum-pro-bono-games/issues">Reportar Bug</a>
     ·
-    <a href="https://github.com/ludum-pro-bono/ludum-pro-bono-games/issues">Sugerir funcionalidade</a>
+    <a href="https://github.com/lumac-ufsm/ludum-pro-bono-games/issues">Sugerir funcionalidade</a>
   </p>
 </p>
 
@@ -46,7 +46,7 @@
 - [Jogos](#-jogos)
 
 # 🔖 Sobre
-[![image](public/menu.gif)](https://ludum-pro-bono.github.io/ludum-pro-bono-frontend/menu/index.html)
+[![image](public/menu.gif)](https://lumac-ufsm.github.io/ludum-pro-bono-frontend/menu/index.html)
 <p style='text-align: justify;'>
     O ensino de disciplinas relacionadas à programação e lógica apresentam uma série de desafios, principalmente relacionados a dificuldade dos alunos na associação de questões lógicas nas disciplinas iniciais de programação e dificuldade na aplicação de conceitos relacionados a estas disciplinas em problemas de outras áreas do conhecimento. Tal característica é intrínseca à área de computação, que é constantemente aplicada com outras disciplinas para a resolução de problemas. Este projeto apresenta a construção de jogos com foco na aprendizagem de lógica e algoritmos. Cada jogo desenvolvido abrange diferentes áreas do conhecimento, fazendo que o usuário aprenda o conteúdo abordado no jogo através de um processo divertido.
 </p>
