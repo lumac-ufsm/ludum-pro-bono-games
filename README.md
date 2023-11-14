@@ -21,7 +21,7 @@
 
 <p align="center">
   <a href="https://github.com/lumac-ufsm/ludum-pro-bono-games">
-    <img src="https://avatars.githubusercontent.com/u/65375446?s=200&v=4" alt="Logo" width="150" height="150">
+    <img src="https://avatars.githubusercontent.com/u/142287033" alt="Logo" width="150" height="150">
   </a>
 
   <h3 align="center">Ludum pro bono</h3>
